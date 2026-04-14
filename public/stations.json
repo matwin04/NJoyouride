@@ -1,0 +1,37 @@
+{
+  "stations": {
+    "80214": {
+      "Name": "Union Station"
+    },
+    "80213": {
+      "Name": "Civic Center"
+    },
+    "80212": {
+      "Name": "Pershing Square"
+    },
+    "80211": {
+      "Name": "7th St/Metro Center"
+    },
+    "80210": {
+      "Name": "Westlake/MacArthur Park"
+    },
+    "80209": {
+      "Name": "Wilshire/Vermont"
+    },
+    "DALY": {
+      "Name": "Daly City",
+      "connections": [
+        {
+          "type": "BUS",
+          "ID": "R12",
+          "Headsign": "UCLA"
+        }
+      ],
+      "services": {
+        "bikeshare": true,
+        "throne": false,
+        "customercenter": false
+      }
+    }
+  }
+}

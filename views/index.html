@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BART Map</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="/public/styles/main.css" />
+    </head>
+
+    <body>
+        <div id="app">
+            <!-- ============================= -->
+            <!-- SIDE PANEL -->
+            <!-- ============================= -->
+            <div class="col" id="side-panel">
+                <div class="panel-header">
+                    <h2 id="station-name">Select a station</h2>
+                    <span id="station-id" class="station-id"></span>
+                    <span id="station-addr"></span>
+                </div>
+                <h3>Departures</h3>
+                <div id="departures">
+                    <p>Select a station to view departures</p>
+                </div>
+                <div id="access">
+                    view station access
+                </div>
+                <div id="resize-handle"></div>
+            </div>
+
+            <div class="col" id="svg-container"></div>
+        </div>
+
+        <!-- ============================= -->
+        <!-- SCRIPT -->
+        <!-- ============================= -->
+        <script type="module" src="/public/scripts/metro.js"></script>
+    </body>
+</html>
+s

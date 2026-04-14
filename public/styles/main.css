@@ -1,0 +1,176 @@
+/* ============================= */
+/* GLOBAL */
+/* ============================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:
+        system-ui,
+        -apple-system,
+        sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    background: #f5f7fa;
+}
+
+/* ============================= */
+/* LAYOUT */
+/* ============================= */
+#app {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.col {
+    height: 100%;
+}
+
+/* ============================= */
+/* SIDEBAR */
+/* ============================= */
+#side-panel {
+    width: 320px;
+    min-width: 220px;
+    max-width: 600px;
+
+    background: #ffffff;
+    border-right: 1px solid #ddd;
+
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+
+    position: relative;
+    overflow-y: auto;
+}
+
+/* resize handle */
+#resize-handle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6px;
+    height: 100%;
+    cursor: ew-resize;
+    background: transparent;
+}
+
+#resize-handle:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+.panel-header {
+    margin-bottom: 12px;
+}
+
+#station-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.station-id {
+    font-size: 12px;
+    color: #888;
+}
+
+#station-addr {
+    display: block;
+    font-size: 13px;
+    color: #555;
+    margin-top: 4px;
+}
+
+/* ============================= */
+/* DEPARTURES */
+/* ============================= */
+#departures {
+    margin-top: 12px;
+}
+
+/* group block */
+.departure-group {
+    background: #fafafa;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    transition: 0.2s;
+}
+
+.departure-group:hover {
+    background: #f0f4f8;
+}
+
+/* header */
+.departure-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.route-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* times row */
+.departure-times {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.train-etd {
+    background: #e9eef5;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* meta */
+.departure-meta {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
+/* ============================= */
+/* MAP */
+/* ============================= */
+#svg-container {
+    flex: 1;
+    background: #e6ebf0;
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+@media (max-width: 700px) {
+    #side-panel {
+        width: 100%;
+        max-width: none;
+        height: 40%;
+    }
+
+    #svg-container {
+        height: 60%;
+    }
+
+    #app {
+        flex-direction: column;
+    }
+
+    #resize-handle {
+        display: none;
+    }
+}

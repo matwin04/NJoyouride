@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>njoyouride - API Documentation</title>
+    <style>
+        body { margin: 0; padding: 0; }
+        #opencollection-container { width: 100vw; height: 100vh; }
+    </style>
+    <link rel="stylesheet" href="https://cdn.opencollection.com/docs.css">
+    <script src="https://cdn.opencollection.com/docs.js"></script>
+</head>
+<body>
+    <div id="opencollection-container"></div>
+    <script>
+        const collectionData = "opencollection: 1.0.0\ninfo:\n  name: njoyouride\nconfig:\n  proxy:\n    inherit: true\n    config:\n      protocol: http\n      hostname: ''\n      port: ''\n      auth:\n        username: ''\n        password: ''\n      bypassProxy: ''\nitems:\n  - info:\n      name: APIs\n      type: folder\n      seq: 2\n    request:\n      auth: inherit\n    items:\n      - info:\n          name: ETD\n          type: http\n          seq: 1\n        http:\n          method: GET\n          url: https://api.bart.gov/api/etd.aspx?cmd=etd&orig=DALY&json=y&key=QMAK-PUTH-9BVT-DWEI\n          params:\n            - name: cmd\n              value: etd\n              type: query\n            - name: orig\n              value: DALY\n              type: query\n            - name: json\n              value: 'y'\n              type: query\n            - name: key\n              value: QMAK-PUTH-9BVT-DWEI\n              type: query\n          auth: inherit\n        settings:\n          encodeUrl: true\n          timeout: 0\n          followRedirects: true\n          maxRedirects: 5\n  - info:\n      name: Internal\n      type: folder\n      seq: 3\n    request:\n      auth: inherit\n    items:\n      - info:\n          name: ETD\n          type: http\n          seq: 1\n        http:\n          method: GET\n          url: http://localhost:8088/api/eta?stationId=DALY\n          params:\n            - name: stationId\n              value: DALY\n              type: query\n          auth: inherit\n        settings:\n          encodeUrl: true\n          timeout: 0\n          followRedirects: true\n          maxRedirects: 5\nbundled: true\nextensions:\n  bruno:\n    ignore:\n      - node_modules\n      - .git\n    exportedAt: '2026-04-14T01:42:43.146Z'\n    exportedUsing: Bruno/3.2.2\n";
+        new window.OpenCollection({
+            target: document.getElementById('opencollection-container'),
+            opencollection: collectionData,
+            theme: 'light'
+        });
+    </script>
+</body>
+</html>

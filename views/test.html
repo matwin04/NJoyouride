@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BART Map</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="/public/styles/main.css" />
+    </head>
+
+    <body>
+        <div id="app">
+            <!-- ============================= -->
+            <!-- SIDE PANEL -->
+            <!-- ============================= -->
+            <div class="col" id="side-panel">
+                <!-- HEADER -->
+                <div class="panel-header">
+                    <h2 id="station-name">San Francisco International Airport</h2>
+                    <span id="station-id" class="station-id">SFIA</span>
+                    <span id="station-addr">—</span>
+                </div>
+
+                <!-- ============================= -->
+                <!-- 🚆 DEPARTURES (NEW) -->
+                <!-- ============================= -->
+                <h3>Departures</h3>
+                <div id="departures">
+                    <div class="departure-group">
+                        <div class="departure-header">
+                            <img src="/public/icons/BAY/YELLOW.svg" class="route-icon" />
+                            <div class="departure-dest">Antioch</div>
+                        </div>
+                        <div class="departure-times">
+                            <span class="train-etd">4 Min</span>
+                            <span class="train-etd">24 Min</span>
+                        </div>
+                        <div class="departure-meta">Platform 1 * North</div>
+                    </div>
+                    <p>Select a station to view departures</p>
+                </div>
+                <div id="resize-handle"></div>
+            </div>
+
+            <div class="col" id="svg-container"></div>
+        </div>
+
+        <!-- ============================= -->
+        <!-- SCRIPT -->
+        <!-- ============================= -->
+        <script type="module" src="/public/scripts/metro.js"></script>
+    </body>
+</html>
+s

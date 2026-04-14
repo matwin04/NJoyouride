@@ -1,0 +1,16 @@
+{
+  "name": "enjoyouride",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "run": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express-handlebars": "^9.0.1"
+  }
+}

@@ -1,0 +1,3436 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="canvas"
+   width="788.216"
+   height="777.809"
+   viewBox="253.702 33.398 788.216 777.809"
+   version="1.1"
+   sodipodi:docname="bart.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style
+     id="style144"></style>
+  <defs
+     id="defs142" />
+  <sodipodi:namedview
+     id="namedview142"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.5173417"
+     inkscape:cx="219.47756"
+     inkscape:cy="645.52223"
+     inkscape:window-width="1181"
+     inkscape:window-height="785"
+     inkscape:window-x="259"
+     inkscape:window-y="31"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="SBRN" />
+  <path
+     id="line_jA14Y2emTY"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m398.232 651.768 25 25"
+     cursor="pointer" />
+  <path
+     id="line_vvAe2hb4_K"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m423.232 676.768 25 25"
+     cursor="pointer" />
+  <path
+     id="line_rEBFSK_udy"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m448.232 701.768 25 25"
+     cursor="pointer" />
+  <path
+     id="line_l7VnRSdZSn"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m473.232 726.768 25 25"
+     cursor="pointer" />
+  <path
+     id="line_2lGK1Lr4xR"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M377.5 615v-25"
+     cursor="pointer" />
+  <path
+     id="line_laUyM9uRH-"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m426.768 673.232-25-25"
+     cursor="pointer" />
+  <path
+     id="line_hUMSRY_lgU"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m451.768 698.232-25-25"
+     cursor="pointer" />
+  <path
+     id="line_MI_ZeZVecL"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m476.768 723.232-25-25"
+     cursor="pointer" />
+  <path
+     id="line_kUcTVpN9HL"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m501.768 748.232-25-25"
+     cursor="pointer" />
+  <path
+     id="line_StUPXUxkeE"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M382.5 590v25"
+     cursor="pointer" />
+  <path
+     id="line_uMOXeD4tN4"
+     fill="none"
+     stroke="#00aeef"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M387.5 590v25"
+     cursor="pointer" />
+  <path
+     id="line_RZdXMdbnoC"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M392.5 590v25"
+     cursor="pointer" />
+  <path
+     id="line_YjbiieDmlf"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M377.5 590v-25"
+     cursor="pointer" />
+  <path
+     id="line_5W83S0FLuP"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M377.5 565v-25"
+     cursor="pointer" />
+  <path
+     id="line_RpIBqOt9EO"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M377.5 540v-25"
+     cursor="pointer" />
+  <path
+     id="line_Vp59G77Ig3"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m399.697 474.697 25-25"
+     cursor="pointer" />
+  <path
+     id="line_-hS4Qjqwcl"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m424.697 449.697 25-25"
+     cursor="pointer" />
+  <path
+     id="line_N6MiOrwc5Y"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m449.697 424.697 25-25"
+     cursor="pointer" />
+  <path
+     id="line_fYYQY-FFjb"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M620 335v-25"
+     cursor="pointer" />
+  <path
+     id="line_h9kr8eVfHq"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M620 310v-25"
+     cursor="pointer" />
+  <path
+     id="line_8UFzprvaM1"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m608.232 256.768-20-20"
+     cursor="pointer" />
+  <path
+     id="line_T9spgAcsOW"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m588.232 236.768-20-20"
+     cursor="pointer" />
+  <path
+     id="line_Th1GkbZKPp"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m568.232 216.768-20-20"
+     cursor="pointer" />
+  <path
+     id="line_Gc5iYpnb5T"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m548.232 196.768-20-20"
+     cursor="pointer" />
+  <path
+     id="line_FsdRt0sFmY"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m528.232 176.768-20-20"
+     cursor="pointer" />
+  <path
+     id="line_LTncNFB_-_"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M630 310v-25"
+     cursor="pointer" />
+  <path
+     id="line_q_RKT_thHr"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M630 335v-25"
+     cursor="pointer" />
+  <path
+     id="line_ZyZNHzC4L8"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M625 335v-25"
+     cursor="pointer" />
+  <path
+     id="line_3L3hpT6Dj_"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M625 310v-25"
+     cursor="pointer" />
+  <path
+     id="line_zpp89Zx_7s"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m611.768 253.232-20-20"
+     cursor="pointer" />
+  <path
+     id="line_gjDAsE3uzo"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m591.768 233.232-20-20"
+     cursor="pointer" />
+  <path
+     id="line_nXUB7gN0C-"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m571.768 213.232-20-20"
+     cursor="pointer" />
+  <path
+     id="line_3qHXbc2OGp"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m551.768 193.232-20-20"
+     cursor="pointer" />
+  <path
+     id="line_Dt4IGiPbfV"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m531.768 173.232-20-20"
+     cursor="pointer" />
+  <path
+     id="line_GRXVH48iDz"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m650 400 25 25"
+     cursor="pointer" />
+  <path
+     id="line_aXy4hyknfK"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m675 425 25 25"
+     cursor="pointer" />
+  <path
+     id="line_oAOrLn7iRU"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M625 335v20"
+     cursor="pointer" />
+  <path
+     id="line_-M7c3bet-3"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m640 390 10 10"
+     cursor="pointer" />
+  <path
+     id="line_bXPNujl920"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m700 450 25 25"
+     cursor="pointer" />
+  <path
+     id="line_gzx7Ac0DED"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m725 475 25 25"
+     cursor="pointer" />
+  <path
+     id="line_5qiQ6vnBqG"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M762.5 525v25"
+     cursor="pointer" />
+  <path
+     id="line_CeQ4AjzEOQ"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M762.5 550v25"
+     cursor="pointer" />
+  <path
+     id="line_5fO2NMFs7L"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M762.5 575v25"
+     cursor="pointer" />
+  <path
+     id="line_GaUuSSsgxn"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M762.5 600v25"
+     cursor="pointer" />
+  <path
+     id="line_W3-mYc2QKq"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M762.5 625v25"
+     cursor="pointer" />
+  <path
+     id="line_NJ3IiS6N8p"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M762.5 650v25"
+     cursor="pointer" />
+  <path
+     id="line_jMf6H1553J"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M757.5 675v-25"
+     cursor="pointer" />
+  <path
+     id="line_j6HKtWe02h"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M757.5 650v-25"
+     cursor="pointer" />
+  <path
+     id="line_LxRUAG4SRK"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M757.5 625v-25"
+     cursor="pointer" />
+  <path
+     id="line_uZjuln_nef"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M757.5 600v-25"
+     cursor="pointer" />
+  <path
+     id="line_Kmy8BMz6g2"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M757.5 575v-25"
+     cursor="pointer" />
+  <path
+     id="line_lIAFH8nm65"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M757.5 550v-25"
+     cursor="pointer" />
+  <path
+     id="line_p-v6YFbO4a"
+     fill="none"
+     stroke="#00aeef"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m728.536 471.464 25 25"
+     cursor="pointer" />
+  <path
+     id="line_CGBNDO38rA"
+     fill="none"
+     stroke="#00aeef"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m728.536 471.464-25-25"
+     cursor="pointer" />
+  <path
+     id="line_vRP2uBhVep"
+     fill="none"
+     stroke="#00aeef"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m703.536 446.464-25-25"
+     cursor="pointer" />
+  <path
+     id="line_1VZsxyaD75"
+     fill="none"
+     stroke="#00aeef"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m678.536 421.464-25-25"
+     cursor="pointer" />
+  <path
+     id="line_S4vmbJcM3U"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m646.464 403.536 25 25"
+     cursor="pointer" />
+  <path
+     id="line_cRBwg_Wpeh"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m671.464 428.536 25 25"
+     cursor="pointer" />
+  <path
+     id="line_V01ESdyADK"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m696.464 453.536 25 25"
+     cursor="pointer" />
+  <path
+     id="line_0U6sMSg9Sw"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m721.464 478.536 25 25"
+     cursor="pointer" />
+  <path
+     id="line_BrjlHn7Tsx"
+     fill="none"
+     stroke="#00aeef"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M825 510h55"
+     cursor="pointer" />
+  <path
+     id="line_f6rEihTz6t"
+     fill="none"
+     stroke="#00aeef"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M880 510h45"
+     cursor="pointer" />
+  <path
+     id="line_xR0Rtlg91f"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m453.232 428.232 25-25"
+     cursor="pointer" />
+  <path
+     id="line_6pYtazkWrB"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m428.232 453.232 25-25"
+     cursor="pointer" />
+  <path
+     id="line_pxFBseoC-a"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m403.232 478.232 25-25"
+     cursor="pointer" />
+  <path
+     id="line_oHG_t_VXiN"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M382.5 540v-25"
+     cursor="pointer" />
+  <path
+     id="line_TyJnJPwx8m"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M382.5 565v-25"
+     cursor="pointer" />
+  <path
+     id="line_vYRMdU1sk7"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M382.5 590v-25"
+     cursor="pointer" />
+  <path
+     id="line_4AoDaQRH-3"
+     fill="none"
+     stroke="#00aeef"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M387.5 590v-25"
+     cursor="pointer" />
+  <path
+     id="line_NTBMKeke5H"
+     fill="none"
+     stroke="#00aeef"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M387.5 565v-25"
+     cursor="pointer" />
+  <path
+     id="line_UfB1YodkdO"
+     fill="none"
+     stroke="#00aeef"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M387.5 540v-25"
+     cursor="pointer" />
+  <path
+     id="line_7GtOPOvQAW"
+     fill="none"
+     stroke="#00aeef"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m406.768 481.768 25-25"
+     cursor="pointer" />
+  <path
+     id="line_dOESTQuwe7"
+     fill="none"
+     stroke="#00aeef"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m431.768 456.768 25-25"
+     cursor="pointer" />
+  <path
+     id="line_hL3nTkGZxZ"
+     fill="none"
+     stroke="#00aeef"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m456.768 431.768 25-25"
+     cursor="pointer" />
+  <path
+     id="line_M2MZDvKbXn"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m460.303 435.303 25-25"
+     cursor="pointer" />
+  <path
+     id="line_fcj3-UmCMz"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m435.303 460.303 25-25"
+     cursor="pointer" />
+  <path
+     id="line_nFlnRKIf10"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m410.303 485.303 25-25"
+     cursor="pointer" />
+  <path
+     id="line_oy25P2gIyG"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M392.5 540v-25"
+     cursor="pointer" />
+  <path
+     id="line_Uvq4HP3tKt"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M392.5 565v-25"
+     cursor="pointer" />
+  <path
+     id="line_2y1ZgBWYgh"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M392.5 590v-25"
+     cursor="pointer" />
+  <path
+     id="line_Gc6uhSOZ76"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m650 245 25-25"
+     cursor="pointer" />
+  <path
+     id="line_r_hdB2uUrn"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m675 220 25-25"
+     cursor="pointer" />
+  <path
+     id="line_eaR0-x4OIc"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m700 195 20-20"
+     cursor="pointer" />
+  <path
+     id="line_xowwFTuM1g"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m720 175 20-20"
+     cursor="pointer" />
+  <path
+     id="line_1IRrTY7Vu5"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m740 155 20-20"
+     cursor="pointer" />
+  <path
+     id="line__0OWqGkuz3"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M800 115h35"
+     cursor="pointer" />
+  <path
+     id="line_wB4OfTDHku"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M900 115h50"
+     cursor="pointer" />
+  <path
+     id="line_qPwmCuZd5k"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M835 115h30"
+     cursor="pointer" />
+  <path
+     id="line_9y3LqQyaNc"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M865 115h35"
+     cursor="pointer" />
+  <path
+     id="line_NMD7xLPjHg"
+     fill="none"
+     stroke="#000"
+     stroke-dasharray="5 2.5"
+     stroke-width="5"
+     d="M350 590h35"
+     cursor="pointer" />
+  <path
+     id="line_UD5Z5MtHJu"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m398.232 651.768-16.49-16.49c-2.12-2.121-4.242-7.242-4.242-10.242V615"
+     cursor="pointer" />
+  <path
+     id="line_Q6J8fMssbW"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M382.5 615v10.964c0 1.5 1.06 4.061 2.121 5.122l17.147 17.146"
+     cursor="pointer" />
+  <path
+     id="line_Lx7t-I7kQy"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M377.5 515v-10.107c0-4 2.828-10.828 5.657-13.656l16.54-16.54"
+     cursor="pointer" />
+  <path
+     id="line_lwToQ65wlk"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m474.697 399.697 26.54-26.54c2.828-2.829 9.656-5.657 13.656-5.657H575"
+     cursor="pointer" />
+  <path
+     id="line_T894fR9iU3"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M575 367.5h43c1 0 2-1 2-2V335"
+     cursor="pointer" />
+  <path
+     id="line_GE_Vvo-W9w"
+     fill="none"
+     stroke="#ed1c24"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M620 285v-14.464c0-1-.707-2.708-1.414-3.415l-10.354-10.353"
+     cursor="pointer" />
+  <path
+     id="line_PIVFi5ALGh"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M625 285v-14.536c0-2-1.414-5.414-2.828-6.828l-10.404-10.404"
+     cursor="pointer" />
+  <path
+     id="line_kdNQQsROez"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M575 382.5h48.429c1 0 2.707.707 3.414 1.414l19.621 19.622"
+     cursor="pointer" />
+  <path
+     id="line_EUyulJQYc2"
+     fill="none"
+     stroke="#00aeef"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M575 377.5h53.571c3 0 8.121 2.121 10.243 4.243l14.722 14.721"
+     cursor="pointer" />
+  <path
+     id="line_UdNujwbFeH"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M575 372.5h49c3 0 6-3 6-6V335"
+     cursor="pointer" />
+  <path
+     id="line_xutJTNxnPM"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m750 500 9.672 9.672c1.414 1.414 2.828 4.828 2.828 6.828v8.5"
+     cursor="pointer" />
+  <path
+     id="line_v_KInsBrMC"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M757.5 525v-8.429c0-1-.707-2.707-1.414-3.414l-9.622-9.621"
+     cursor="pointer" />
+  <path
+     id="line_c8x3w4xFUx"
+     fill="none"
+     stroke="#00aeef"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m753.536 496.464 12.12 12.122c.708.707 2.415 1.414 3.415 1.414H825"
+     cursor="pointer" />
+  <path
+     id="line_A5nYfn-LTT"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M575 372.5h-60.036c-3 0-8.12 2.121-10.242 4.243l-26.49 26.49"
+     cursor="pointer" />
+  <path
+     id="line_OVdtsk--9h"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M382.5 515v-10.036c0-3 2.121-8.12 4.243-10.242l16.49-16.49"
+     cursor="pointer" />
+  <path
+     id="line_m-89kmWIAm"
+     fill="none"
+     stroke="#00aeef"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M387.5 515v-9.964c0-2 1.414-5.415 2.828-6.829l16.44-16.44"
+     cursor="pointer" />
+  <path
+     id="line_lgPeW6T6an"
+     fill="none"
+     stroke="#00aeef"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M575 377.5h-59.964c-2 0-5.415 1.414-6.829 2.828l-26.44 26.44"
+     cursor="pointer" />
+  <path
+     id="line_905efDAkw0"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M575 382.5h-59.893c-1 0-2.708.707-3.415 1.414l-26.389 26.39"
+     cursor="pointer" />
+  <path
+     id="line_XxPZOABXBR"
+     fill="none"
+     stroke="#4db848"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M392.5 515v-9.893c0-1 .707-2.708 1.414-3.415l16.39-16.389"
+     cursor="pointer" />
+  <path
+     id="line_Z--dtQSWWO"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M630 285v-16c0-2 1.414-5.414 2.828-6.828L650 245"
+     cursor="pointer" />
+  <path
+     id="line_rbbTCDtPsA"
+     fill="none"
+     stroke="#ffe800"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="m760 135 12.929-12.929C776.464 118.536 785 115 790 115h10"
+     cursor="pointer" />
+  <g
+     id="COLM"
+     inkscape:label="COLM"
+     class="station">
+    <g
+       style="cursor:move"
+       transform="rotate(-45 984.62 -157.843)"
+       id="g2">
+      <rect
+         width="11"
+         height="6"
+         x="-5.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect1" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ffe800"
+         id="circle1" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle2" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(408.89 655)"
+       id="text144">Colma
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(408.89 655)"
+       id="text3">Stn
+                        </text>
+  </g>
+  <g
+     id="DALY"
+     class="station"
+     transform="translate(385 615)"
+     inkscape:label="DALY"
+     style="class:station;">
+    <g
+       style="cursor:move"
+       id="g6">
+      <rect
+         width="21"
+         height="6"
+         x="-10.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect3" />
+      <circle
+         cx="-7.5"
+         r="2"
+         fill="#ffe800"
+         id="circle3" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle4" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#00aeef"
+         id="circle5" />
+      <circle
+         cx="7.5"
+         r="2"
+         fill="#4db848"
+         id="circle6" />
+    </g>
+    <g
+       id="text2"
+       text-anchor="start">
+      <text
+         dx="0"
+         dy="-1"
+         font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+         font-size="10"
+         style="font-synthesis:none"
+         transform="translate(15.5 5)"
+         id="text6">Daly City</text>
+      <text
+         fill="gray"
+         dominant-baseline="hanging"
+         dx="0"
+         dy="1.5"
+         font-family="Arial, sans-serif"
+         font-size="5"
+         transform="translate(15.5 5)"
+         id="text7">DALY</text>
+    </g>
+  </g>
+  <g
+     id="SSAN"
+     class="station"
+     inkscape:label="SSAN">
+    <g
+       style="cursor:move"
+       transform="rotate(-45 1027.297 -175.52)"
+       id="g8">
+      <rect
+         width="11"
+         height="6"
+         x="-5.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect7" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle7" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#ffe800"
+         id="circle8" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(433.89 680)"
+       id="text8">South San Francisco
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(433.89 680)"
+       id="text9">Stn
+                        </text>
+  </g>
+  <g
+     id="SBRN"
+     inkscape:label="SBRN"
+     
+     class="station"
+     >
+     
+    <g
+       style="cursor:move"
+       transform="rotate(-45 1069.975 -193.198)"
+       id="g10">
+      <rect
+         width="11"
+         height="6"
+         x="-5.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect9" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle9" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#ffe800"
+         id="circle10" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(458.89 705)"
+       id="text10">San Bruno
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(458.89 705)"
+       id="text11">SBRN</text>
+  </g>
+  <g
+     id="SFIA"
+     inkscape:label="SFIA"
+     class="station">
+    <g
+       style="cursor:move"
+       transform="rotate(-45 1112.652 -210.876)"
+       id="g12">
+      <rect
+         width="11"
+         height="6"
+         x="-5.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect11" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle11" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#ffe800"
+         id="circle12" />
+    </g>
+    <g
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       id="g13">
+      <text
+         dx="0"
+         dy="-1"
+         style="font-synthesis:none"
+         transform="translate(483.89 730)"
+         id="text12">Int'l Airport (SFO)
+                        </text>
+      <text
+         dx="0"
+         dy="-11"
+         style="font-synthesis:none"
+         transform="translate(483.89 730)"
+         id="text13">San Francisco
+                        </text>
+    </g>
+    <text
+       fill="#808080"
+       dominant-baseline="hanging"
+       font-family="Arial, sans-serif"
+       font-size="5px"
+       transform="translate(483.89,730)"
+       id="text14">SFIA</text>
+  </g>
+  <g
+     id="MLBR"
+     inkscape:label="MLBR"
+     class="station">
+    <g
+       style="cursor:move"
+       transform="rotate(-45 1155.33 -228.553)"
+       id="g15">
+      <rect
+         width="11"
+         height="6"
+         x="-5.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect14" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle14" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#ffe800"
+         id="circle15" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(508.89 755)"
+       id="text15">Millbrae
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(508.89 755)"
+       id="text16">MLBR</text>
+  </g>
+  <g
+     id="BALB"
+     class="station">
+    <g
+       style="cursor:move"
+       transform="translate(385 590)"
+       id="g19">
+      <rect
+         width="21"
+         height="6"
+         x="-10.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect16" />
+      <circle
+         cx="-7.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle16" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ffe800"
+         id="circle17" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#00aeef"
+         id="circle18" />
+      <circle
+         cx="7.5"
+         r="2"
+         fill="#4db848"
+         id="circle19" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(400.5 595)"
+       id="text19">Balboa Park
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(400.5 595)"
+       id="text20">BALB
+                        </text>
+  </g>
+  <g
+     class="station"
+     id="GLEN">
+    <g
+       style="cursor:move"
+       transform="translate(385 565)"
+       id="g23">
+      <rect
+         width="21"
+         height="6"
+         x="-10.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect20" />
+      <circle
+         cx="-7.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle20" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ffe800"
+         id="circle21" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#00aeef"
+         id="circle22" />
+      <circle
+         cx="7.5"
+         r="2"
+         fill="#4db848"
+         id="circle23" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(400.5 570)"
+       id="text23">Glen Park
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(400.5 570)"
+       id="text24">GLEN
+                        </text>
+  </g>
+  <g
+     id="24TH"
+     class="station">
+    <g
+       style="cursor:move"
+       transform="translate(385 540)"
+       id="g27">
+      <rect
+         width="21"
+         height="6"
+         x="-10.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect24" />
+      <circle
+         cx="-7.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle24" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ffe800"
+         id="circle25" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#00aeef"
+         id="circle26" />
+      <circle
+         cx="7.5"
+         r="2"
+         fill="#4db848"
+         id="circle27" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(400.5 545)"
+       id="text27">24th St Mission
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(400.5 545)"
+       id="text28">StationId
+                        </text>
+  </g>
+  <g
+     id="16TH"
+     class="station">
+    <g
+       style="cursor:move"
+       transform="translate(385 515)"
+       id="g31">
+      <rect
+         width="21"
+         height="6"
+         x="-10.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect28" />
+      <circle
+         cx="-7.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle28" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ffe800"
+         id="circle29" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#00aeef"
+         id="circle30" />
+      <circle
+         cx="7.5"
+         r="2"
+         fill="#4db848"
+         id="circle31" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(400.5 520)"
+       id="text31">16th St Mission
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(400.5 520)"
+       id="text32">16TH
+                        </text>
+  </g>
+  <g
+     id="CIVC"
+     inkscape:label="CIVC"
+     class="station">
+    <g
+       style="cursor:move"
+       transform="rotate(45 -376.911 728.878)"
+       id="g35">
+      <rect
+         width="21"
+         height="6"
+         x="-10.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect32" />
+      <circle
+         cx="-7.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle32" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ffe800"
+         id="circle33" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#00aeef"
+         id="circle34" />
+      <circle
+         cx="7.5"
+         r="2"
+         fill="#4db848"
+         id="circle35" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(417.425 485)"
+       id="text35">Civic Center/UN Plaza
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(417.425 485)"
+       id="text36">StationId
+                        </text>
+  </g>
+  <g
+     id="POWL"
+     inkscape:label="POWL"
+     class="station">
+    <g
+       style="cursor:move"
+       transform="rotate(45 -334.234 746.556)"
+       id="g39">
+      <rect
+         width="21"
+         height="6"
+         x="-10.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect36" />
+      <circle
+         cx="-7.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle36" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ffe800"
+         id="circle37" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#00aeef"
+         id="circle38" />
+      <circle
+         cx="7.5"
+         r="2"
+         fill="#4db848"
+         id="circle39" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(442.425 460)"
+       id="text39">Powell St
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(442.425 460)"
+       id="text40">StationId
+                        </text>
+  </g>
+  <g
+     id="MONT"
+     inkscape:label="MONT"
+     class="station">
+    <g
+       style="cursor:move"
+       transform="rotate(45 -291.556 764.234)"
+       id="g43">
+      <rect
+         width="21"
+         height="6"
+         x="-10.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect40" />
+      <circle
+         cx="-7.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle40" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ffe800"
+         id="circle41" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#00aeef"
+         id="circle42" />
+      <circle
+         cx="7.5"
+         r="2"
+         fill="#4db848"
+         id="circle43" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(467.425 435)"
+       id="text43">Montgomery St
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(467.425 435)"
+       id="text44">StationId
+                        </text>
+  </g>
+  <g
+     id="EMBR"
+     class="station">
+    <g
+       style="cursor:move"
+       transform="rotate(45 -248.878 781.911)"
+       id="g47">
+      <rect
+         width="21"
+         height="6"
+         x="-10.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect44" />
+      <circle
+         cx="-7.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle44" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ffe800"
+         id="circle45" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#00aeef"
+         id="circle46" />
+      <circle
+         cx="7.5"
+         r="2"
+         fill="#4db848"
+         id="circle47" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(492.425 410)"
+       id="text47">Embarcadero
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(492.425 410)"
+       id="text48">StationId
+                        </text>
+  </g>
+  <g
+     id="WOAK"
+     inkscape:label="WOAK"
+     class="station">
+    <g
+       style="cursor:move"
+       transform="rotate(90 100 475)"
+       id="g51">
+      <rect
+         width="21"
+         height="6"
+         x="-10.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect48" />
+      <circle
+         cx="-7.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle48" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ffe800"
+         id="circle49" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#00aeef"
+         id="circle50" />
+      <circle
+         cx="7.5"
+         r="2"
+         fill="#4db848"
+         id="circle51" />
+    </g>
+    <g
+       text-anchor="middle"
+       id="g53">
+      <g
+         font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+         font-size="10"
+         id="g52">
+        <text
+           dx="0"
+           dy="-1"
+           style="font-synthesis:none"
+           transform="translate(575 355)"
+           id="text51">Oakland
+                        </text>
+        <text
+           dx="0"
+           dy="-11"
+           style="font-synthesis:none"
+           transform="translate(575 355)"
+           id="text52">West
+                        </text>
+      </g>
+      <text
+         fill="#808080"
+         dominant-baseline="hanging"
+         font-family="Arial, sans-serif"
+         font-size="5px"
+         transform="translate(575,355)"
+         id="text53"><tspan
+           sodipodi:role="line"
+           id="tspan143"
+           x="0"
+           y="0">WOAK</tspan></text>
+    </g>
+  </g>
+  <g
+     id="12TH"
+     inkscape:label="12TH"
+     class="station">
+    <g
+       style="cursor:move"
+       transform="translate(625 335)"
+       id="g55">
+      <rect
+         width="16"
+         height="6"
+         x="-8"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect53" />
+      <circle
+         cx="-5"
+         r="2"
+         fill="#ed1c24"
+         id="circle53" />
+      <circle
+         r="2"
+         fill="#ffe800"
+         id="circle54" />
+      <circle
+         cx="5"
+         r="2"
+         fill="#faa61a"
+         id="circle55" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(638 340)"
+       id="text55">12th St/Oakland City Center
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(638 340)"
+       id="text56">StationId
+                        </text>
+  </g>
+  <g
+     id="19TH"
+     inkscape:label="19TH"
+     class="station">
+    <g
+       style="cursor:move"
+       transform="translate(625 310)"
+       id="g58">
+      <rect
+         width="16"
+         height="6"
+         x="-8"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect56" />
+      <circle
+         cx="-5"
+         r="2"
+         fill="#ed1c24"
+         id="circle56" />
+      <circle
+         r="2"
+         fill="#ffe800"
+         id="circle57" />
+      <circle
+         cx="5"
+         r="2"
+         fill="#faa61a"
+         id="circle58" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(638 315)"
+       id="text58">19th St/Oakland
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(638 315)"
+       id="text59">StationId
+                        </text>
+  </g>
+  <g
+     id="MCAR"
+     inkscape:label="MCAR"
+     class="station">
+    <g
+       style="cursor:move"
+       transform="translate(625 285)"
+       id="g61">
+      <rect
+         width="16"
+         height="6"
+         x="-8"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect59" />
+      <circle
+         cx="-5"
+         r="2"
+         fill="#ed1c24"
+         id="circle59" />
+      <circle
+         r="2"
+         fill="#faa61a"
+         id="circle60" />
+      <circle
+         cx="5"
+         r="2"
+         fill="#ffe800"
+         id="circle61" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(638 290)"
+       id="text61">MacArthur
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(638 290)"
+       id="text62">StationId
+                        </text>
+  </g>
+  <g
+     id="ASHB"
+     inkscape:label="ASHB"
+     class="station">
+    <g
+       style="cursor:move"
+       transform="rotate(-45 612.812 -608.835)"
+       id="g63">
+      <rect
+         width="11"
+         height="6"
+         x="-5.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect62" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle62" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#faa61a"
+         id="circle63" />
+    </g>
+    <g
+       text-anchor="end"
+       id="g64">
+      <text
+         dx="0"
+         dy="-1"
+         font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+         font-size="10"
+         style="font-synthesis:none"
+         transform="translate(601.11 260)"
+         id="text63">Ashby
+                        </text>
+      <text
+         fill="gray"
+         dominant-baseline="hanging"
+         dx="0"
+         dy="1.5"
+         font-family="Arial, sans-serif"
+         font-size="5"
+         transform="translate(601.11 260)"
+         id="text64">StationId
+                        </text>
+    </g>
+  </g>
+  <g
+     id="DBRK"
+     inkscape:label="DBRK"
+     class="station">
+     
+    <g
+       style="cursor:move"
+       transform="rotate(-45 578.67 -594.693)"
+       id="g65">
+      <rect
+         width="11"
+         height="6"
+         x="-5.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect64" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle64" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#faa61a"
+         id="circle65" />
+    </g>
+    <g
+       text-anchor="end"
+       id="g66">
+      <text
+         dx="0"
+         dy="-1"
+         font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+         font-size="10"
+         style="font-synthesis:none"
+         transform="translate(581.11 240)"
+         id="text65">Downtown Berkeley
+                        </text>
+      <text
+         fill="gray"
+         dominant-baseline="hanging"
+         dx="0"
+         dy="1.5"
+         font-family="Arial, sans-serif"
+         font-size="5"
+         transform="translate(581.11 240)"
+         id="text66">StationId
+                        </text>
+    </g>
+  </g>
+  <g
+     id="NBRK"
+     
+     class="station"
+     inkscape:label="NBRK">
+    <g
+       style="cursor:move"
+       transform="rotate(-45 544.528 -580.55)"
+       id="g67">
+      <rect
+         width="11"
+         height="6"
+         x="-5.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect66" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle66" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#faa61a"
+         id="circle67" />
+    </g>
+    <g
+       text-anchor="end"
+       id="g68">
+      <text
+         dx="0"
+         dy="-1"
+         font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+         font-size="10"
+         style="font-synthesis:none"
+         transform="translate(561.11 220)"
+         id="text67">North Berkeley
+                        </text>
+      <text
+         fill="gray"
+         dominant-baseline="hanging"
+         dx="0"
+         dy="1.5"
+         font-family="Arial, sans-serif"
+         font-size="5"
+         transform="translate(561.11 220)"
+         id="text68">StationId
+                        </text>
+    </g>
+  </g>
+  <g
+     id="PLZA"
+     
+     class="station"
+     inkscape:label="PLZA">
+    <g
+       style="cursor:move"
+       transform="rotate(-45 510.386 -566.409)"
+       id="g69">
+      <rect
+         width="11"
+         height="6"
+         x="-5.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect68" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle68" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#faa61a"
+         id="circle69" />
+    </g>
+    <g
+       text-anchor="end"
+       id="g70">
+      <text
+         dx="0"
+         dy="-1"
+         font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+         font-size="10"
+         style="font-synthesis:none"
+         transform="translate(541.11 200)"
+         id="text69">El Cerrito Plaza
+                        </text>
+      <text
+         fill="gray"
+         dominant-baseline="hanging"
+         dx="0"
+         dy="1.5"
+         font-family="Arial, sans-serif"
+         font-size="5"
+         transform="translate(541.11 200)"
+         id="text70">StationId
+                        </text>
+    </g>
+  </g>
+  <g
+     id="DELN"
+     
+     class="station"
+     inkscape:label="DELN">
+    <g
+       style="cursor:move"
+       transform="rotate(-45 476.244 -552.267)"
+       id="g71">
+      <rect
+         width="11"
+         height="6"
+         x="-5.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect70" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle70" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#faa61a"
+         id="circle71" />
+    </g>
+    <g
+       text-anchor="end"
+       id="g72">
+      <text
+         dx="0"
+         dy="-1"
+         font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+         font-size="10"
+         style="font-synthesis:none"
+         transform="translate(521.11 180)"
+         id="text71">El Cerrito Del Norte
+                        </text>
+      <text
+         fill="gray"
+         dominant-baseline="hanging"
+         dx="0"
+         dy="1.5"
+         font-family="Arial, sans-serif"
+         font-size="5"
+         transform="translate(521.11 180)"
+         id="text72">StationId
+                        </text>
+    </g>
+  </g>
+  <g
+     id="RICH"
+     
+     class="station"
+     inkscape:label="RICH">
+    <g
+       style="cursor:move"
+       transform="rotate(-45 442.102 -538.124)"
+       id="g73">
+      <rect
+         width="11"
+         height="6"
+         x="-5.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect72" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#ed1c24"
+         id="circle72" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#faa61a"
+         id="circle73" />
+    </g>
+    <g
+       text-anchor="end"
+       id="g74">
+      <text
+         dx="0"
+         dy="-1"
+         font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+         font-size="10"
+         style="font-synthesis:none"
+         transform="translate(501.11 160)"
+         id="text73">Richmond
+                        </text>
+      <text
+         fill="gray"
+         dominant-baseline="hanging"
+         dx="0"
+         dy="1.5"
+         font-family="Arial, sans-serif"
+         font-size="5"
+         transform="translate(501.11 160)"
+         id="text74">StationId
+                        </text>
+    </g>
+  </g>
+  <g
+     
+     class="station"
+     id="LAKE">
+     
+    <g
+       style="cursor:move"
+       transform="rotate(135 242.157 334.62)"
+       id="g76">
+      <rect
+         width="16"
+         height="6"
+         x="-8"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect74" />
+      <circle
+         cx="-5"
+         r="2"
+         fill="#00aeef"
+         id="circle74" />
+      <circle
+         r="2"
+         fill="#faa61a"
+         id="circle75" />
+      <circle
+         cx="5"
+         r="2"
+         fill="#4db848"
+         id="circle76" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(660.657 384.843)"
+       id="text76">Lake Merritt
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(660.657 384.843)"
+       id="text77">StationId
+                        </text>
+  </g>
+  <g
+     
+     class="station"
+     id="FTVL">
+    <g
+       style="cursor:move"
+       transform="rotate(135 249.48 352.297)"
+       id="g79">
+      <rect
+         width="16"
+         height="6"
+         x="-8"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect77" />
+      <circle
+         cx="-5"
+         r="2"
+         fill="#00aeef"
+         id="circle77" />
+      <circle
+         r="2"
+         fill="#faa61a"
+         id="circle78" />
+      <circle
+         cx="5"
+         r="2"
+         fill="#4db848"
+         id="circle79" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(685.657 409.843)"
+       id="text79">Fruitvale
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(685.657 409.843)"
+       id="text80">StationId
+                        </text>
+  </g>
+  <g
+     
+     class="station"
+     id="COLS">
+    <g
+       style="cursor:move"
+       transform="rotate(135 256.802 369.975)"
+       id="g82">
+      <rect
+         width="16"
+         height="6"
+         x="-8"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect80" />
+      <circle
+         cx="-5"
+         r="2"
+         fill="#00aeef"
+         id="circle80" />
+      <circle
+         r="2"
+         fill="#faa61a"
+         id="circle81" />
+      <circle
+         cx="5"
+         r="2"
+         fill="#4db848"
+         id="circle82" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(710.657 434.843)"
+       id="text82">Coliseum
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(710.657 434.843)"
+       id="text83">StationId
+                        </text>
+  </g>
+  <g
+     
+     class="station"
+     
+     id="SANL">
+    <g
+       style="cursor:move"
+       transform="rotate(135 264.124 387.652)"
+       id="g85">
+      <rect
+         width="16"
+         height="6"
+         x="-8"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect83" />
+      <circle
+         cx="-5"
+         r="2"
+         fill="#00aeef"
+         id="circle83" />
+      <circle
+         r="2"
+         fill="#faa61a"
+         id="circle84" />
+      <circle
+         cx="5"
+         r="2"
+         fill="#4db848"
+         id="circle85" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(735.657 459.843)"
+       id="text85">San Leandro
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(735.657 459.843)"
+       id="text86">StationId
+                        </text>
+  </g>
+  <g
+     
+     class="station"
+     id="BAYF">
+    <g
+       style="cursor:move"
+       transform="rotate(135 271.447 405.33)"
+       id="g88">
+      <rect
+         width="16"
+         height="6"
+         x="-8"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect86" />
+      <circle
+         cx="-5"
+         r="2"
+         fill="#00aeef"
+         id="circle86" />
+      <circle
+         r="2"
+         fill="#faa61a"
+         id="circle87" />
+      <circle
+         cx="5"
+         r="2"
+         fill="#4db848"
+         id="circle88" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(760.657 484.843)"
+       id="text88">Bay Fair
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(760.657 484.843)"
+       id="text89">StationId
+                        </text>
+  </g>
+  <g
+     
+     class="station"
+     id="HAYW">
+    <g
+       style="cursor:move"
+       transform="translate(760 525)"
+       id="g90">
+      <rect
+         width="11"
+         height="6"
+         x="-5.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect89" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#4db848"
+         id="circle89" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#faa61a"
+         id="circle90" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(770.5 530)"
+       id="text90">Hayward
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(770.5 530)"
+       id="text91">StationId
+                        </text>
+  </g>
+  <g
+     
+     class="station"
+     id="SHAY">
+    <g
+       style="cursor:move"
+       transform="translate(760 550)"
+       id="g92">
+      <rect
+         width="11"
+         height="6"
+         x="-5.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect91" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#4db848"
+         id="circle91" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#faa61a"
+         id="circle92" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(770.5 555)"
+       id="text92">South Hayward
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(770.5 555)"
+       id="text93">StationId
+                        </text>
+  </g>
+  <g
+     
+     class="station"
+     id="UCTY">
+    <g
+       style="cursor:move"
+       transform="translate(760 575)"
+       id="g94">
+      <rect
+         width="11"
+         height="6"
+         x="-5.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect93" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#4db848"
+         id="circle93" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#faa61a"
+         id="circle94" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(770.5 580)"
+       id="text94">Union City
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(770.5 580)"
+       id="text95">StationId
+                        </text>
+  </g>
+  <g
+     
+     class="station"
+     id="FRMT">
+    <g
+       style="cursor:move"
+       transform="translate(760 600)"
+       id="g96">
+      <rect
+         width="11"
+         height="6"
+         x="-5.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect95" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#4db848"
+         id="circle95" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#faa61a"
+         id="circle96" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(770.5 605)"
+       id="text96">Fremont
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(770.5 605)"
+       id="text97">StationId
+                        </text>
+  </g>
+  <g
+     
+     class="station"
+     id="WARM">
+    <g
+       style="cursor:move"
+       transform="translate(760 625)"
+       id="g98">
+      <rect
+         width="11"
+         height="6"
+         x="-5.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect97" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#4db848"
+         id="circle97" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#faa61a"
+         id="circle98" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(770.5 630)"
+       id="text98">Warm Springs/South Fremont
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(770.5 630)"
+       id="text99">StationId
+                        </text>
+  </g>
+  <g
+     id="MLPT"
+     class="station">
+    <g
+       style="cursor:move"
+       transform="translate(760 650)"
+       id="g100">
+      <rect
+         width="11"
+         height="6"
+         x="-5.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect99" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#4db848"
+         id="circle99" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#faa61a"
+         id="circle100" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(770.5 655)"
+       id="text100">Milpitas
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(770.5 655)"
+       id="text101">StationId
+                        </text>
+  </g>
+  <g
+     id="BERY"
+     class="station">
+    <g
+       style="cursor:move"
+       transform="translate(760 675)"
+       id="g102">
+      <rect
+         width="11"
+         height="6"
+         x="-5.5"
+         y="-3"
+         fill="#fff"
+         stroke="#616161"
+         ry="3"
+         id="rect101" />
+      <circle
+         cx="-2.5"
+         r="2"
+         fill="#4db848"
+         id="circle101" />
+      <circle
+         cx="2.5"
+         r="2"
+         fill="#faa61a"
+         id="circle102" />
+    </g>
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(770.5 680)"
+       id="text102">Berryessa/North San José
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(770.5 680)"
+       id="text103">StationId
+                        </text>
+  </g>
+  <g
+     id="CAST"
+     transform="translate(825 510)"
+     class="station">
+    <circle
+       id="stn_core_stn_J_L91zf2Zk"
+       r="3"
+       fill="#fff"
+       stroke="#00aeef"
+       stroke-width="1"
+       style="cursor:move" />
+    <g
+       text-anchor="middle"
+       id="g106">
+      <g
+         font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+         font-size="10"
+         id="g105">
+        <text
+           dx="0"
+           dy="-1"
+           style="font-synthesis:none"
+           transform="translate(0 -10)"
+           id="text104">Valley
+                        </text>
+        <text
+           dx="0"
+           dy="-11"
+           style="font-synthesis:none"
+           transform="translate(0 -10)"
+           id="text105">Castro
+                        </text>
+      </g>
+      <text
+         fill="gray"
+         dominant-baseline="hanging"
+         dx="0"
+         dy="1.5"
+         font-family="Arial, sans-serif"
+         font-size="5"
+         transform="translate(0 -10)"
+         id="text106">StationId
+                        </text>
+    </g>
+  </g>
+  <g
+     id="WDUB"
+     
+     class="station"
+     transform="translate(880 510)">
+    <circle
+       id="stn_core_stn_jfa0EJ7Uze"
+       r="3"
+       fill="#fff"
+       stroke="#00aeef"
+       stroke-width="1"
+       style="cursor:move" />
+    <g
+       text-anchor="middle"
+       id="g109">
+      <g
+         font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+         font-size="10"
+         id="g108">
+        <text
+           dx="0"
+           dy="-1"
+           style="font-synthesis:none"
+           transform="translate(0 -10)"
+           id="text107">Pleasanton
+                        </text>
+        <text
+           dx="0"
+           dy="-11"
+           style="font-synthesis:none"
+           transform="translate(0 -10)"
+           id="text108">West Dublin/
+                        </text>
+      </g>
+      <text
+         fill="gray"
+         dominant-baseline="hanging"
+         dx="0"
+         dy="1.5"
+         font-family="Arial, sans-serif"
+         font-size="5"
+         transform="translate(0 -10)"
+         id="text109">StationId
+                        </text>
+    </g>
+  </g>
+  <g
+     id="DUBL"
+     
+     class="station"
+     transform="translate(925 510)">
+    <circle
+       id="stn_core_stn_CqxdIId0uE"
+       r="3"
+       fill="#fff"
+       stroke="#00aeef"
+       stroke-width="1"
+       style="cursor:move" />
+    <g
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       id="g111">
+      <text
+         dx="0"
+         dy="-1"
+         style="font-synthesis:none"
+         transform="translate(5 5)"
+         id="text110">Pleasanton
+                        </text>
+      <text
+         dx="0"
+         dy="-11"
+         style="font-synthesis:none"
+         transform="translate(5 5)"
+         id="text111">Dublin/
+                        </text>
+    </g>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(5 5)"
+       id="text112">StationId
+                        </text>
+  </g>
+  <g
+     id="ROCK"
+     
+     class="station"
+     transform="translate(650 245)">
+    <circle
+       id="stn_core_stn_xhpGvYcqqf"
+       r="3"
+       fill="#fff"
+       stroke="#ffe800"
+       stroke-width="1"
+       style="cursor:move" />
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(5 5)"
+       id="text113">Rockridge
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(5 5)"
+       id="text114">StationId
+                        </text>
+  </g>
+  <g
+     id="ORIN"
+     
+     class="station"
+     transform="translate(675 220)">
+    <circle
+       id="stn_core_stn_BswD6FZe6b"
+       r="3"
+       fill="#fff"
+       stroke="#ffe800"
+       stroke-width="1"
+       style="cursor:move" />
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(5 5)"
+       id="text115">Orinda
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(5 5)"
+       id="text116">StationId
+                        </text>
+  </g>
+  <g
+     id="LAFY"
+     
+     class="station"
+     transform="translate(700 195)">
+    <circle
+       id="stn_core_stn_5q3-LJ0LOc"
+       r="3"
+       fill="#fff"
+       stroke="#ffe800"
+       stroke-width="1"
+       style="cursor:move" />
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(5 5)"
+       id="text117">Lafayette
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(5 5)"
+       id="text118">StationId
+                        </text>
+  </g>
+  <g
+     id="WCRK"
+     
+     class="station"
+     transform="translate(720 175)">
+    <circle
+       id="stn_core_stn_MgB6zJPebt"
+       r="3"
+       fill="#fff"
+       stroke="#ffe800"
+       stroke-width="1"
+       style="cursor:move" />
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(5 5)"
+       id="text119">Walnut Creek
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(5 5)"
+       id="text120">StationId
+                        </text>
+  </g>
+  <g
+     id="PHIL"
+     
+     class="station"
+     transform="translate(740 155)">
+    <circle
+       id="stn_core_stn_j8rSzMzcOi"
+       r="3"
+       fill="#fff"
+       stroke="#ffe800"
+       stroke-width="1"
+       style="cursor:move" />
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(5 5)"
+       id="text121">Pleasant Hill/Contra Costa Centre
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(5 5)"
+       id="text122">StationId
+                        </text>
+  </g>
+  <g
+     id="CONC"
+     
+     class="station"
+     transform="translate(760 135)">
+    <circle
+       id="stn_core_stn_-B8StCpdij"
+       r="3"
+       fill="#fff"
+       stroke="#ffe800"
+       stroke-width="1"
+       style="cursor:move" />
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(5 5)"
+       id="text123">Concord
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(5 5)"
+       id="text124">StationId
+                        </text>
+  </g>
+  <g
+     id="NCON"
+     
+     class="station"
+     transform="translate(800 115)">
+    <circle
+       id="stn_core_stn_R56J-7aFbb"
+       r="3"
+       fill="#fff"
+       stroke="#ffe800"
+       stroke-width="1"
+       style="cursor:move" />
+    <g
+       text-anchor="end"
+       id="g127">
+      <g
+         font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+         font-size="10"
+         id="g126">
+        <text
+           dx="0"
+           dy="-1"
+           style="font-synthesis:none"
+           transform="translate(-5 -10)"
+           id="text125">Martinez
+                        </text>
+        <text
+           dx="0"
+           dy="-11"
+           style="font-synthesis:none"
+           transform="translate(-5 -10)"
+           id="text126">North Concord/
+                        </text>
+      </g>
+      <text
+         fill="gray"
+         dominant-baseline="hanging"
+         dx="0"
+         dy="1.5"
+         font-family="Arial, sans-serif"
+         font-size="5"
+         transform="translate(-5 -10)"
+         id="text127">StationId
+                        </text>
+    </g>
+  </g>
+  <g
+     id="PITT"
+     
+     class="station"
+     transform="translate(835 115)">
+    <circle
+       id="stn_core_stn_vzKGK0EuoU"
+       r="3"
+       fill="#fff"
+       stroke="#ffe800"
+       stroke-width="1"
+       style="cursor:move" />
+    <g
+       text-anchor="middle"
+       id="g130">
+      <g
+         font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+         font-size="10"
+         id="g129">
+        <text
+           dx="0"
+           dy="-1"
+           style="font-synthesis:none"
+           transform="translate(0 -10)"
+           id="text128">Bay Point
+                        </text>
+        <text
+           dx="0"
+           dy="-11"
+           style="font-synthesis:none"
+           transform="translate(0 -10)"
+           id="text129">Pittsburg/
+                        </text>
+      </g>
+      <text
+         fill="gray"
+         dominant-baseline="hanging"
+         dx="0"
+         dy="1.5"
+         font-family="Arial, sans-serif"
+         font-size="5"
+         transform="translate(0 -10)"
+         id="text130">StationId
+                        </text>
+    </g>
+  </g>
+  <g
+     id="PCTR"
+     
+     class="station"
+     transform="translate(900 115)">
+    <circle
+       id="stn_core_stn_2eqFfHJ3t9"
+       r="3"
+       fill="#fff"
+       stroke="#ffe800"
+       stroke-width="1"
+       style="cursor:move" />
+    <g
+       text-anchor="middle"
+       id="g133">
+      <g
+         font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+         font-size="10"
+         id="g132">
+        <text
+           dx="0"
+           dy="-1"
+           style="font-synthesis:none"
+           transform="translate(0 -10)"
+           id="text131">Center
+                        </text>
+        <text
+           dx="0"
+           dy="-11"
+           style="font-synthesis:none"
+           transform="translate(0 -10)"
+           id="text132">Pittsburg
+                        </text>
+      </g>
+      <text
+         fill="gray"
+         dominant-baseline="hanging"
+         dx="0"
+         dy="1.5"
+         font-family="Arial, sans-serif"
+         font-size="5"
+         transform="translate(0 -10)"
+         id="text133">StationId
+                        </text>
+    </g>
+  </g>
+  <g
+     id="ANTC"
+     
+     class="station"
+     transform="translate(950 115)">
+    <circle
+       id="stn_core_stn_OKQT3pVx2a"
+       r="3"
+       fill="#fff"
+       stroke="#ffe800"
+       stroke-width="1"
+       style="cursor:move" />
+    <text
+       dx="0"
+       dy="-1"
+       font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+       font-size="10"
+       style="font-synthesis:none"
+       transform="translate(5 5)"
+       id="text134">Antioch
+                        </text>
+    <text
+       fill="gray"
+       dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
+       font-family="Arial, sans-serif"
+       font-size="5"
+       transform="translate(5 5)"
+       id="text135">StationId
+                        </text>
+  </g>
+  <g
+     id="stn_bfnXknll1W">
+    <g
+       transform="translate(865 115)"
+       id="g138">
+      <circle
+         r="2.25"
+         transform="translate(-1.5)"
+         id="circle135" />
+      <circle
+         r="2.25"
+         transform="translate(1.5)"
+         id="circle136" />
+      <circle
+         r="1.75"
+         fill="#fff"
+         transform="translate(-1.5)"
+         id="circle137" />
+      <circle
+         r="1.75"
+         fill="#fff"
+         transform="translate(1.5)"
+         id="circle138" />
+      <path
+         id="stn_core_stn_bfnXknll1W"
+         fill="#fff"
+         fill-opacity="0"
+         stroke="none"
+         d="M-4-4h8v8h-8z"
+         style="cursor:move" />
+    </g>
+    <g
+       text-anchor="middle"
+       id="g140">
+      <g
+         font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+         font-size="7"
+         id="g139">
+        <text
+           dx="0"
+           dy="-1"
+           style="font-synthesis:none"
+           transform="translate(865 138)"
+           id="text138">transfer platform
+                        </text>
+        <text
+           dx="0"
+           dy="-8"
+           style="font-synthesis:none"
+           transform="translate(865 138)"
+           id="text139">Change trains at
+                        </text>
+      </g>
+      <text
+         dominant-baseline="hanging"
+         dx="0"
+         dy="1"
+         font-family="Arial, sans-serif"
+         font-size="3.5"
+         transform="translate(865 138)"
+         id="text140">
+                            E-Bart
+                        </text>
+    </g>
+  </g>
+  <g
+     id="stn_tz6yNzZiL2"
+     transform="translate(350 590)">
+    <circle
+       id="stn_core_stn_tz6yNzZiL2"
+       r="1.75"
+       fill="#fff"
+       stroke="#000"
+       stroke-width="1"
+       style="cursor:move" />
+    <g
+       text-anchor="end"
+       id="g142">
+      <text
+         dx="0"
+         dy="-1"
+         font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
+         font-size="7"
+         style="font-synthesis:none"
+         transform="translate(-5 2)"
+         id="text141">Balboa Park
+                        </text>
+      <text
+         dominant-baseline="hanging"
+         dx="0"
+         dy="1"
+         font-family="Arial, sans-serif"
+         font-size="3.5"
+         transform="translate(-5 2)"
+         id="text142">
+                            MUNI
+                        </text>
+    </g>
+  </g>
+  <path
+     id="line_1ruQiYZdhF"
+     fill="none"
+     stroke="#faa61a"
+     stroke-linecap="round"
+     stroke-width="5"
+     d="M625 355v18c0 1 .707 2.707 1.414 3.414L640 390"
+     cursor="pointer" />
+</svg>
