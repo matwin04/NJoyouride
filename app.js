@@ -51,6 +51,16 @@ app.get("/api/station-info/connections", async (req, res) => {
         console.error(err);
     }
 });
+app.get("/api/station/parking", async (req, res) => {
+    try {
+        const data = await getDataFile();
+        const {stationId} = req.query;
+        const parking = data.stations.stationId.parking;
+        res.json(parking);
+    } catch (err) {
+        console.error(err);
+    }
+});
 app.get("/api/api-docs", async (req, res) => {
     res.render("api-docs");
 })
@@ -86,12 +96,9 @@ app.get("/api/station-info", async (req, res) => {
 app.get("/api/schedule/arrivals", async (req, res) => {
     try {
         const { stationId } = req.query;
-
         const url = `https://api.bart.gov/api/sched.aspx?cmd=arrive&orig=${stationId}&key=QMAK-PUTH-9BVT-DWEI&json=y`;
-
         const response = await fetch(url);
         const data = await response.json();
-
         res.json(data);
     } catch (err) {
         console.error(err);

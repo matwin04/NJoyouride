@@ -33,6 +33,12 @@
           "ID": "K"
         }
       ],
+      "parking": {
+        "dailyfee": 3.40,
+        "carpool": 3.40,
+        "multdayres": 6.00,
+        "monthly": 105
+      },
       "bikeshare": [
         {
           "stationId": ""
