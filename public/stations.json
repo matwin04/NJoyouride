@@ -22,10 +22,20 @@
       "Name": "Daly City",
       "connections": [
         {
-          "agency": "",
+          "agency": "SFMTA",
           "type": "TRAM",
           "ID": "M",
           "Headsign": "M"
+        },
+        {
+          "agency": "SFMTA",
+          "type": "TRAM",
+          "ID": "K"
+        }
+      ],
+      "bikeshare": [
+        {
+          "stationId": ""
         }
       ],
       "services": {

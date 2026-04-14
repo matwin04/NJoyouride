@@ -68,12 +68,25 @@ function hookMap(map) {
         .on("click", async function () {
             const stationId = d3.select(this).attr("id");
 
-            // 1. Load station info
-            const infoData = await fetchStationInfo(stationId);
+            // ======================
+            // STATION INFO
+            // ======================
+            const infoRes = await fetch(`/api/station-info?stationId=${stationId}`);
+            const infoData = await infoRes.json();
             renderStationInfo(stationId, infoData);
 
-            // 2. Load departures
-            const etaData = await fetchDepartures(stationId);
+            // ======================
+            // ACCESS INFO (NEW)
+            // ======================
+            const accessRes = await fetch(`/api/station-info/access?stationId=${stationId}`);
+            const accessData = await accessRes.json();
+            renderAccess(accessData);
+
+            // ======================
+            // DEPARTURES
+            // ======================
+            const etaRes = await fetch(`/api/eta?stationId=${stationId}`);
+            const etaData = await etaRes.json();
             renderDepartures(etaData);
         })
 
@@ -90,19 +103,49 @@ function hookMap(map) {
 // FETCH FUNCTIONS
 // ==============================
 
-async function fetchStationInfo(stationId) {
-    const res = await fetch(`/api/station-info?stationId=${stationId}`);
-    return await res.json();
-}
-
-async function fetchDepartures(stationId) {
-    const res = await fetch(`/api/eta?stationId=${stationId}`);
-    return await res.json();
-}
 // ==============================
 // RENDER STATION INFO
 // ==============================
+function renderAccess(data) {
+    const container = document.getElementById("info");
+    container.innerHTML = "";
 
+    const station = data.root.stations.station;
+
+    // helper to safely extract HTML
+    const getHTML = (field) =>
+        field && field["#cdata-section"]
+            ? field["#cdata-section"]
+            : "<p>No information available</p>";
+
+    container.innerHTML = `
+        <div class="info-group">
+            <h3>${station.name}</h3>
+        </div>
+
+        <div class="info-group">
+            <h4>
+             <span class="mdi mdi-human"></span> Station Access</h4>
+            ${getHTML(station.entering)}
+        </div>
+
+        <div class="info-group">
+            <h4><span class="mdi mdi-parking"> Parking</h4>
+            ${getHTML(station.parking)}
+        </div>
+
+        <div class="info-group">
+            <h4>
+             <span class="mdi mdi-bike"></span> Bike / Lockers</h4>
+            ${getHTML(station.lockers)}
+        </div>
+
+        <div class="info-group">
+            <h4><span class="mdi mdi-subway-variant"></span> Transit Connections</h4>
+            ${getHTML(station.transit_info)}
+        </div>
+    `;
+}
 function renderStationInfo(stationId, data) {
     document.getElementById("station-id").innerHTML = stationId;
     document.getElementById("station-name").innerHTML = data.root.stations.station.name;
@@ -159,7 +202,7 @@ function createDepartureHeader(route) {
     const color = route.estimate[0]?.hexcolor || "#ccc";
     const routename = route.estimate[0]?.color;
     header.innerHTML = `
-        <img class="route-icon" src="/public/icons/BAY/${routename}.svg">
+        <img class="route-icon" src="/public/icons/BAY/${routename}.svg" alt="${routename}">
         <strong>${route.destination}</strong>
     `;
 

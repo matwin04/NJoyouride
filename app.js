@@ -1,9 +1,10 @@
 import express from "express";
 import path from "path";
 import dotenv from "dotenv";
-import { engine } from "express-handlebars";
-import { fileURLToPath } from "url";
+import {engine} from "express-handlebars";
+import {fileURLToPath} from "url";
 import fs from "node:fs/promises";
+
 dotenv.config();
 
 const app = express();
@@ -27,15 +28,29 @@ app.use("/public", express.static(path.join(__dirname, "public")));
 app.get("/", async (req, res) => {
     res.render("index");
 });
-app.get("/api/station-info/connections", async (req, res) => {
+async function getDataFile() {
+    const filePath = path.join(__dirname, "public", "stations.json");
+    const file = await fs.readFile(filePath, "utf-8");
+    return JSON.parse(file);
+}
+app.get("/api/station-info/bikeshare", async (req, res) => {
     try {
-        const response = await fetch("/public/stations.json");
-        const data = await response.json();
-        res.json(data);
+        const data = await getDataFile();
+        const bikeshare = data.stations.DALY.bikeshare
+        res.json(bikeshare);
     } catch (err) {
         console.error(err);
     }
-})
+});
+app.get("/api/station-info/connections", async (req, res) => {
+    try {
+        const data = await getDataFile();
+        const connections = data.stations.DALY.connections
+        res.json(connections);
+    } catch (err) {
+        console.error(err);
+    }
+});
 app.get("/api/api-docs", async (req, res) => {
     res.render("api-docs");
 })
