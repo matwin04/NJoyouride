@@ -27,6 +27,15 @@ app.use("/public", express.static(path.join(__dirname, "public")));
 app.get("/", async (req, res) => {
     res.render("index");
 });
+app.get("/api/station-info/connections", async (req, res) => {
+    try {
+        const response = await fetch("/public/stations.json");
+        const data = await response.json();
+        res.json(data);
+    } catch (err) {
+        console.error(err);
+    }
+})
 app.get("/api/api-docs", async (req, res) => {
     res.render("api-docs");
 })
@@ -59,7 +68,51 @@ app.get("/api/station-info", async (req, res) => {
         });
     }
 });
+app.get("/api/schedule/arrivals", async (req, res) => {
+    try {
+        const { stationId } = req.query;
 
+        const url = `https://api.bart.gov/api/sched.aspx?cmd=arrive&orig=${stationId}&key=QMAK-PUTH-9BVT-DWEI&json=y`;
+
+        const response = await fetch(url);
+        const data = await response.json();
+
+        res.json(data);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: "Arrival schedule failed" });
+    }
+});
+app.get("/api/schedule/departures", async (req, res) => {
+    try {
+        const { stationId } = req.query;
+
+        const url = `https://api.bart.gov/api/sched.aspx?cmd=depart&orig=${stationId}&key=QMAK-PUTH-9BVT-DWEI&json=y`;
+
+        const response = await fetch(url);
+        const data = await response.json();
+
+        res.json(data);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: "Departure schedule failed" });
+    }
+});
+app.get("/api/fare", async (req, res) => {
+    try {
+        const { from, to } = req.query;
+
+        const url = `https://api.bart.gov/api/sched.aspx?cmd=fare&orig=${from}&dest=${to}&key=QMAK-PUTH-9BVT-DWEI&json=y`;
+
+        const response = await fetch(url);
+        const data = await response.json();
+
+        res.json(data);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: "Fare lookup failed" });
+    }
+});
 app.get("/api/eta",async(req,res)=>{
     try {
         const {stationId} = req.query;

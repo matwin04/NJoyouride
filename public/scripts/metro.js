@@ -6,6 +6,7 @@ import { initResize } from "./re-size.js";
 
 loadSVG("/public/maps/bart.svg");
 initResize();
+initTabs();
 // ==============================
 // LOAD SVG
 // ==============================
@@ -32,6 +33,19 @@ async function loadSVG(url) {
 // ZOOM / PAN
 // ==============================
 
+function initTabs() {
+    const tabs = document.querySelectorAll(".tab");
+
+    tabs.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            document.querySelectorAll(".tab").forEach((t) => t.classList.remove("active"));
+            document.querySelectorAll(".tab-content").forEach((c) => c.classList.remove("active"));
+
+            btn.classList.add("active");
+            document.getElementById("tab-" + btn.dataset.tab).classList.add("active");
+        });
+    });
+}
 function enableZoom(svg, content) {
     const zoom = d3
         .zoom()
@@ -47,8 +61,6 @@ function enableZoom(svg, content) {
 // MAP INTERACTION
 // ==============================
 
-
-
 function hookMap(map) {
     map.selectAll("g.station")
         .style("cursor", "pointer")
@@ -59,8 +71,7 @@ function hookMap(map) {
             // 1. Load station info
             const infoData = await fetchStationInfo(stationId);
             renderStationInfo(stationId, infoData);
-            const accessData = await fetchAccessData(stationId);
-            renderAccessData(accessData);
+
             // 2. Load departures
             const etaData = await fetchDepartures(stationId);
             renderDepartures(etaData);
@@ -88,10 +99,6 @@ async function fetchDepartures(stationId) {
     const res = await fetch(`/api/eta?stationId=${stationId}`);
     return await res.json();
 }
-async function fetchAccessData(stationId) {
-    const res = await fetch(`/api/station-info/access?stationId=${stationId}`);
-    return await res.json();
-}
 // ==============================
 // RENDER STATION INFO
 // ==============================
@@ -104,13 +111,8 @@ function renderStationInfo(stationId, data) {
 // ==============================
 // RENDER DEPARTURES (MAIN)
 // ==============================
-function renderAccessData(data) {
-    const container = document.getElementById("access");
-    container.innerHTML = "";
-    const stationRoot = data.root.stations.station;
 
-    console.log("station", stationRoot.bike_flag);
-}
+
 function renderDepartures(etaData) {
     const container = document.getElementById("departures");
     container.innerHTML = "";
@@ -140,11 +142,9 @@ function createDepartureGroup(route) {
     const header = createDepartureHeader(route);
     const times = createDepartureTimes(route);
     const meta = createDepartureMeta(route);
-
     group.appendChild(header);
     group.appendChild(times);
     group.appendChild(meta);
-
     return group;
 }
 

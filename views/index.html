@@ -15,18 +15,40 @@
             <!-- SIDE PANEL -->
             <!-- ============================= -->
             <div class="col" id="side-panel">
+                <!-- HEADER -->
                 <div class="panel-header">
                     <h2 id="station-name">Select a station</h2>
-                    <span id="station-id" class="station-id"></span>
+                    <span id="station-id"></span>
                     <span id="station-addr"></span>
+                    <div id="access"></div>
                 </div>
-                <h3>Departures</h3>
-                <div id="departures">
-                    <p>Select a station to view departures</p>
+
+                <!-- TABS -->
+                <div class="tabs">
+                    <button class="tab active" data-tab="departures">Departures</button>
+                    <button class="tab" data-tab="schedule">Schedule</button>
+                    <button class="tab" data-tab="fares">Fares</button>
+                    <button class="tab" data-tab="info">Info</button>
                 </div>
-                <div id="access">
-                    view station access
+
+                <!-- CONTENT -->
+                <div class="tab-content active" id="tab-departures">
+                    <div id="departures"></div>
                 </div>
+
+                <div class="tab-content" id="tab-schedule">
+                    <div id="schedule"></div>
+                </div>
+
+                <div class="tab-content" id="tab-fares">
+                    <div id="fares"></div>
+                </div>
+
+                <div class="tab-content" id="tab-info">
+                    <div id="info"></div>
+                </div>
+
+                <!-- resize handle -->
                 <div id="resize-handle"></div>
             </div>
 

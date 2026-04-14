@@ -22,9 +22,10 @@
       "Name": "Daly City",
       "connections": [
         {
-          "type": "BUS",
-          "ID": "R12",
-          "Headsign": "UCLA"
+          "agency": "",
+          "type": "TRAM",
+          "ID": "M",
+          "Headsign": "M"
         }
       ],
       "services": {
