@@ -1,0 +1,19 @@
+info:
+  name: ETD
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:8088/api/eta?stationId=DALY
+  params:
+    - name: stationId
+      value: DALY
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

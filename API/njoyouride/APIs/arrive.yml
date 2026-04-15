@@ -1,0 +1,31 @@
+info:
+  name: arrive
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: https://api.bart.gov/api/sched.aspx?cmd=arrive&key=QMAK-PUTH-9BVT-DWEI&orig=EMBR&dest=DALY&json=y
+  params:
+    - name: cmd
+      value: arrive
+      type: query
+    - name: key
+      value: QMAK-PUTH-9BVT-DWEI
+      type: query
+    - name: orig
+      value: EMBR
+      type: query
+    - name: dest
+      value: DALY
+      type: query
+    - name: json
+      value: y
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

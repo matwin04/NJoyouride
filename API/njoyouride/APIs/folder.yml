@@ -1,0 +1,12 @@
+info:
+  name: APIs
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit
+  variables:
+    - name: apiKey
+      value: QMAK-PUTH-9BVT-DWEI
+    - name: bartLegacyBaseUrl
+      value: https://api.bart.gov/api

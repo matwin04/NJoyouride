@@ -104,7 +104,9 @@ function hookMap(map) {
             const accessRes = await fetch(`/api/station-info/access?stationId=${stationId}`);
             const accessData = await accessRes.json();
             renderAccess(accessData);
-
+            const discoveryRes = await fetch(`/api/station-info/discovery?stationId=${stationId}`);
+            const discoveryData = await discoveryRes.json();
+            renderDiscovery(discoveryData);
             // ======================
             // DEPARTURES
             // ======================
@@ -192,6 +194,46 @@ async function loadBikeShare(stationId) {
         `;
         container.appendChild(card);
     });
+}
+function renderDiscovery(data) {
+    const container = document.getElementById("discover");
+    container.innerHTML = "";
+    const station = data.root.stations.station;
+    const getHTML = (field) =>
+        field && field["#cdata-section"]
+            ? field["#cdata-section"]
+            : "<p>No information available</p>";
+    container.innerHTML = `
+        <div class="info-group">
+            <h3>${station.name}</h3>
+        </div>
+        <div class="info-group">
+            <h4>
+             <span class="mdi mdi-information-variant"></span> Intro </h4>
+            ${getHTML(station.intro)}
+        </div>
+        <div class="info-group">
+            <h4>
+             <span class="mdi mdi-information-variant"></span> Food </h4>
+            ${getHTML(station.food)}
+        </div>
+        <div class="info-group">
+            <h4>
+             <span class="mdi mdi-map-marker"></span> Cross Streets </h4>
+            ${getHTML(station.cross_street)}
+        </div>
+        <div class="info-group">
+            <h4>
+             <span class="mdi mdi-shopping"></span> Shopping </h4>
+            ${getHTML(station.shopping)}
+        </div>
+        <div class="info-group">
+            <h4>
+             <span class="mdi mdi-ticket"></span> Attractions </h4>
+            ${getHTML(station.shopping)}
+        </div>
+    </div>
+    `;
 }
 function renderAccess(data) {
     const container = document.getElementById("info");

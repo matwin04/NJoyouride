@@ -1,0 +1,33 @@
+info:
+  name: ETD
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{bartLegacyBaseUrl}}/etd.aspx?cmd=etd&orig=DALY&json=y&key={{apiKey}}"
+  params:
+    - name: cmd
+      value: etd
+      type: query
+    - name: orig
+      value: DALY
+      type: query
+    - name: json
+      value: y
+      type: query
+    - name: key
+      value: "{{apiKey}}"
+      type: query
+  auth: inherit
+
+runtime:
+  variables:
+    - name: QMAK-PUTH-9BVT-DWEI
+      value: QMAK-PUTH-9BVT-DWEI
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

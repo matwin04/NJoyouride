@@ -122,7 +122,20 @@ app.get("/api/station-info/access", async (req, res) => {
         console.error(err);
         res.status(500).send("Server Error");
     }
-})
+});
+app.get("/api/station-info/discovery", async (req, res) => {
+    try {
+        const {stationId} = req.query;
+        const url = `https://api.bart.gov/api/stn.aspx?cmd=stninfo&key=QMAK-PUTH-9BVT-DWEI&orig=${stationId}&json=y`;
+        const options = {method: "GET"};
+        const response = await fetch(url, options);
+        const data = await response.json();
+        res.json(data);
+    } catch (err) {
+        console.error(err);
+        res.status(500).send("Server Error");
+    }
+});
 app.get("/api/station-info", async (req, res) => {
     try {
         const {stationId} = req.query;
