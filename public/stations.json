@@ -51,6 +51,11 @@
     "24TH": {
       "Name": "24th St Mission"
     },
+    "CIVC": {
+      "Name": "Civic Center",
+      "bikeshare": [
+      ]
+    },
     "DALY": {
       "Name": "Daly City",
       "connections": [

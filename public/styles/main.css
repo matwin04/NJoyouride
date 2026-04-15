@@ -3,21 +3,82 @@
 /* ============================= */
 @import url("https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css");
 
+:root {
+    --map-bg: #e6ebf0;
+    --bg: #f5f7fa;
+    --panel: #ffffff;
+    --border: #e5e7eb;
+    --text: #1f2937;
+    --text-muted: #6b7280;
+
+    --card: #fafafa;
+    --hover: #f1f5f9;
+
+    --tab: #f3f4f6;
+    --tab-active: #111827;
+
+    --meter-bg: #e5e7eb;
+
+    --bike-classic: #22c55e;
+    --bike-ebike: #3b82f6;
+}
+
+body.dark {
+    --bg: #0f172a;
+    --map-bg: #020617;
+    --panel: #111827;
+    --border: #1f2937;
+    --text: #e5e7eb;
+    --text-muted: #9ca3af;
+
+    --card: #1f2937;
+    --hover: #374151;
+
+    --tab: #1f2937;
+    --tab-active: #374151;
+
+    --meter-bg: #374151;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:
-        system-ui,
-        -apple-system,
-        sans-serif;
+    font-family: system-ui, -apple-system, sans-serif;
+    transition: background 0.2s, color 0.2s;
 }
 
-html,
-body {
+html, body {
     height: 100%;
-    background: #f5f7fa;
-    color: #1f2937;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+.navbar {
+    height: 50px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 12px;
+}
+
+.nav-title {
+    font-weight: 600;
+}
+
+.theme-btn {
+    border: none;
+    background: var(--tab);
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 /* ============================= */
@@ -25,19 +86,11 @@ body {
 /* ============================= */
 #app {
     display: flex;
-    height: 100vh;
-    overflow: hidden;
+    height: calc(100vh - 50px);
 }
 
 .col {
     height: 100%;
-}
-
-.mdi {
-    font-size: 20px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* ============================= */
@@ -48,8 +101,8 @@ body {
     min-width: 220px;
     max-width: 600px;
 
-    background: #ffffff;
-    border-right: 1px solid #e5e7eb;
+    background: var(--panel);
+    border-right: 1px solid var(--border);
 
     display: flex;
     flex-direction: column;
@@ -58,8 +111,6 @@ body {
 
     position: relative;
     overflow-y: auto;
-
-    transition: width 0.15s ease;
 }
 
 /* resize handle */
@@ -70,37 +121,24 @@ body {
     width: 6px;
     height: 100%;
     cursor: ew-resize;
-    background: transparent;
-}
-
-#resize-handle:hover {
-    background: rgba(0, 0, 0, 0.06);
 }
 
 /* ============================= */
 /* HEADER */
 /* ============================= */
 .panel-header {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
 }
 
 #station-name {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    line-height: 1.2;
-}
-
-.station-id {
-    font-size: 12px;
-    color: #9ca3af;
 }
 
 #station-addr {
-    display: block;
     font-size: 13px;
-    color: #6b7280;
-    margin-top: 4px;
+    color: var(--text-muted);
 }
 
 /* ============================= */
@@ -113,28 +151,20 @@ body {
 
 .tab {
     flex: 1;
-    padding: 8px;
-    font-size: 13px;
-    border: none;
+    padding: 6px;
     border-radius: 6px;
-    background: #f3f4f6;
+    border: none;
+    background: var(--tab);
     cursor: pointer;
-    transition: all 0.15s ease;
-}
-
-.tab:hover {
-    background: #e5e7eb;
 }
 
 .tab.active {
-    background: #111827;
+    background: var(--tab-active);
     color: white;
 }
 
 .tab-content {
     display: none;
-    flex: 1;
-    overflow-y: auto;
 }
 
 .tab-content.active {
@@ -144,202 +174,111 @@ body {
 /* ============================= */
 /* DEPARTURES */
 /* ============================= */
-#departures {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* group card */
 .departure-group {
-    background: #fafafa;
-    border-radius: 10px;
-    padding: 12px;
-    border: 1px solid #eee;
-
-    transition: all 0.15s ease;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 8px;
 }
 
 .departure-group:hover {
-    background: #f1f5f9;
-    transform: translateY(-1px);
+    background: var(--hover);
 }
 
-/* header */
 .departure-header {
     display: flex;
+    gap: 6px;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 6px;
-    font-size: 14px;
 }
 
-.route-icon {
-    width: 18px;
-    height: 18px;
-}
-
-/* times row */
 .departure-times {
     display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
+    gap: 4px;
     margin-top: 4px;
 }
 
 .train-etd {
-    background: #e5e7eb;
-    padding: 4px 8px;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 13px;
+    background: var(--meter-bg);
+    padding: 3px 6px;
+    border-radius: 4px;
 }
 
-/* meta */
-.departure-meta {
-    font-size: 11px;
-    color: #6b7280;
-    margin-top: 6px;
+/* ============================= */
+/* BIKE SHARE */
+/* ============================= */
+.bikeshare-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px;
 }
+
+.bike-card-grid {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    gap: 6px;
+}
+
+.bike-name {
+    grid-column: 1 / -1;
+    font-weight: 600;
+}
+
+.bike-meter {
+    grid-column: 1 / -1;
+    height: 8px;
+    background: var(--meter-bg);
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+}
+
+.bike-fill {
+    height: 100%;
+}
+
+.bike-classic {
+    background: var(--bike-classic);
+}
+
+.bike-ebike {
+    background: var(--bike-ebike);
+}
+
+.bike-stat {
+    font-size: 13px;
+}
+.route-icon {
+    width: 24px;
+    height: 24px;
+    display: block;      /* 🔥 FIX */
+    object-fit: contain; /* 🔥 FIX */
+}
+.bike-stat.classic { color: var(--bike-classic); }
+.bike-stat.ebike { color: var(--bike-ebike); }
+.bike-stat.docks { color: var(--text-muted); }
 
 /* ============================= */
 /* MAP */
 /* ============================= */
 #svg-container {
     flex: 1;
-    background: #e6ebf0;
-}
-.info-group {
-    background: #fafafa;
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px solid #eee;
-    margin-bottom: 10px;
-}
-
-.info-group h4 {
-    margin-bottom: 6px;
-}
-
-/* fix BART HTML formatting */
-.info-group p {
-    margin: 6px 0;
-    font-size: 13px;
-    line-height: 1.5;
-}
-
-.info-group ul {
-    padding-left: 18px;
-    margin: 6px 0;
-}
-
-.info-group li {
-    margin-bottom: 4px;
+    background: var(--map-bg);
 }
 /* ============================= */
-/* BIKE SHARE */
+/* SVG TEXT */
 /* ============================= */
 
-.bikeshare-card {
-    background: #fafafa;
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px solid #eee;
-    margin-top: 10px;
+/* default text */
+
+
+
+/* dark mode */
+body.dark #svg-container svg text {
+    fill: #e5e7eb;
 }
 
-/* meter container */
-.bike-meter {
-    width: 100%;
-    height: 8px;
-    background: #e5e7eb;
-    border-radius: 6px;
-    margin: 8px 0;
-    overflow: hidden;
-}
-
-/* fill */
-.bike-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #22c55e, #4ade80);
-    transition: width 0.3s ease;
-}
-
-/* stats */
-.bike-stats {
-    font-size: 13px;
-    margin-top: 6px;
-    color: #374151;
-}
-
-/* percent */
-.bike-percent {
-    font-size: 12px;
-    color: #6b7280;
-    margin-top: 4px;
-}
-/* ============================= */
-/* BIKE GRID CARD */
-/* ============================= */
-
-.bike-card-grid {
-    display: grid;
-    grid-template-columns: 1fr auto auto auto;
-    grid-template-rows: auto auto;
-    gap: 8px;
-
-    align-items: center;
-}
-
-/* station name */
-.bike-name {
-    grid-column: 1 / -1;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-/* meter spans full width */
-.bike-meter {
-    grid-column: 1 / -1;
-    height: 8px;
-    background: #e5e7eb;
-    border-radius: 6px;
-    overflow: hidden;
-}
-
-/* fill */
-.bike-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #22c55e, #4ade80);
-    transition: width 0.3s ease;
-}
-
-/* stat blocks */
-.bike-stat {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-
-    font-size: 13px;
-    color: #374151;
-}
-
-/* icons */
-.bike-stat .mdi {
-    font-size: 16px;
-}
-.bike-stat:nth-child(3) { color: #22c55e; } /* bikes */
-.bike-stat:nth-child(4) { color: #3b82f6; } /* ebikes */
-.bike-stat:nth-child(5) { color: #6b7280; } /* docks */
-
-.info-group a {
-    color: #2563eb;
-    text-decoration: none;
-}
-
-.info-group a:hover {
-    text-decoration: underline;
-}
 /* ============================= */
 /* MOBILE */
 /* ============================= */
@@ -350,15 +289,10 @@ body {
 
     #side-panel {
         width: 100%;
-        max-width: none;
         height: 45%;
     }
 
     #svg-container {
         height: 55%;
-    }
-
-    #resize-handle {
-        display: none;
     }
 }

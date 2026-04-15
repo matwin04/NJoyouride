@@ -7,6 +7,29 @@ import { initResize } from "./re-size.js";
 loadSVG("/public/maps/bart.svg");
 initResize();
 initTabs();
+initTheme();
+function initTheme() {
+    const btn = document.getElementById("theme-toggle");
+
+    // load saved theme
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark");
+    }
+
+    btn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+
+        const isDark = document.body.classList.contains("dark");
+
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+
+        // change icon
+        btn.innerHTML = isDark
+            ? '<span class="mdi mdi-weather-sunny"></span>'
+            : '<span class="mdi mdi-weather-night"></span>';
+    });
+}
+
 // ==============================
 // LOAD SVG
 // ==============================
@@ -131,7 +154,11 @@ async function loadBikeShare(stationId) {
 
         const card = document.createElement("div");
         card.className = "bikeshare-card";
+        const total = bikes + ebikes;
+        const docks = capacity - total;
 
+        const bikesPercent = (bikes / capacity) * 100;
+        const ebikesPercent = (ebikes / capacity) * 100;
         card.innerHTML = `
             <div class="bike-card-grid">
         
@@ -139,28 +166,30 @@ async function loadBikeShare(stationId) {
                     ${data.name}
                 </div>
         
+                <!-- SPLIT METER -->
                 <div class="bike-meter">
-                    <div class="bike-fill" style="width:${percent}%"></div>
+                    <div class="bike-fill bike-classic" style="width:${bikesPercent}%"></div>
+                    <div class="bike-fill bike-ebike" style="width:${ebikesPercent}%"></div>
                 </div>
         
-                <div class="bike-stat">
+                <!-- STATS -->
+                <div class="bike-stat classic">
                     <span class="mdi mdi-bicycle"></span>
                     <span>${bikes}</span>
                 </div>
         
-                <div class="bike-stat">
+                <div class="bike-stat ebike">
                     <span class="mdi mdi-bicycle-electric"></span>
                     <span>${ebikes}</span>
                 </div>
         
-                <div class="bike-stat">
+                <div class="bike-stat docks">
                     <span class="mdi mdi-parking"></span>
-                    <span>${capacity - (bikes + ebikes)}</span>
+                    <span>${docks}</span>
                 </div>
         
             </div>
         `;
-
         container.appendChild(card);
     });
 }
@@ -243,13 +272,32 @@ function createDepartureGroup(route) {
     const header = createDepartureHeader(route);
     const times = createDepartureTimes(route);
     const meta = createDepartureMeta(route);
+    group.addEventListener("click", () => {
+        highlightRoute(route);
+    });
+
     group.appendChild(header);
     group.appendChild(times);
     group.appendChild(meta);
     return group;
 }
+function highlightRoute(route) {
+    const routeClass = route.estimate[0]?.color; // "YELLOW"
 
-// ==============================
+    if (!routeClass) return;
+
+    // dim ALL lines
+    d3.select("#svg-container svg")
+        .selectAll("path")
+        .style("opacity", 0.15)
+        .style("stroke-width", 3);
+
+    // highlight ONLY this line
+    d3.select("#svg-container svg")
+        .selectAll(`path.${routeClass}`)
+        .style("opacity", 1)
+        .style("stroke-width", 6);
+}// ==============================
 // HEADER (DESTINATION + COLOR)
 // ==============================
 

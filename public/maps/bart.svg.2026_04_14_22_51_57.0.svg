@@ -12,12 +12,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <style
-     id="style144">.BLUE {   }
-.GREEN {   }
-.ORANGE {   }
-.RED {   }
-.station_name_text { font-family:'Helvetica',sans-serif;          font-size:10; }
-.YELLOW {   }
+     id="style144">
+      .station_name_text {
+      font-family:'Helvetica',sans-serif;
+          font-size:10;
+      }
+    .YELLOW {   }
 </style>
   <defs
      id="defs142" />
@@ -30,15 +30,15 @@
      inkscape:pageopacity="1"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="4.5175126"
-     inkscape:cx="411.06692"
-     inkscape:cy="384.72499"
+     inkscape:zoom="7.5176563"
+     inkscape:cx="541.92421"
+     inkscape:cy="645.01485"
      inkscape:window-width="1440"
      inkscape:window-height="785"
      inkscape:window-x="0"
      inkscape:window-y="31"
      inkscape:window-maximized="1"
-     inkscape:current-layer="canvas" />
+     inkscape:current-layer="MLPT" />
   <path
      id="line_jA14Y2emTY"
      fill="none"
@@ -46,9 +46,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m398.232 651.768 25 25"
-     cursor="pointer"
-     class="RED "
-     style="" />
+     cursor="pointer" />
   <path
      id="line_vvAe2hb4_K"
      fill="none"
@@ -56,9 +54,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m423.232 676.768 25 25"
-     cursor="pointer"
-     class="RED "
-     style="" />
+     cursor="pointer" />
   <path
      id="line_rEBFSK_udy"
      fill="none"
@@ -66,9 +62,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m448.232 701.768 25 25"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_l7VnRSdZSn"
      fill="none"
@@ -76,9 +70,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m473.232 726.768 25 25"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_2lGK1Lr4xR"
      fill="none"
@@ -86,9 +78,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M377.5 615v-25"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_laUyM9uRH-"
      fill="none"
@@ -96,9 +86,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m426.768 673.232-25-25"
-     cursor="pointer"
-     class="YELLOW"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_hUMSRY_lgU"
      fill="none"
@@ -106,9 +94,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m451.768 698.232-25-25"
-     cursor="pointer"
-     class="YELLOW"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_MI_ZeZVecL"
      fill="none"
@@ -116,9 +102,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m476.768 723.232-25-25"
-     cursor="pointer"
-     class="YELLOW"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_kUcTVpN9HL"
      fill="none"
@@ -126,9 +110,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m501.768 748.232-25-25"
-     cursor="pointer"
-     class="YELLOW"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_StUPXUxkeE"
      fill="none"
@@ -136,9 +118,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M382.5 590v25"
-     cursor="pointer"
-     class="YELLOW"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_uMOXeD4tN4"
      fill="none"
@@ -146,9 +126,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M387.5 590v25"
-     cursor="pointer"
-     class="BLUE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_RZdXMdbnoC"
      fill="none"
@@ -156,9 +134,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M392.5 590v25"
-     cursor="pointer"
-     class="GREEN "
-     style="" />
+     cursor="pointer" />
   <path
      id="line_YjbiieDmlf"
      fill="none"
@@ -166,9 +142,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M377.5 590v-25"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_5W83S0FLuP"
      fill="none"
@@ -176,9 +150,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M377.5 565v-25"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_RpIBqOt9EO"
      fill="none"
@@ -186,9 +158,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M377.5 540v-25"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_Vp59G77Ig3"
      fill="none"
@@ -196,9 +166,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m399.697 474.697 25-25"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_-hS4Qjqwcl"
      fill="none"
@@ -206,9 +174,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m424.697 449.697 25-25"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_N6MiOrwc5Y"
      fill="none"
@@ -216,9 +182,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m449.697 424.697 25-25"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_fYYQY-FFjb"
      fill="none"
@@ -226,9 +190,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M620 335v-25"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_h9kr8eVfHq"
      fill="none"
@@ -236,9 +198,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M620 310v-25"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_8UFzprvaM1"
      fill="none"
@@ -246,9 +206,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m608.232 256.768-20-20"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_T9spgAcsOW"
      fill="none"
@@ -256,9 +214,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m588.232 236.768-20-20"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_Th1GkbZKPp"
      fill="none"
@@ -266,9 +222,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m568.232 216.768-20-20"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_Gc5iYpnb5T"
      fill="none"
@@ -284,9 +238,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m528.232 176.768-20-20"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_LTncNFB_-_"
      fill="none"
@@ -294,9 +246,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M630 310v-25"
-     cursor="pointer"
-     class="YELLOW"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_q_RKT_thHr"
      fill="none"
@@ -304,9 +254,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M630 335v-25"
-     cursor="pointer"
-     class="YELLOW"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_ZyZNHzC4L8"
      fill="none"
@@ -314,9 +262,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M625 335v-25"
-     cursor="pointer"
-     class="ORANGE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_3L3hpT6Dj_"
      fill="none"
@@ -324,9 +270,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M625 310v-25"
-     cursor="pointer"
-     class="ORANGE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_zpp89Zx_7s"
      fill="none"
@@ -334,9 +278,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m611.768 253.232-20-20"
-     cursor="pointer"
-     class="ORANGE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_gjDAsE3uzo"
      fill="none"
@@ -344,9 +286,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m591.768 233.232-20-20"
-     cursor="pointer"
-     class="ORANGE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_nXUB7gN0C-"
      fill="none"
@@ -354,9 +294,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m571.768 213.232-20-20"
-     cursor="pointer"
-     class="ORANGE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_3qHXbc2OGp"
      fill="none"
@@ -364,9 +302,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m551.768 193.232-20-20"
-     cursor="pointer"
-     class="RED  ORANGE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_Dt4IGiPbfV"
      fill="none"
@@ -374,9 +310,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m531.768 173.232-20-20"
-     cursor="pointer"
-     class="ORANGE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_GRXVH48iDz"
      fill="none"
@@ -400,9 +334,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M625 335v20"
-     cursor="pointer"
-     class="ORANGE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_-M7c3bet-3"
      fill="none"
@@ -434,9 +366,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M762.5 525v25"
-     cursor="pointer"
-     class="ORANGE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_CeQ4AjzEOQ"
      fill="none"
@@ -444,9 +374,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M762.5 550v25"
-     cursor="pointer"
-     class="ORANGE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_5fO2NMFs7L"
      fill="none"
@@ -454,9 +382,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M762.5 575v25"
-     cursor="pointer"
-     class="ORANGE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_GaUuSSsgxn"
      fill="none"
@@ -464,9 +390,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M762.5 600v25"
-     cursor="pointer"
-     class="ORANGE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_W3-mYc2QKq"
      fill="none"
@@ -474,9 +398,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M762.5 625v25"
-     cursor="pointer"
-     class="ORANGE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_NJ3IiS6N8p"
      fill="none"
@@ -484,9 +406,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M762.5 650v25"
-     cursor="pointer"
-     class="ORANGE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_jMf6H1553J"
      fill="none"
@@ -494,8 +414,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M757.5 675v-25"
-     cursor="pointer"
-     class="GREEN" />
+     cursor="pointer" />
   <path
      id="line_j6HKtWe02h"
      fill="none"
@@ -503,8 +422,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M757.5 650v-25"
-     cursor="pointer"
-     class="GREEN" />
+     cursor="pointer" />
   <path
      id="line_LxRUAG4SRK"
      fill="none"
@@ -512,8 +430,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M757.5 625v-25"
-     cursor="pointer"
-     class="GREEN" />
+     cursor="pointer" />
   <path
      id="line_uZjuln_nef"
      fill="none"
@@ -521,8 +438,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M757.5 600v-25"
-     cursor="pointer"
-     class="GREEN" />
+     cursor="pointer" />
   <path
      id="line_Kmy8BMz6g2"
      fill="none"
@@ -530,8 +446,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M757.5 575v-25"
-     cursor="pointer"
-     class="GREEN" />
+     cursor="pointer" />
   <path
      id="line_lIAFH8nm65"
      fill="none"
@@ -539,8 +454,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M757.5 550v-25"
-     cursor="pointer"
-     class="GREEN" />
+     cursor="pointer" />
   <path
      id="line_p-v6YFbO4a"
      fill="none"
@@ -548,9 +462,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m728.536 471.464 25 25"
-     cursor="pointer"
-     class="BLUE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_CGBNDO38rA"
      fill="none"
@@ -558,9 +470,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m728.536 471.464-25-25"
-     cursor="pointer"
-     class="BLUE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_vRP2uBhVep"
      fill="none"
@@ -568,9 +478,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m703.536 446.464-25-25"
-     cursor="pointer"
-     class="BLUE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_1VZsxyaD75"
      fill="none"
@@ -578,9 +486,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m678.536 421.464-25-25"
-     cursor="pointer"
-     class="BLUE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_S4vmbJcM3U"
      fill="none"
@@ -588,9 +494,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m646.464 403.536 25 25"
-     cursor="pointer"
-     class="GREEN "
-     style="" />
+     cursor="pointer" />
   <path
      id="line_cRBwg_Wpeh"
      fill="none"
@@ -598,9 +502,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m671.464 428.536 25 25"
-     cursor="pointer"
-     class="GREEN"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_V01ESdyADK"
      fill="none"
@@ -608,9 +510,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m696.464 453.536 25 25"
-     cursor="pointer"
-     class="GREEN"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_0U6sMSg9Sw"
      fill="none"
@@ -618,9 +518,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m721.464 478.536 25 25"
-     cursor="pointer"
-     class="GREEN"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_BrjlHn7Tsx"
      fill="none"
@@ -628,9 +526,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M825 510h55"
-     cursor="pointer"
-     class="BLUE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_f6rEihTz6t"
      fill="none"
@@ -638,9 +534,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M880 510h45"
-     cursor="pointer"
-     class="BLUE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_xR0Rtlg91f"
      fill="none"
@@ -648,9 +542,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m453.232 428.232 25-25"
-     cursor="pointer"
-     class="YELLOW"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_6pYtazkWrB"
      fill="none"
@@ -658,9 +550,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m428.232 453.232 25-25"
-     cursor="pointer"
-     class="YELLOW"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_pxFBseoC-a"
      fill="none"
@@ -668,9 +558,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m403.232 478.232 25-25"
-     cursor="pointer"
-     class="YELLOW"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_oHG_t_VXiN"
      fill="none"
@@ -678,9 +566,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M382.5 540v-25"
-     cursor="pointer"
-     class="YELLOW "
-     style="" />
+     cursor="pointer" />
   <path
      id="line_TyJnJPwx8m"
      fill="none"
@@ -688,9 +574,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M382.5 565v-25"
-     cursor="pointer"
-     class="YELLOW"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_vYRMdU1sk7"
      fill="none"
@@ -698,9 +582,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M382.5 590v-25"
-     cursor="pointer"
-     class="YELLOW"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_4AoDaQRH-3"
      fill="none"
@@ -708,9 +590,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M387.5 590v-25"
-     cursor="pointer"
-     class="BLUE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_NTBMKeke5H"
      fill="none"
@@ -718,9 +598,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M387.5 565v-25"
-     cursor="pointer"
-     class="BLUE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_UfB1YodkdO"
      fill="none"
@@ -728,9 +606,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M387.5 540v-25"
-     cursor="pointer"
-     class="BLUE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_7GtOPOvQAW"
      fill="none"
@@ -738,9 +614,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m406.768 481.768 25-25"
-     cursor="pointer"
-     class="BLUE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_dOESTQuwe7"
      fill="none"
@@ -748,9 +622,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m431.768 456.768 25-25"
-     cursor="pointer"
-     class="BLUE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_hL3nTkGZxZ"
      fill="none"
@@ -758,9 +630,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m456.768 431.768 25-25"
-     cursor="pointer"
-     class="BLUE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_M2MZDvKbXn"
      fill="none"
@@ -768,9 +638,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m460.303 435.303 25-25"
-     cursor="pointer"
-     class="GREEN"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_fcj3-UmCMz"
      fill="none"
@@ -778,9 +646,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m435.303 460.303 25-25"
-     cursor="pointer"
-     class="GREEN"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_nFlnRKIf10"
      fill="none"
@@ -788,9 +654,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m410.303 485.303 25-25"
-     cursor="pointer"
-     class="GREEN "
-     style="" />
+     cursor="pointer" />
   <path
      id="line_oy25P2gIyG"
      fill="none"
@@ -798,9 +662,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M392.5 540v-25"
-     cursor="pointer"
-     class="GREEN "
-     style="" />
+     cursor="pointer" />
   <path
      id="line_Uvq4HP3tKt"
      fill="none"
@@ -809,8 +671,7 @@
      stroke-width="5"
      d="M392.5 565v-25"
      cursor="pointer"
-     class="line  GREEN "
-     style="" />
+     class="line" />
   <path
      id="line_2y1ZgBWYgh"
      fill="none"
@@ -818,9 +679,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M392.5 590v-25"
-     cursor="pointer"
-     class="GREEN "
-     style="" />
+     cursor="pointer" />
   <path
      id="line_Gc6uhSOZ76"
      fill="none"
@@ -829,7 +688,7 @@
      stroke-width="5"
      d="m650 245 25-25"
      cursor="pointer"
-     class="YELLOW "
+     class="YELLOW"
      style="" />
   <path
      id="line_r_hdB2uUrn"
@@ -839,7 +698,7 @@
      stroke-width="5"
      d="m675 220 25-25"
      cursor="pointer"
-     class="YELLOW "
+     class="YELLOW"
      style="" />
   <path
      id="line_eaR0-x4OIc"
@@ -849,7 +708,7 @@
      stroke-width="5"
      d="m700 195 20-20"
      cursor="pointer"
-     class="YELLOW "
+     class="YELLOW"
      style="" />
   <path
      id="line_xowwFTuM1g"
@@ -859,7 +718,7 @@
      stroke-width="5"
      d="m720 175 20-20"
      cursor="pointer"
-     class="YELLOW "
+     class="YELLOW"
      style="" />
   <path
      id="line_1IRrTY7Vu5"
@@ -869,7 +728,7 @@
      stroke-width="5"
      d="m740 155 20-20"
      cursor="pointer"
-     class="YELLOW "
+     class="YELLOW"
      style="" />
   <path
      id="line__0OWqGkuz3"
@@ -878,9 +737,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M800 115h35"
-     cursor="pointer"
-     class="YELLOW "
-     style="" />
+     cursor="pointer" />
   <path
      id="line_wB4OfTDHku"
      fill="none"
@@ -888,9 +745,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M900 115h50"
-     cursor="pointer"
-     class="YELLOW "
-     style="" />
+     cursor="pointer" />
   <path
      id="line_qPwmCuZd5k"
      fill="none"
@@ -898,9 +753,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M835 115h30"
-     cursor="pointer"
-     class="YELLOW "
-     style="" />
+     cursor="pointer" />
   <path
      id="line_9y3LqQyaNc"
      fill="none"
@@ -908,9 +761,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M865 115h35"
-     cursor="pointer"
-     class="YELLOW "
-     style="" />
+     cursor="pointer" />
   <path
      id="line_UD5Z5MtHJu"
      fill="none"
@@ -918,9 +769,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m398.232 651.768-16.49-16.49c-2.12-2.121-4.242-7.242-4.242-10.242V615"
-     cursor="pointer"
-     class="RED "
-     style="" />
+     cursor="pointer" />
   <path
      id="line_Q6J8fMssbW"
      fill="none"
@@ -928,9 +777,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M382.5 615v10.964c0 1.5 1.06 4.061 2.121 5.122l17.147 17.146"
-     cursor="pointer"
-     class="YELLOW"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_Lx7t-I7kQy"
      fill="none"
@@ -938,9 +785,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M377.5 515v-10.107c0-4 2.828-10.828 5.657-13.656l16.54-16.54"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_lwToQ65wlk"
      fill="none"
@@ -948,9 +793,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m474.697 399.697 26.54-26.54c2.828-2.829 9.656-5.657 13.656-5.657H575"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_T894fR9iU3"
      fill="none"
@@ -958,9 +801,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M575 367.5h43c1 0 2-1 2-2V335"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_GE_Vvo-W9w"
      fill="none"
@@ -968,9 +809,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M620 285v-14.464c0-1-.707-2.708-1.414-3.415l-10.354-10.353"
-     cursor="pointer"
-     class="RED"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_PIVFi5ALGh"
      fill="none"
@@ -978,9 +817,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M625 285v-14.536c0-2-1.414-5.414-2.828-6.828l-10.404-10.404"
-     cursor="pointer"
-     class="ORANGE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_kdNQQsROez"
      fill="none"
@@ -988,9 +825,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M575 382.5h48.429c1 0 2.707.707 3.414 1.414l19.621 19.622"
-     cursor="pointer"
-     class="GREEN "
-     style="" />
+     cursor="pointer" />
   <path
      id="line_EUyulJQYc2"
      fill="none"
@@ -998,8 +833,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M575 377.5h53.571c3 0 8.121 2.121 10.243 4.243l14.722 14.721"
-     cursor="pointer"
-     class="BLUE" />
+     cursor="pointer" />
   <path
      id="line_UdNujwbFeH"
      fill="none"
@@ -1007,9 +841,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M575 372.5h49c3 0 6-3 6-6V335"
-     cursor="pointer"
-     class="YELLOW"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_xutJTNxnPM"
      fill="none"
@@ -1017,9 +849,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m750 500 9.672 9.672c1.414 1.414 2.828 4.828 2.828 6.828v8.5"
-     cursor="pointer"
-     class="ORANGE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_v_KInsBrMC"
      fill="none"
@@ -1027,8 +857,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M757.5 525v-8.429c0-1-.707-2.707-1.414-3.414l-9.622-9.621"
-     cursor="pointer"
-     class="GREEN" />
+     cursor="pointer" />
   <path
      id="line_c8x3w4xFUx"
      fill="none"
@@ -1036,9 +865,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m753.536 496.464 12.12 12.122c.708.707 2.415 1.414 3.415 1.414H825"
-     cursor="pointer"
-     class="BLUE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_A5nYfn-LTT"
      fill="none"
@@ -1046,9 +873,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M575 372.5h-60.036c-3 0-8.12 2.121-10.242 4.243l-26.49 26.49"
-     cursor="pointer"
-     class="YELLOW"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_OVdtsk--9h"
      fill="none"
@@ -1056,9 +881,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M382.5 515v-10.036c0-3 2.121-8.12 4.243-10.242l16.49-16.49"
-     cursor="pointer"
-     class="YELLOW"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_m-89kmWIAm"
      fill="none"
@@ -1066,9 +889,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M387.5 515v-9.964c0-2 1.414-5.415 2.828-6.829l16.44-16.44"
-     cursor="pointer"
-     class="BLUE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_lgPeW6T6an"
      fill="none"
@@ -1076,9 +897,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M575 377.5h-59.964c-2 0-5.415 1.414-6.829 2.828l-26.44 26.44"
-     cursor="pointer"
-     class="BLUE"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_905efDAkw0"
      fill="none"
@@ -1086,9 +905,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M575 382.5h-59.893c-1 0-2.708.707-3.415 1.414l-26.389 26.39"
-     cursor="pointer"
-     class="GREEN"
-     style="" />
+     cursor="pointer" />
   <path
      id="line_XxPZOABXBR"
      fill="none"
@@ -1096,9 +913,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M392.5 515v-9.893c0-1 .707-2.708 1.414-3.415l16.39-16.389"
-     cursor="pointer"
-     class="GREEN "
-     style="" />
+     cursor="pointer" />
   <path
      id="line_Z--dtQSWWO"
      fill="none"
@@ -1108,8 +923,7 @@
      d="M630 285v-16c0-2 1.414-5.414 2.828-6.828L650 245"
      cursor="pointer"
      line="YELLOW"
-     class="YELLOW "
-     style="" />
+     class="YELLOW" />
   <path
      id="line_rbbTCDtPsA"
      fill="none"
@@ -1117,9 +931,7 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m760 135 12.929-12.929C776.464 118.536 785 115 790 115h10"
-     cursor="pointer"
-     class="YELLOW"
-     style="" />
+     cursor="pointer" />
   <g
      id="COLM"
      inkscape:label="COLM"
@@ -1155,8 +967,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(408.89 655)"
-       id="text144"
-       class="station_name_text">Colma
+       id="text144">Colma
                         </text>
     <text
        fill="gray"
@@ -1212,7 +1023,7 @@
        id="text2"
        text-anchor="start">
       <text
-         class="station-text  station_name_text"
+         class="station-text"
          dx="0"
          dy="-1"
          font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
@@ -1267,8 +1078,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(433.89 680)"
-       id="text8"
-       class="station_name_text">South San Francisco
+       id="text8">South San Francisco
                         </text>
     <text
        fill="gray"
@@ -1316,8 +1126,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(458.89 705)"
-       id="text10"
-       class="station_name_text">San Bruno
+       id="text10">San Bruno
                         </text>
     <text
        fill="gray"
@@ -1366,16 +1175,14 @@
          dy="-1"
          style="font-synthesis:none"
          transform="translate(483.89 730)"
-         id="text12"
-         class="station_name_text">Int'l Airport (SFO)
+         id="text12">Int'l Airport (SFO)
                         </text>
       <text
          dx="0"
          dy="-11"
          style="font-synthesis:none"
          transform="translate(483.89 730)"
-         id="text13"
-         class="station_name_text">San Francisco
+         id="text13">San Francisco
                         </text>
     </g>
     <text
@@ -1421,8 +1228,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(508.89 755)"
-       id="text15"
-       class="station_name_text">Millbrae
+       id="text15">Millbrae
                         </text>
     <text
        fill="gray"
@@ -1478,8 +1284,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(400.5 595)"
-       id="text19"
-       class="station_name_text">Balboa Park
+       id="text19">Balboa Park
                         </text>
     <text
        fill="gray"
@@ -1536,8 +1341,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(400.5 570)"
-       id="text23"
-       class="station_name_text">Glen Park
+       id="text23">Glen Park
                         </text>
     <text
        fill="gray"
@@ -1594,8 +1398,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(400.5 545)"
-       id="text27"
-       class="station_name_text">24th St Mission
+       id="text27">24th St Mission
                         </text>
     <text
        fill="gray"
@@ -1652,8 +1455,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(400.5 520)"
-       id="text31"
-       class="station_name_text">16th St Mission
+       id="text31">16th St Mission
                         </text>
     <text
        fill="gray"
@@ -1711,8 +1513,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(417.425 485)"
-       id="text35"
-       class="station_name_text">Civic Center/UN Plaza
+       id="text35">Civic Center/UN Plaza
                         </text>
     <text
        fill="gray"
@@ -1770,8 +1571,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(442.425 460)"
-       id="text39"
-       class="station_name_text">Powell St
+       id="text39">Powell St
                         </text>
     <text
        fill="#808080"
@@ -1826,8 +1626,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(467.425 435)"
-       id="text43"
-       class="station_name_text">Montgomery St
+       id="text43">Montgomery St
                         </text>
     <text
        fill="gray"
@@ -1884,8 +1683,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(492.425 410)"
-       id="text47"
-       class="station_name_text">Embarcadero
+       id="text47">Embarcadero
                         </text>
     <text
        fill="gray"
@@ -1948,16 +1746,14 @@
            dy="-1"
            style="font-synthesis:none"
            transform="translate(575 355)"
-           id="text51"
-           class="station_name_text">Oakland
+           id="text51">Oakland
                         </text>
         <text
            dx="0"
            dy="-11"
            style="font-synthesis:none"
            transform="translate(575 355)"
-           id="text52"
-           class="station_name_text">West
+           id="text52">West
                         </text>
       </g>
       <text
@@ -2053,8 +1849,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(638 340)"
-       id="text55"
-       class="station_name_text">12th St/Oakland City Center
+       id="text55">12th St/Oakland City Center
                         </text>
     <text
        fill="gray"
@@ -2104,10 +1899,9 @@
        dy="-1"
        font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
        font-size="10"
-       id="text58"
-       class="station_name_text"
        style="font-synthesis:none"
-       transform="translate(638 315)">19th St/Oakland
+       transform="translate(638 315)"
+       id="text58">19th St/Oakland
                         </text>
     <text
        fill="gray"
@@ -2159,18 +1953,17 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(638 290)"
-       id="text61"
-       class="station_name_text">MacArthur
+       id="text61">MacArthur
                         </text>
     <text
-       id="text62"
        fill="gray"
-       transform="translate(638 290)"
        dominant-baseline="hanging"
+       dx="0"
+       dy="1.5"
        font-family="Arial, sans-serif"
        font-size="5"
-       dy="1.5"
-       dx="0">StationId
+       transform="translate(638 290)"
+       id="text62">StationId
                         </text>
   </g>
   <g
@@ -2211,8 +2004,7 @@
          font-size="10"
          style="font-synthesis:none"
          transform="translate(601.11 260)"
-         id="text63"
-         class="station_name_text">Ashby
+         id="text63">Ashby
                         </text>
       <text
          fill="gray"
@@ -2264,8 +2056,7 @@
          font-size="10"
          style="font-synthesis:none"
          transform="translate(581.11 240)"
-         id="text65"
-         class="station_name_text">Downtown Berkeley
+         id="text65">Downtown Berkeley
                         </text>
       <text
          fill="gray"
@@ -2317,8 +2108,7 @@
          font-size="10"
          style="font-synthesis:none"
          transform="translate(561.11 220)"
-         id="text67"
-         class="station_name_text">North Berkeley
+         id="text67">North Berkeley
                         </text>
       <text
          fill="gray"
@@ -2370,8 +2160,7 @@
          font-size="10"
          style="font-synthesis:none"
          transform="translate(541.11 200)"
-         id="text69"
-         class="station_name_text">El Cerrito Plaza
+         id="text69">El Cerrito Plaza
                         </text>
       <text
          fill="gray"
@@ -2423,8 +2212,7 @@
          font-size="10"
          style="font-synthesis:none"
          transform="translate(521.11 180)"
-         id="text71"
-         class="station_name_text">El Cerrito Del Norte
+         id="text71">El Cerrito Del Norte
                         </text>
       <text
          fill="gray"
@@ -2476,8 +2264,7 @@
          font-size="10"
          style="font-synthesis:none"
          transform="translate(501.11 160)"
-         id="text73"
-         class="station_name_text">Richmond
+         id="text73">Richmond
                         </text>
       <text
          fill="gray"
@@ -2529,8 +2316,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(660.657 384.843)"
-       id="text76"
-       class="station_name_text">Lake Merritt
+       id="text76">Lake Merritt
                         </text>
     <text
        fill="gray"
@@ -2581,8 +2367,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(685.657 409.843)"
-       id="text79"
-       class="station_name_text">Fruitvale
+       id="text79">Fruitvale
                         </text>
     <text
        fill="gray"
@@ -2633,8 +2418,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(710.657 434.843)"
-       id="text82"
-       class="station_name_text">Coliseum
+       id="text82">Coliseum
                         </text>
     <text
        fill="gray"
@@ -2685,8 +2469,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(735.657 459.843)"
-       id="text85"
-       class="station_name_text">San Leandro
+       id="text85">San Leandro
                         </text>
     <text
        fill="gray"
@@ -2737,8 +2520,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(760.657 484.843)"
-       id="text88"
-       class="station_name_text">Bay Fair
+       id="text88">Bay Fair
                         </text>
     <text
        fill="gray"
@@ -2785,8 +2567,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(770.5 530)"
-       id="text90"
-       class="station_name_text">Hayward
+       id="text90">Hayward
                         </text>
     <text
        fill="gray"
@@ -2833,8 +2614,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(770.5 555)"
-       id="text92"
-       class="station_name_text">South Hayward
+       id="text92">South Hayward
                         </text>
     <text
        fill="gray"
@@ -2881,8 +2661,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(770.5 580)"
-       id="text94"
-       class="station_name_text">Union City
+       id="text94">Union City
                         </text>
     <text
        fill="gray"
@@ -2929,8 +2708,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(770.5 605)"
-       id="text96"
-       class="station_name_text">Fremont
+       id="text96">Fremont
                         </text>
     <text
        fill="gray"
@@ -2977,8 +2755,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(770.5 630)"
-       id="text98"
-       class="station_name_text">Warm Springs/South Fremont
+       id="text98">Warm Springs/South Fremont
                         </text>
     <text
        fill="gray"
@@ -3025,8 +2802,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(770.5 655)"
-       id="text100"
-       class="station_name_text">Milpitas
+       id="text100">Milpitas
                         </text>
     <text
        fill="gray"
@@ -3064,19 +2840,16 @@
          cx="2.5"
          r="2"
          fill="#faa61a"
-         id="circle102"
-         class="ORANGE"
-         style="" />
+         id="circle102" />
     </g>
     <text
        dx="0"
        dy="-1"
        font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
        font-size="10"
-       style="font-synthesis:none;-inkscape-font-specification:'Helvetica, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       style="font-synthesis:none;-inkscape-font-specification:'Helvetica, Normal';font-family:Helvetica;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
        transform="translate(770.5 680)"
-       id="text102"
-       class="station_name_text">Berryessa/North San José
+       id="text102">Berryessa/North San José
                         </text>
     <text
        fill="gray"
@@ -3112,16 +2885,14 @@
            dy="-1"
            style="font-synthesis:none"
            transform="translate(0 -10)"
-           id="text104"
-           class="station_name_text">Valley
+           id="text104">Valley
                         </text>
         <text
            dx="0"
            dy="-11"
            style="font-synthesis:none"
            transform="translate(0 -10)"
-           id="text105"
-           class="station_name_text">Castro
+           id="text105">Castro
                         </text>
       </g>
       <text
@@ -3159,16 +2930,14 @@
            dy="-1"
            style="font-synthesis:none"
            transform="translate(0 -10)"
-           id="text107"
-           class="station_name_text">Pleasanton
+           id="text107">Pleasanton
                         </text>
         <text
            dx="0"
            dy="-11"
            style="font-synthesis:none"
            transform="translate(0 -10)"
-           id="text108"
-           class="station_name_text">West Dublin/
+           id="text108">West Dublin/
                         </text>
       </g>
       <text
@@ -3203,16 +2972,14 @@
          dy="-1"
          style="font-synthesis:none"
          transform="translate(5 5)"
-         id="text110"
-         class="station_name_text">Pleasanton
+         id="text110">Pleasanton
                         </text>
       <text
          dx="0"
          dy="-11"
          style="font-synthesis:none"
          transform="translate(5 5)"
-         id="text111"
-         class="station_name_text">Dublin/
+         id="text111">Dublin/
                         </text>
     </g>
     <text
@@ -3244,8 +3011,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(5 5)"
-       id="text113"
-       class="station_name_text">Rockridge
+       id="text113">Rockridge
                         </text>
     <text
        fill="gray"
@@ -3276,8 +3042,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(5 5)"
-       id="text115"
-       class="station_name_text">Orinda
+       id="text115">Orinda
                         </text>
     <text
        fill="gray"
@@ -3308,8 +3073,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(5 5)"
-       id="text117"
-       class="station_name_text">Lafayette
+       id="text117">Lafayette
                         </text>
     <text
        fill="gray"
@@ -3340,8 +3104,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(5 5)"
-       id="text119"
-       class="station_name_text">Walnut Creek
+       id="text119">Walnut Creek
                         </text>
     <text
        fill="gray"
@@ -3371,7 +3134,7 @@
        style="class:station-text"
        transform="translate(5 5)"
        id="text121"
-       class="station-text  station_name  station_name_text">Pleasant Hill/Contra Costa Centre
+       class="station-text  station_name">Pleasant Hill/Contra Costa Centre
                         </text>
     <text
        fill="gray"
@@ -3403,7 +3166,7 @@
        style="font-synthesis:none"
        transform="translate(5 5)"
        id="text123"
-       class="station_name  station_name_text">Concord
+       class="station_name">Concord
                         </text>
     <text
        fill="gray"
@@ -3433,23 +3196,20 @@
       <g
          font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
          font-size="10"
-         id="g126"
-         style="">
+         id="g126">
         <text
            dx="0"
            dy="-1"
            style="font-synthesis:none"
            transform="translate(-5 -10)"
-           id="text125"
-           class="station_name_text">Martinez
+           id="text125">Martinez
                         </text>
         <text
            dx="0"
            dy="-11"
            style="font-synthesis:none"
            transform="translate(-5 -10)"
-           id="text126"
-           class="station_name_text">North Concord/
+           id="text126">North Concord/
                         </text>
       </g>
       <text
@@ -3481,23 +3241,20 @@
       <g
          font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
          font-size="10"
-         id="g129"
-         style="">
+         id="g129">
         <text
            dx="0"
            dy="-1"
            style="font-synthesis:none"
            transform="translate(0 -10)"
-           id="text128"
-           class="station_name_text">Bay Point
+           id="text128">Bay Point
                         </text>
         <text
            dx="0"
            dy="-11"
            style="font-synthesis:none"
            transform="translate(0 -10)"
-           id="text129"
-           class="station_name_text">Pittsburg/
+           id="text129">Pittsburg/
                         </text>
       </g>
       <text
@@ -3529,23 +3286,20 @@
       <g
          font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif"
          font-size="10"
-         id="g132"
-         style="">
+         id="g132">
         <text
            dx="0"
            dy="-1"
            style="font-synthesis:none"
            transform="translate(0 -10)"
-           id="text131"
-           class="station_name_text">Center
+           id="text131">Center
                         </text>
         <text
            dx="0"
            dy="-11"
            style="font-synthesis:none"
            transform="translate(0 -10)"
-           id="text132"
-           class="station_name_text">Pittsburg
+           id="text132">Pittsburg
                         </text>
       </g>
       <text
@@ -3578,8 +3332,7 @@
        font-size="10"
        style="font-synthesis:none"
        transform="translate(5 5)"
-       id="text134"
-       class="station_name_text">Antioch
+       id="text134">Antioch
                         </text>
     <text
        fill="gray"
@@ -3664,7 +3417,5 @@
      stroke-linecap="round"
      stroke-width="5"
      d="M625 355v18c0 1 .707 2.707 1.414 3.414L640 390"
-     cursor="pointer"
-     class="ORANGE"
-     style="" />
+     cursor="pointer" />
 </svg>
