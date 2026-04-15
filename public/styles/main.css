@@ -4,7 +4,6 @@
 @import url("https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css");
 
 :root {
-    --map-bg: #e6ebf0;
     --bg: #f5f7fa;
     --panel: #ffffff;
     --border: #e5e7eb;
@@ -17,15 +16,17 @@
     --tab: #f3f4f6;
     --tab-active: #111827;
 
-    --meter-bg: #e5e7eb;
+    --map-bg: #e6ebf0;
 
     --bike-classic: #22c55e;
     --bike-ebike: #3b82f6;
 }
 
+/* ============================= */
+/* DARK MODE */
+/* ============================= */
 body.dark {
     --bg: #0f172a;
-    --map-bg: #020617;
     --panel: #111827;
     --border: #1f2937;
     --text: #e5e7eb;
@@ -37,15 +38,17 @@ body.dark {
     --tab: #1f2937;
     --tab-active: #374151;
 
-    --meter-bg: #374151;
+    --map-bg: #020617;
 }
 
+/* ============================= */
+/* BASE */
+/* ============================= */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: system-ui, -apple-system, sans-serif;
-    transition: background 0.2s, color 0.2s;
 }
 
 html, body {
@@ -69,10 +72,6 @@ html, body {
     padding: 0 12px;
 }
 
-.nav-title {
-    font-weight: 600;
-}
-
 .theme-btn {
     border: none;
     background: var(--tab);
@@ -87,10 +86,6 @@ html, body {
 #app {
     display: flex;
     height: calc(100vh - 50px);
-}
-
-.col {
-    height: 100%;
 }
 
 /* ============================= */
@@ -109,18 +104,8 @@ html, body {
     padding: 16px;
     gap: 12px;
 
-    position: relative;
     overflow-y: auto;
-}
-
-/* resize handle */
-#resize-handle {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 6px;
-    height: 100%;
-    cursor: ew-resize;
+    position: relative;
 }
 
 /* ============================= */
@@ -180,16 +165,28 @@ html, body {
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 8px;
+    cursor: pointer;
 }
 
 .departure-group:hover {
     background: var(--hover);
 }
 
+.departure-group.active {
+    border: 2px solid #3b82f6;
+}
+
 .departure-header {
     display: flex;
     gap: 6px;
     align-items: center;
+}
+
+.route-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    object-fit: contain;
 }
 
 .departure-times {
@@ -199,9 +196,64 @@ html, body {
 }
 
 .train-etd {
-    background: var(--meter-bg);
+    background: var(--tab);
     padding: 3px 6px;
     border-radius: 4px;
+    font-weight: 600;
+}
+
+.departure-meta {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+/* ============================= */
+/* INFO / ACCESS */
+/* ============================= */
+.info-group {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+.info-group h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.info-group h4 {
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.info-group p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 6px 0;
+}
+
+.info-group ul {
+    padding-left: 18px;
+    margin: 6px 0;
+}
+
+.info-group li {
+    margin-bottom: 4px;
+}
+
+.info-group a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.info-group a:hover {
+    text-decoration: underline;
 }
 
 /* ============================= */
@@ -228,7 +280,7 @@ html, body {
 .bike-meter {
     grid-column: 1 / -1;
     height: 8px;
-    background: var(--meter-bg);
+    background: var(--tab);
     border-radius: 6px;
     overflow: hidden;
     display: flex;
@@ -249,12 +301,7 @@ html, body {
 .bike-stat {
     font-size: 13px;
 }
-.route-icon {
-    width: 24px;
-    height: 24px;
-    display: block;      /* 🔥 FIX */
-    object-fit: contain; /* 🔥 FIX */
-}
+
 .bike-stat.classic { color: var(--bike-classic); }
 .bike-stat.ebike { color: var(--bike-ebike); }
 .bike-stat.docks { color: var(--text-muted); }
@@ -266,17 +313,38 @@ html, body {
     flex: 1;
     background: var(--map-bg);
 }
+
+/* route highlight */
+#svg-container svg path {
+    transition: all 0.2s ease;
+}
+
+.dimmed {
+    opacity: 0.15;
+}
+
+.active-line {
+    opacity: 1;
+    stroke-width: 6px;
+}
+
 /* ============================= */
 /* SVG TEXT */
 /* ============================= */
+#svg-container svg .station_name_text {
+    fill: var(--text);
+    font-size: 12px;
+    font-weight: 600;
 
-/* default text */
+    /* improves readability */
+    paint-order: stroke;
+    stroke: white;
+    stroke-width: 2px;
+}
 
-
-
-/* dark mode */
-body.dark #svg-container svg text {
-    fill: #e5e7eb;
+/* dark mode text outline */
+body.dark #svg-container svg .station_name_text {
+    stroke: #020617;
 }
 
 /* ============================= */

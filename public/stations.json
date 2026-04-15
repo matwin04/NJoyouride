@@ -49,6 +49,11 @@
       "Name": "16TH St Mission"
     },
     "24TH": {
+      "bikeshare": [
+        {
+          "stationId": "47fcca45-c6c5-4665-9f34-8852ca3c3ae8"
+        }
+      ],
       "Name": "24th St Mission"
     },
     "CIVC": {

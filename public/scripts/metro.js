@@ -281,24 +281,32 @@ function createDepartureGroup(route) {
     group.appendChild(meta);
     return group;
 }
-function highlightRoute(route) {
-    const routeClass = route.estimate[0]?.color; // "YELLOW"
+function resetHighlight() {
+    const svg = d3.select("#svg-container svg");
 
-    if (!routeClass) return;
-
-    // dim ALL lines
-    d3.select("#svg-container svg")
-        .selectAll("path")
-        .style("opacity", 0.15)
-        .style("stroke-width", 3);
-
-    // highlight ONLY this line
-    d3.select("#svg-container svg")
-        .selectAll(`path.${routeClass}`)
+    svg.selectAll("path")
+        .classed("dimmed", false)
+        .classed("active-line", false)
         .style("opacity", 1)
-        .style("stroke-width", 6);
-}// ==============================
-// HEADER (DESTINATION + COLOR)
+        .style("stroke-width", 5);
+
+    svg.selectAll("g.station")
+        .classed("active-station", false)
+        .style("opacity", 1);
+}
+function highlightRoute(route) {
+    const routeClass = route.estimate[0]?.color;
+
+    const svg = d3.select("#svg-container svg");
+
+    svg.selectAll("path")
+        .classed("dimmed", true)
+        .classed("active-line", false);
+
+    svg.selectAll(`path.${routeClass}`)
+        .classed("dimmed", false)
+        .classed("active-line", true);
+}// HEADER (DESTINATION + COLOR)
 // ==============================
 
 function createDepartureHeader(route) {
