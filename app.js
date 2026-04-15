@@ -179,6 +179,18 @@ app.get("/api/schedule/departures", async (req, res) => {
         res.status(500).json({ error: "Departure schedule failed" });
     }
 });
+app.get("/api/directions", async (req, res) => {
+    try {
+        const { orig, dest } = req.query;
+        const url = `https://api.bart.gov/api/sched.aspx?cmd=arrive&key=QMAK-PUTH-9BVT-DWEI&orig=${orig}&dest=${dest}&json=y`;
+        const response = await fetch(url);
+        const data = await response.json();
+        res.json(data);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: "Departure schedule failed" });
+    }
+})
 app.get("/api/fare", async (req, res) => {
     try {
         const { from, to } = req.query;

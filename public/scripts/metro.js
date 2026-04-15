@@ -301,6 +301,12 @@ function renderDepartures(etaData) {
         const group = createDepartureGroup(route);
         container.appendChild(group);
     });
+    const destination = document.getElementById("destination");
+    destination.innerHTML = `
+            <select id="departures">
+                <option id="station-id">Station ID</option>
+            </select>`;
+
 }
 
 // ==============================
