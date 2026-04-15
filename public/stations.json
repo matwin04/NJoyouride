@@ -37,6 +37,20 @@
         }
       ]
     },
+    "16TH": {
+      "bikeshare": [
+        {
+          "stationId": "d6ced8f4-977a-441a-86f0-27381b495794"
+        },
+        {
+          "stationId": "cdc26b4b-f9dc-4b00-8cf4-1665b5bf8afd"
+        }
+      ],
+      "Name": "16TH St Mission"
+    },
+    "24TH": {
+      "Name": "24th St Mission"
+    },
     "DALY": {
       "Name": "Daly City",
       "connections": [
@@ -53,9 +67,9 @@
         }
       ],
       "parking": {
-        "dailyfee": 3.40,
-        "carpool": 3.40,
-        "multdayres": 6.00,
+        "dailyfee": 3.4,
+        "carpool": 3.4,
+        "multdayres": 6,
         "monthly": 105
       },
       "bikeshare": [
