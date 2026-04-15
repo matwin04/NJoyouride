@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>BART Map</title>
-
+        <title>NJoy Your Ride</title>
+        <meta property="description" content="Search engine description" />
+        <meta property="og:image" content="/public/icons/favicon.svg" />
         <!-- Styles -->
         <link rel="icon" type="image/x-icon" href="/public/icons/favicon.svg" />
 
@@ -43,16 +44,12 @@
 
                 <!-- CONTENT -->
                 <div class="tab-content active" id="tab-departures">
-                    <div id="destination">
-
-                    </div>
+                    <div id="destination"></div>
                     <div id="departures"></div>
                 </div>
 
                 <div class="tab-content" id="tab-connections">
-                    <div id="connections">
-
-                    </div>
+                    <div id="connections"></div>
                 </div>
                 <div class="tab-content" id="tab-info">
                     <div id="info"></div>
@@ -60,9 +57,7 @@
 
                 <div class="tab-content" id="tab-bikeshare">
                     <span class="mdi mdi-bicycle"></span>BikeShare Systems Nearby
-                    <div class="bikeshare-station">
-
-                    </div>
+                    <div class="bikeshare-station"></div>
                     <div id="bikeshare"></div>
                 </div>
 
@@ -82,9 +77,13 @@
         <!-- ============================= -->
         <script type="module" src="/public/scripts/metro.js"></script>
         <script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/<unique-path>/script.js"></script>
+            window.va =
+                window.va ||
+                function () {
+                    (window.vaq = window.vaq || []).push(arguments);
+                };
+        </script>
+        <script defer src="/<unique-path>/script.js"></script>
     </body>
 </html>
 s
