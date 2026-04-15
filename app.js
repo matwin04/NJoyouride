@@ -35,12 +35,58 @@ async function getDataFile() {
 }
 app.get("/api/station-info/bikeshare", async (req, res) => {
     try {
+        const { stationId } = req.query;
+
         const data = await getDataFile();
-        const bikeshare = data.stations.DALY.bikeshare
-        res.json(bikeshare);
+        const station = data.stations[stationId];
+
+        if (!station || !station.bikeshare || station.bikeshare.length === 0) {
+            return res.json([]);
+        }
+
+        const ids = station.bikeshare.map(b => b.stationId);
+
+        const [infoRes, statusRes] = await Promise.all([
+            fetch("https://gbfs.lyft.com/gbfs/2.3/bay/en/station_information.json"),
+            fetch("https://gbfs.lyft.com/gbfs/2.3/bay/en/station_status.json")
+        ]);
+
+        const info = await infoRes.json();
+        const status = await statusRes.json();
+
+        const results = ids.map(id => {
+            const stationInfo = info.data.stations.find(s => s.station_id === id);
+            const stationStatus = status.data.stations.find(s => s.station_id === id);
+
+            if (!stationInfo || !stationStatus) return null;
+
+            return {
+                name: stationInfo.name,
+                station_id: stationId, // keep BART station id (your pattern)
+                bikeshare_id: id,      // 🔥 add this (important!)
+                status: stationStatus,
+                info: stationInfo
+            };
+        }).filter(Boolean);
+
+        res.json(results);
+
     } catch (err) {
         console.error(err);
+        res.status(500).json({ error: "Bikeshare lookup failed" });
     }
+});
+app.get("/api/bikeshare/status", async (req, res) => {
+    const url = "https://gbfs.lyft.com/gbfs/2.3/bay/en/station_status.json";
+    const response = await fetch(url);
+    const data = await response.json();
+    res.json(data);
+});
+app.get("/api/bikeshare/info", async (req, res) => {
+    const url = "https://gbfs.lyft.com/gbfs/2.3/bay/en/station_information.json";
+    const response = await fetch(url);
+    const data = await response.json();
+    res.json(data);
 });
 app.get("/api/station-info/connections", async (req, res) => {
     try {

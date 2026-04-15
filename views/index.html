@@ -6,7 +6,7 @@
         <title>BART Map</title>
 
         <!-- Styles -->
-        <link rel="icon" type="image/x-icon" href="/public/icons/favicon.svg">
+        <link rel="icon" type="image/x-icon" href="/public/icons/favicon.svg" />
 
         <link rel="stylesheet" href="/public/styles/main.css" />
     </head>
@@ -28,8 +28,8 @@
                 <!-- TABS -->
                 <div class="tabs">
                     <button class="tab active" data-tab="departures">Departures</button>
-                    <button class="tab" data-tab="schedule">Schedule</button>
-                    <button class="tab" data-tab="fares">Fares</button>
+                    <button class="tab" data-tab="connections">Connections</button>
+                    <button class="tab" data-tab="bikeshare">Bikeshare</button>
                     <button class="tab" data-tab="info">Info</button>
                 </div>
 
@@ -38,18 +38,23 @@
                     <div id="departures"></div>
                 </div>
 
-                <div class="tab-content" id="tab-bikes">
-                    <div id="bikes"></div>
+                <div class="tab-content" id="tab-connections">
+                    <div id="connections">
+                        
+                    </div>
                 </div>
 
-                <div class="tab-content" id="tab-fares">
-                    <div id="fares"></div>
+                <div class="tab-content" id="tab-bikeshare">
+                    <span class="mdi mdi-bicycle"></span>BikeShare Systems Nearby
+                    <div class="bikeshare-station">
+                    6 Bikes Available
+                    </div>
+                    <div id="bikeshare"></div>
                 </div>
 
                 <div class="tab-content" id="tab-info">
                     <div id="info"></div>
                 </div>
-
 
                 <!-- resize handle -->
                 <div id="resize-handle"></div>

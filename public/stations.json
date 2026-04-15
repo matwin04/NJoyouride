@@ -18,6 +18,25 @@
     "80209": {
       "Name": "Wilshire/Vermont"
     },
+    "BALB": {
+      "Name": "Balboa Park",
+      "bikeshare": [
+        {
+          "stationId": "1864948538934258100"
+        },
+        {
+          "stationId": "90f3a6f3-b34b-48fa-b162-d7fdffd9637f"
+        }
+      ]
+    },
+    "GLEN": {
+      "Name": "Glen Park",
+      "bikeshare": [
+        {
+          "stationId": "e0ae39c6-90d9-4302-8da9-582cdaaa2a60"
+        }
+      ]
+    },
     "DALY": {
       "Name": "Daly City",
       "connections": [
@@ -41,7 +60,7 @@
       },
       "bikeshare": [
         {
-          "stationId": ""
+          "stationId": "1924343126095301624"
         }
       ],
       "services": {

@@ -88,6 +88,8 @@ function hookMap(map) {
             const etaRes = await fetch(`/api/eta?stationId=${stationId}`);
             const etaData = await etaRes.json();
             renderDepartures(etaData);
+
+            loadBikeShare(stationId);
         })
 
         .on("mouseenter", function () {
@@ -106,6 +108,62 @@ function hookMap(map) {
 // ==============================
 // RENDER STATION INFO
 // ==============================
+async function loadBikeShare(stationId) {
+    const container = document.getElementById("bikeshare");
+    container.innerHTML = "Loading bikes...";
+
+    const res = await fetch(`/api/station-info/bikeshare?stationId=${stationId}`);
+    const stations = await res.json();
+
+    if (!stations || stations.length === 0) {
+        container.innerHTML = "No bikeshare available";
+        return;
+    }
+
+    container.innerHTML = "";
+
+    stations.forEach(data => {
+        const bikes = data.status.num_bikes_available;
+        const ebikes = data.status.num_ebikes_available;
+        const capacity = data.info.capacity;
+
+        const percent = Math.round(((bikes + ebikes) / capacity) * 100);
+
+        const card = document.createElement("div");
+        card.className = "bikeshare-card";
+
+        card.innerHTML = `
+            <div class="bike-card-grid">
+        
+                <div class="bike-name">
+                    ${data.name}
+                </div>
+        
+                <div class="bike-meter">
+                    <div class="bike-fill" style="width:${percent}%"></div>
+                </div>
+        
+                <div class="bike-stat">
+                    <span class="mdi mdi-bicycle"></span>
+                    <span>${bikes}</span>
+                </div>
+        
+                <div class="bike-stat">
+                    <span class="mdi mdi-bicycle-electric"></span>
+                    <span>${ebikes}</span>
+                </div>
+        
+                <div class="bike-stat">
+                    <span class="mdi mdi-parking"></span>
+                    <span>${capacity - (bikes + ebikes)}</span>
+                </div>
+        
+            </div>
+        `;
+
+        container.appendChild(card);
+    });
+}
 function renderAccess(data) {
     const container = document.getElementById("info");
     container.innerHTML = "";
