@@ -48,10 +48,14 @@ body.dark {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, sans-serif;
+    font-family:
+        system-ui,
+        -apple-system,
+        sans-serif;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     background: var(--bg);
     color: var(--text);
@@ -302,9 +306,15 @@ html, body {
     font-size: 13px;
 }
 
-.bike-stat.classic { color: var(--bike-classic); }
-.bike-stat.ebike { color: var(--bike-ebike); }
-.bike-stat.docks { color: var(--text-muted); }
+.bike-stat.classic {
+    color: var(--bike-classic);
+}
+.bike-stat.ebike {
+    color: var(--bike-ebike);
+}
+.bike-stat.docks {
+    color: var(--text-muted);
+}
 
 /* ============================= */
 /* MAP */
@@ -346,10 +356,263 @@ html, body {
 body.dark #svg-container svg .station_name_text {
     stroke: #020617;
 }
+/* ============================= */
+/* DIRECTIONS */
+/* ============================= */
+.directions-box {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.directions-box select {
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    color: var(--text);
+}
+
+.directions-box button {
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    background: #3b82f6;
+    color: white;
+    cursor: pointer;
+}
 
 /* ============================= */
 /* MOBILE */
 /* ============================= */
+
+/* KEEP YOUR VARIABLES (unchanged) */
+
+/* ============================= */
+/* CARD ANIMATIONS */
+/* ============================= */
+.departure-group {
+    animation: fadeSlideIn 0.35s ease forwards;
+    transform: translateY(8px);
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+@keyframes fadeSlideIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.departure-group:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.departure-group:active {
+    transform: scale(0.97);
+}
+
+.departure-group.active {
+    border: 2px solid #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* ============================= */
+/* ROUTE ANIMATION */
+/* ============================= */
+#svg-container svg path {
+    transition:
+        opacity 0.25s ease,
+        stroke-width 0.25s ease;
+}
+
+.dimmed {
+    opacity: 0.15;
+}
+
+.active-line {
+    stroke-width: 6px;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: drawLine 0.6s ease forwards;
+}
+
+@keyframes drawLine {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* ============================= */
+/* TAB ANIMATION */
+/* ============================= */
+.tab-content {
+    opacity: 0;
+    transform: translateY(6px);
+    transition: all 0.2s ease;
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+}
+
+.tab-content.active {
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+    pointer-events: auto;
+}
+
+/* ============================= */
+/* MAP DARK MODE */
+/* ============================= */
+body.dark #svg-container {
+    background: radial-gradient(circle at center, #020617, #000);
+}
+
+/* ============================= */
+/* SVG TEXT */
+/* ============================= */
+#svg-container svg .station_name_text {
+    fill: var(--text);
+    stroke: white;
+    stroke-width: 2px;
+    paint-order: stroke;
+}
+
+body.dark #svg-container svg .station_name_text {
+    stroke: #020617;
+}
+
+/* ============================= */
+/* BIKE */
+/* ============================= */
+.bike-classic {
+    background: var(--bike-classic);
+}
+
+.bike-ebike {
+    background: var(--bike-ebike);
+}
+
+.tab {
+    transition: all 0.2s ease;
+}
+
+.tab:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.theme-btn {
+    transition: all 0.2s ease;
+}
+
+.theme-btn:hover {
+    transform: rotate(10deg) scale(1.05);
+}
+/* ============================= */
+/* BUTTON FEEDBACK */
+/* ============================= */
+
+.directions-box button {
+    position: relative;
+    overflow: hidden;
+}
+
+.directions-box button::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top: 50%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+.directions-box button:active::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+/* ============================= */
+/* ROUTE GLOW */
+/* ============================= */
+
+.active-line {
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
+}
+
+body.dark .active-line {
+    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.8));
+}
+/* ============================= */
+/* ROUTE GLOW */
+/* ============================= */
+
+.active-line {
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
+}
+
+body.dark .active-line {
+    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.8));
+}
+/* ============================= */
+/* STATION HOVER */
+/* ============================= */
+
+/* ============================= */
+/* SCROLL SMOOTH */
+/* ============================= */
+
+#side-panel {
+    scroll-behavior: smooth;
+}
+/* ============================= */
+/* LOADING SHIMMER */
+/* ============================= */
+
+.loading {
+    position: relative;
+    overflow: hidden;
+}
+
+.loading::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 150%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: shimmer 1.2s infinite;
+}
+/* ============================= */
+/* ACTIVE CARD PULSE */
+/* ============================= */
+
+.departure-group.active {
+    animation: pulse 0.6s ease;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes shimmer {
+    100% {
+        left: 150%;
+    }
+}
 @media (max-width: 700px) {
     #app {
         flex-direction: column;
@@ -363,4 +626,26 @@ body.dark #svg-container svg .station_name_text {
     #svg-container {
         height: 55%;
     }
+}
+/* ============================= */
+/* BACKGROUND DEPTH */
+/* ============================= */
+
+#svg-container {
+    background: radial-gradient(circle at center, var(--map-bg), #cbd5e1);
+}
+
+body.dark #svg-container {
+    background: radial-gradient(circle at center, #020617, #000);
+}
+/* ============================= */
+/* ICON POLISH */
+/* ============================= */
+
+.route-icon {
+    transition: transform 0.2s ease;
+}
+
+.departure-group:hover .route-icon {
+    transform: scale(1.15);
 }

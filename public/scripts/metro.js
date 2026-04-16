@@ -147,7 +147,7 @@ async function loadBikeShare(stationId) {
 
     container.innerHTML = "";
 
-    stations.forEach(data => {
+    stations.forEach((data) => {
         const bikes = data.status.num_bikes_available;
         const ebikes = data.status.num_ebikes_available;
         const capacity = data.info.capacity;
@@ -200,9 +200,7 @@ function renderDiscovery(data) {
     container.innerHTML = "";
     const station = data.root.stations.station;
     const getHTML = (field) =>
-        field && field["#cdata-section"]
-            ? field["#cdata-section"]
-            : "<p>No information available</p>";
+        field && field["#cdata-section"] ? field["#cdata-section"] : "<p>No information available</p>";
     container.innerHTML = `
         <div class="info-group">
             <h3>${station.name}</h3>
@@ -243,9 +241,7 @@ function renderAccess(data) {
 
     // helper to safely extract HTML
     const getHTML = (field) =>
-        field && field["#cdata-section"]
-            ? field["#cdata-section"]
-            : "<p>No information available</p>";
+        field && field["#cdata-section"] ? field["#cdata-section"] : "<p>No information available</p>";
 
     container.innerHTML = `
         <div class="info-group">
@@ -284,7 +280,6 @@ function renderStationInfo(stationId, data) {
 // RENDER DEPARTURES (MAIN)
 // ==============================
 
-
 function renderDepartures(etaData) {
     const container = document.getElementById("departures");
     container.innerHTML = "";
@@ -306,7 +301,6 @@ function renderDepartures(etaData) {
             <select id="departures">
                 <option id="station-id">Station ID</option>
             </select>`;
-
 }
 
 // ==============================
@@ -338,25 +332,70 @@ function resetHighlight() {
         .style("opacity", 1)
         .style("stroke-width", 5);
 
-    svg.selectAll("g.station")
-        .classed("active-station", false)
-        .style("opacity", 1);
+    svg.selectAll("g.station").classed("active-station", false).style("opacity", 1);
 }
 function highlightRoute(route) {
     const routeClass = route.estimate[0]?.color;
 
     const svg = d3.select("#svg-container svg");
 
-    svg.selectAll("path")
-        .classed("dimmed", true)
-        .classed("active-line", false);
+    svg.selectAll("path").classed("dimmed", true).classed("active-line", false);
 
-    svg.selectAll(`path.${routeClass}`)
-        .classed("dimmed", false)
-        .classed("active-line", true);
-}// HEADER (DESTINATION + COLOR)
+    svg.selectAll(`path.${routeClass}`).classed("dimmed", false).classed("active-line", true);
+} // HEADER (DESTINATION + COLOR)
 // ==============================
+function renderDirections(data) {
+    const container = document.getElementById("directions-results"); // ✅ use directions tab
+    container.innerHTML = "";
 
+    const trips = data.root.schedule.request.trip || [];
+
+    if (trips.length === 0) {
+        container.innerHTML = "<p>No routes found</p>";
+        return;
+    }
+
+    trips.forEach((trip) => {
+        const group = document.createElement("div");
+        group.className = "departure-group";
+
+        // normalize legs (single vs array)
+        const legs = Array.isArray(trip.leg) ? trip.leg : [trip.leg];
+
+        // map to your SVG classes
+        const routeClasses = legs.map((l) => mapRouteToClass(l["@line"]));
+
+        // 🔥 click = highlight full route
+        group.addEventListener("click", () => {
+            highlightMultipleRoutes(routeClasses);
+        });
+
+        // 🔥 build icons like departures
+        const icons = routeClasses
+            .filter(Boolean)
+            .map((cls) => `<img class="route-icon" src="/public/icons/BAY/${cls}.svg" alt="${cls}">`)
+            .join("");
+
+        group.innerHTML = `
+            <div class="departure-header">
+                ${icons}
+                <strong>${trip["@origin"]} → ${trip["@destination"]}</strong>
+            </div>
+
+            <div class="departure-times">
+                <span class="train-etd">${trip["@origTimeMin"]}</span>
+                <span>→</span>
+                <span class="train-etd">${trip["@destTimeMin"]}</span>
+            </div>
+
+            <div class="departure-meta">
+                ${trip["@tripTime"]} min • $${trip["@fare"]}
+            </div>
+        `;
+
+        container.appendChild(group);
+    });
+}
 function createDepartureHeader(route) {
     const header = document.createElement("div");
     header.className = "departure-header";
@@ -401,7 +440,7 @@ function createDepartureMeta(route) {
 
     const first = route.estimate[0];
 
-    meta.textContent = `Platform ${first.platform} • ${first.direction}`;
+    meta.textContent = `Platform ${first.platform} • ${first.direction} ${first.length} Car`;
 
     return meta;
 }

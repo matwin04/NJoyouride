@@ -4,26 +4,27 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>NJoy Your Ride</title>
+
         <meta property="description" content="Search engine description" />
         <meta property="og:image" content="/public/icons/favicon.svg" />
-        <!-- Styles -->
-        <link rel="icon" type="image/x-icon" href="/public/icons/favicon.svg" />
 
+        <link rel="icon" type="image/x-icon" href="/public/icons/favicon.svg" />
         <link rel="stylesheet" href="/public/styles/main.css" />
     </head>
 
     <body>
+        <!-- NAVBAR -->
         <div class="navbar">
             <div class="nav-title">Transit Map</div>
             <button id="theme-toggle" class="theme-btn">
                 <span class="mdi mdi-weather-night"></span>
             </button>
         </div>
+
         <div id="app">
             <!-- ============================= -->
             <!-- SIDE PANEL -->
             <!-- ============================= -->
-
             <div class="col" id="side-panel">
                 <!-- HEADER -->
                 <div class="panel-header">
@@ -33,42 +34,71 @@
                     <div id="access"></div>
                 </div>
 
+                <!-- ============================= -->
                 <!-- TABS -->
+                <!-- ============================= -->
                 <div class="tabs">
                     <button class="tab active" data-tab="departures">Departures</button>
+                    <button class="tab" data-tab="directions">Directions</button>
+                    <!-- ✅ NEW -->
                     <button class="tab" data-tab="connections">Connections</button>
                     <button class="tab" data-tab="bikeshare">Bikeshare</button>
                     <button class="tab" data-tab="discover">Discover</button>
                     <button class="tab" data-tab="info">Info</button>
                 </div>
 
-                <!-- CONTENT -->
+                <!-- ============================= -->
+                <!-- TAB CONTENT -->
+                <!-- ============================= -->
+
+                <!-- DEPARTURES -->
                 <div class="tab-content active" id="tab-departures">
-                    <div id="destination"></div>
                     <div id="departures"></div>
                 </div>
 
+                <!-- ✅ DIRECTIONS TAB -->
+                <div class="tab-content" id="tab-directions">
+                    <div class="directions-box">
+                        <div id="origin-label">Origin: —</div>
+
+                        <select id="dest-select"></select>
+
+                        <button id="directions-btn">
+                            <span class="mdi mdi-directions"></span>
+                            Go
+                        </button>
+                    </div>
+
+                    <!-- RESULTS -->
+                    <div id="directions-results"></div>
+                </div>
+
+                <!-- CONNECTIONS -->
                 <div class="tab-content" id="tab-connections">
                     <div id="connections"></div>
                 </div>
-                <div class="tab-content" id="tab-info">
-                    <div id="info"></div>
-                </div>
 
+                <!-- BIKE SHARE -->
                 <div class="tab-content" id="tab-bikeshare">
-                    <span class="mdi mdi-bicycle"></span>BikeShare Systems Nearby
-                    <div class="bikeshare-station"></div>
+                    <span class="mdi mdi-bicycle"></span> BikeShare Systems Nearby
                     <div id="bikeshare"></div>
                 </div>
 
+                <!-- DISCOVER -->
                 <div class="tab-content" id="tab-discover">
                     <div id="discover"></div>
+                </div>
+
+                <!-- INFO -->
+                <div class="tab-content" id="tab-info">
+                    <div id="info"></div>
                 </div>
 
                 <!-- resize handle -->
                 <div id="resize-handle"></div>
             </div>
 
+            <!-- MAP -->
             <div class="col" id="svg-container"></div>
         </div>
 
@@ -76,6 +106,7 @@
         <!-- SCRIPT -->
         <!-- ============================= -->
         <script type="module" src="/public/scripts/metro.js"></script>
+
         <script>
             window.va =
                 window.va ||
@@ -83,7 +114,7 @@
                     (window.vaq = window.vaq || []).push(arguments);
                 };
         </script>
+
         <script defer src="/<unique-path>/script.js"></script>
     </body>
 </html>
-s
