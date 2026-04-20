@@ -30,15 +30,15 @@
      inkscape:pageopacity="1"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="4.5175126"
-     inkscape:cx="411.06692"
-     inkscape:cy="384.72499"
+     inkscape:zoom="7.2966545"
+     inkscape:cx="280.67658"
+     inkscape:cy="132.93764"
      inkscape:window-width="1440"
      inkscape:window-height="785"
      inkscape:window-x="0"
      inkscape:window-y="31"
      inkscape:window-maximized="1"
-     inkscape:current-layer="canvas" />
+     inkscape:current-layer="g73" />
   <path
      id="line_jA14Y2emTY"
      fill="none"
@@ -276,7 +276,9 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m548.232 196.768-20-20"
-     cursor="pointer" />
+     cursor="pointer"
+     class="RED"
+     style="" />
   <path
      id="line_FsdRt0sFmY"
      fill="none"
@@ -365,7 +367,7 @@
      stroke-width="5"
      d="m551.768 193.232-20-20"
      cursor="pointer"
-     class="RED  ORANGE"
+     class="ORANGE"
      style="" />
   <path
      id="line_Dt4IGiPbfV"
@@ -384,7 +386,9 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m650 400 25 25"
-     cursor="pointer" />
+     cursor="pointer"
+     class="ORANGE"
+     style="" />
   <path
      id="line_aXy4hyknfK"
      fill="none"
@@ -392,7 +396,9 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m675 425 25 25"
-     cursor="pointer" />
+     cursor="pointer"
+     class="ORANGE"
+     style="" />
   <path
      id="line_oAOrLn7iRU"
      fill="none"
@@ -410,7 +416,9 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m640 390 10 10"
-     cursor="pointer" />
+     cursor="pointer"
+     class="ORANGE"
+     style="" />
   <path
      id="line_bXPNujl920"
      fill="none"
@@ -418,7 +426,9 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m700 450 25 25"
-     cursor="pointer" />
+     cursor="pointer"
+     class="ORANGE"
+     style="" />
   <path
      id="line_gzx7Ac0DED"
      fill="none"
@@ -426,7 +436,9 @@
      stroke-linecap="round"
      stroke-width="5"
      d="m725 475 25 25"
-     cursor="pointer" />
+     cursor="pointer"
+     class="ORANGE"
+     style="" />
   <path
      id="line_5qiQ6vnBqG"
      fill="none"
@@ -1018,7 +1030,7 @@
      stroke-width="5"
      d="m750 500 9.672 9.672c1.414 1.414 2.828 4.828 2.828 6.828v8.5"
      cursor="pointer"
-     class="ORANGE"
+     class="ORANGE "
      style="" />
   <path
      id="line_v_KInsBrMC"
@@ -1159,15 +1171,12 @@
        class="station_name_text">Colma
                         </text>
     <text
-       fill="gray"
+       fill="#808080"
        dominant-baseline="hanging"
-       dx="0"
-       dy="1.5"
        font-family="Arial, sans-serif"
-       font-size="5"
-       transform="translate(408.89 655)"
-       id="text3">Stn
-                        </text>
+       font-size="5px"
+       transform="translate(408.89,655)"
+       id="text3">COLM</text>
   </g>
   <g
      id="DALY"
@@ -1278,8 +1287,7 @@
        font-family="Arial, sans-serif"
        font-size="5"
        transform="translate(433.89 680)"
-       id="text9">Stn
-                        </text>
+       id="text9">SSAN</text>
   </g>
   <g
      id="SBRN"
@@ -1715,15 +1723,12 @@
        class="station_name_text">Civic Center/UN Plaza
                         </text>
     <text
-       fill="gray"
+       fill="#808080"
        dominant-baseline="hanging"
-       dx="0"
-       dy="1.5"
-       font-size="5"
-       transform="translate(417.425 485)"
+       font-size="5px"
+       transform="translate(417.425,485)"
        id="text36"
-       font-family="Arial, sans-serif">StationId
-                        </text>
+       font-family="Arial, sans-serif">CIVC</text>
   </g>
   <g
      id="POWL"
@@ -1830,15 +1835,12 @@
        class="station_name_text">Montgomery St
                         </text>
     <text
-       fill="gray"
+       fill="#808080"
        dominant-baseline="hanging"
-       dx="0"
-       dy="1.5"
        font-family="Arial, sans-serif"
-       font-size="5"
-       transform="translate(467.425 435)"
-       id="text44">StationId
-                        </text>
+       font-size="5px"
+       transform="translate(467.425,435)"
+       id="text44">MONT</text>
   </g>
   <g
      id="EMBR"
@@ -1895,8 +1897,7 @@
        font-family="Arial, sans-serif"
        font-size="5"
        transform="translate(492.425 410)"
-       id="text48">StationId
-                        </text>
+       id="text48">EMBR</text>
   </g>
   <g
      id="WOAK"
@@ -1987,6 +1988,26 @@
          y="369.63879">San Francisco</tspan></text>
     <text
        xml:space="preserve"
+       style="font-style:oblique;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Bold Oblique';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#999999;stroke-width:7.55906;stroke-linejoin:round;paint-order:markers stroke fill"
+       x="324.57812"
+       y="650.43512"
+       id="text1-8"><tspan
+         sodipodi:role="line"
+         id="tspan1-0"
+         x="324.57812"
+         y="650.43512">Daly City</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:oblique;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Bold Oblique';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#999999;stroke-width:7.55906;stroke-linejoin:round;paint-order:markers stroke fill"
+       x="459.3714"
+       y="770.48572"
+       id="text1-8-3"><tspan
+         sodipodi:role="line"
+         id="tspan1-0-7"
+         x="459.3714"
+         y="770.48572">Millbrae</tspan></text>
+    <text
+       xml:space="preserve"
        style="font-style:oblique;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Bold Oblique';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#999999;stroke-width:7.55906;stroke-linejoin:round;paint-order:markers stroke fill"
        x="544.39105"
        y="305.09427"
@@ -2003,16 +2024,6 @@
        id="text1-7"><tspan
          sodipodi:role="line"
          id="tspan5">San José</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:16px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Medium Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#b3b3b3;stroke-width:6.16442;stroke-linejoin:round;paint-order:markers stroke fill"
-       x="602.73199"
-       y="190.98801"
-       id="text1-1-6"><tspan
-         sodipodi:role="line"
-         id="tspan4"
-         x="602.73199"
-         y="190.98801">Berkeley</tspan></text>
   </g>
   <g
      id="12TH"
@@ -2064,8 +2075,7 @@
        font-family="Arial, sans-serif"
        font-size="5"
        transform="translate(638 340)"
-       id="text56">StationId
-                        </text>
+       id="text56">12TH</text>
   </g>
   <g
      id="19TH"
@@ -2117,8 +2127,7 @@
        font-family="Arial, sans-serif"
        font-size="5"
        transform="translate(638 315)"
-       id="text59">StationId
-                        </text>
+       id="text59">19TH</text>
   </g>
   <g
      id="MCAR"
@@ -2170,8 +2179,7 @@
        font-family="Arial, sans-serif"
        font-size="5"
        dy="1.5"
-       dx="0">StationId
-                        </text>
+       dx="0">MCAR</text>
   </g>
   <g
      id="ASHB"
@@ -2459,7 +2467,9 @@
          cx="-2.5"
          r="2"
          fill="#ed1c24"
-         id="circle72" />
+         id="circle72"
+         class="RED"
+         style="" />
       <circle
          cx="2.5"
          r="2"
@@ -2540,8 +2550,7 @@
        font-family="Arial, sans-serif"
        font-size="5"
        transform="translate(660.657 384.843)"
-       id="text77">StationId
-                        </text>
+       id="text77">LAKE</text>
   </g>
   <g
      class="station"
@@ -2592,8 +2601,7 @@
        font-family="Arial, sans-serif"
        font-size="5"
        transform="translate(685.657 409.843)"
-       id="text80">StationId
-                        </text>
+       id="text80">FTVL</text>
   </g>
   <g
      class="station"
@@ -2644,8 +2652,7 @@
        font-family="Arial, sans-serif"
        font-size="5"
        transform="translate(710.657 434.843)"
-       id="text83">StationId
-                        </text>
+       id="text83">COLS</text>
   </g>
   <g
      class="station"
@@ -2696,8 +2703,7 @@
        font-family="Arial, sans-serif"
        font-size="5"
        transform="translate(735.657 459.843)"
-       id="text86">StationId
-                        </text>
+       id="text86">SANL</text>
   </g>
   <g
      class="station"
@@ -2748,8 +2754,7 @@
        font-family="Arial, sans-serif"
        font-size="5"
        transform="translate(760.657 484.843)"
-       id="text89">StationId
-                        </text>
+       id="text89">BAYF</text>
   </g>
   <g
      class="station"
@@ -3595,33 +3600,40 @@
   <g
      id="stn_bfnXknll1W">
     <g
-       transform="translate(865 115)"
+       transform="matrix(1.7777778,0,0,1.7777778,865.44444,115)"
        id="g138">
       <circle
          r="2.25"
          transform="translate(-1.5)"
-         id="circle135" />
+         id="circle135"
+         cx="0"
+         cy="0" />
       <circle
          r="2.25"
          transform="translate(1.5)"
-         id="circle136" />
+         id="circle136"
+         cx="0"
+         cy="0" />
       <circle
          r="1.75"
-         fill="#fff"
+         fill="#ffffff"
          transform="translate(-1.5)"
-         id="circle137" />
+         id="circle137"
+         cx="0"
+         cy="0" />
       <circle
          r="1.75"
-         fill="#fff"
+         fill="#ffffff"
          transform="translate(1.5)"
-         id="circle138" />
+         id="circle138"
+         cx="0"
+         cy="0" />
       <path
          id="stn_core_stn_bfnXknll1W"
-         fill="#fff"
+         fill="#ffffff"
          fill-opacity="0"
          stroke="none"
-         d="M-4-4h8v8h-8z"
-         style="cursor:move" />
+         d="M -4,-4 H 4 V 4 H -4 Z" />
     </g>
     <g
        text-anchor="middle"

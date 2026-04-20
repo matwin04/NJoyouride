@@ -296,11 +296,7 @@ function renderDepartures(etaData) {
         const group = createDepartureGroup(route);
         container.appendChild(group);
     });
-    const destination = document.getElementById("destination");
-    destination.innerHTML = `
-            <select id="departures">
-                <option id="station-id">Station ID</option>
-            </select>`;
+
 }
 
 // ==============================
@@ -344,58 +340,6 @@ function highlightRoute(route) {
     svg.selectAll(`path.${routeClass}`).classed("dimmed", false).classed("active-line", true);
 } // HEADER (DESTINATION + COLOR)
 // ==============================
-function renderDirections(data) {
-    const container = document.getElementById("directions-results"); // ✅ use directions tab
-    container.innerHTML = "";
-
-    const trips = data.root.schedule.request.trip || [];
-
-    if (trips.length === 0) {
-        container.innerHTML = "<p>No routes found</p>";
-        return;
-    }
-
-    trips.forEach((trip) => {
-        const group = document.createElement("div");
-        group.className = "departure-group";
-
-        // normalize legs (single vs array)
-        const legs = Array.isArray(trip.leg) ? trip.leg : [trip.leg];
-
-        // map to your SVG classes
-        const routeClasses = legs.map((l) => mapRouteToClass(l["@line"]));
-
-        // 🔥 click = highlight full route
-        group.addEventListener("click", () => {
-            highlightMultipleRoutes(routeClasses);
-        });
-
-        // 🔥 build icons like departures
-        const icons = routeClasses
-            .filter(Boolean)
-            .map((cls) => `<img class="route-icon" src="/public/icons/BAY/${cls}.svg" alt="${cls}">`)
-            .join("");
-
-        group.innerHTML = `
-            <div class="departure-header">
-                ${icons}
-                <strong>${trip["@origin"]} → ${trip["@destination"]}</strong>
-            </div>
-
-            <div class="departure-times">
-                <span class="train-etd">${trip["@origTimeMin"]}</span>
-                <span>→</span>
-                <span class="train-etd">${trip["@destTimeMin"]}</span>
-            </div>
-
-            <div class="departure-meta">
-                ${trip["@tripTime"]} min • $${trip["@fare"]}
-            </div>
-        `;
-
-        container.appendChild(group);
-    });
-}
 function createDepartureHeader(route) {
     const header = document.createElement("div");
     header.className = "departure-header";
