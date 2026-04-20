@@ -18,6 +18,14 @@
     "80209": {
       "Name": "Wilshire/Vermont"
     },
+    "POWL": {
+      "Name": "Powell St",
+      "bikeshare": [
+        {
+          "stationId": "1b13a386-c5f4-42cc-bc3b-ded95982e090"
+        }
+      ]
+    },
     "BALB": {
       "Name": "Balboa Park",
       "bikeshare": [
