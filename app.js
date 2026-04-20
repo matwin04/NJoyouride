@@ -33,6 +33,15 @@ async function getDataFile() {
     const file = await fs.readFile(filePath, "utf-8");
     return JSON.parse(file);
 }
+app.get("/api/maps", async (req, res) => {
+    try {
+        const data = await getDataFile();
+        const maps = data.maps;
+        res.json(maps);
+    } catch (err) {
+        console.error(err);
+    }
+})
 app.get("/api/station-info/bikeshare", async (req, res) => {
     try {
         const { stationId } = req.query;

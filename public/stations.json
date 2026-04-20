@@ -1,4 +1,13 @@
 {
+  "maps" : [
+  {
+    "id": "bay",
+    "name": "BART",
+    "type": "svg",
+    "file": "/public/maps/bart.svg"
+  }
+],
+
   "stations": {
     "80214": {
       "Name": "Union Station"

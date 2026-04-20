@@ -4,8 +4,10 @@ import { initResize } from "./re-size.js";
 // INIT
 // ==============================
 
-loadSVG("/public/maps/bart.svg");
+let maps = [];
+let currentMap = null;
 initResize();
+loadMaps();
 initTabs();
 initTheme();
 function initTheme() {
@@ -33,7 +35,42 @@ function initTheme() {
 // ==============================
 // LOAD SVG
 // ==============================
+async function loadMaps() {
+    const res = await fetch("/api/maps");
+    maps = await res.json();
+    const select = document.getElementById("map-select");
+    select.innerHTML = "";
+    maps.forEach((map) => {
+        const option = document.createElement("option");
+        option.value = map.id;
+        option.textContent = map.name;
+        select.appendChild(option);
+    });
+    if (maps.length > 0) {
+        loadSelectedMap(maps[0].id);
+    }
+    select.addEventListener("change", (e) => {
+        loadSelectedMap(e.target.value);
+    });
 
+}
+async function loadSelectedMap(mapId) {
+    const map = maps.find(m => m.id === mapId);
+    if (!map) return;
+
+    currentMap = map;
+
+    // clear previous map
+    document.getElementById("svg-container").innerHTML = "";
+
+    if (map.type === "svg") {
+        loadSVG(map.file);
+    }
+
+    if (map.type === "api") {
+        loadApiMap(map);
+    }
+}
 async function loadSVG(url) {
     const svgDoc = await d3.xml(url);
 
