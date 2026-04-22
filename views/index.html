@@ -5,8 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>NJoy Your Ride</title>
 
-        <meta property="description" content="Search engine description" />
-        <meta property="og:image" content="/public/icons/favicon.svg" />
+        <meta property="description" content="Dynamic Transit Maps that make transit more accessible and enjoyable for all" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="N-Joy Your Ride" />
+        <meta property="og:url" content="https://ride.mattwiner.org/" />
+        <meta property="og:image" content="https://ride.mattwiner.org/public/icons/favicon.svg" />
+        <meta property="og:description" content="Making transit more accessible and enjoyable for all" />
 
         <link rel="icon" type="image/x-icon" href="/public/icons/favicon.svg" />
         <link rel="stylesheet" href="/public/styles/main.css" />
@@ -16,11 +20,11 @@
         <!-- NAVBAR -->
         <div class="navbar">
             <div class="nav-title">Transit Map</div>
-            <label for="map-select">Map Select</label><select id="map-select"></select>
+            <label for="map-select">Map Select</label
+            ><select id="map-select"></select>
             <button id="theme-toggle" class="theme-btn">
                 <span class="mdi mdi-weather-night"></span>
             </button>
-
         </div>
 
         <div id="app">
@@ -109,9 +113,12 @@
         <!-- ============================= -->
         <script type="module" src="/public/scripts/metro.js"></script>
         <script>
-            window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+            window.va =
+                window.va ||
+                function () {
+                    (window.vaq = window.vaq || []).push(arguments);
+                };
         </script>
         <script defer src="/_vercel/insights/script.js"></script>
-
     </body>
 </html>

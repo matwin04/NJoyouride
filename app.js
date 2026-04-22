@@ -28,6 +28,7 @@ app.use("/public", express.static(path.join(__dirname, "public")));
 app.get("/", async (req, res) => {
     res.render("index");
 });
+
 async function getDataFile() {
     const filePath = path.join(__dirname, "public", "stations.json");
     const file = await fs.readFile(filePath, "utf-8");
@@ -41,7 +42,7 @@ app.get("/api/maps", async (req, res) => {
     } catch (err) {
         console.error(err);
     }
-})
+});
 app.get("/api/station-info/bikeshare", async (req, res) => {
     try {
         const { stationId } = req.query;
@@ -231,6 +232,16 @@ app.get("/api/eta",async(req,res)=>{
             details: err.message
         });
     }
+});
+app.get("/api/agencies", async (req, res) => {
+    const data = await getDataFile();
+    const agencies = data.agencies;
+    res.json(agencies);
+});
+app.get("/api/bikeshare", async (req, res) => {
+    const data = await getDataFile();
+    const bikeshare = data.bikeshares;
+    res.json(bikeshare);
 });
 app.get("/debug",(req,res)=>{
     res.render("debug");

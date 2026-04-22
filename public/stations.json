@@ -1,8 +1,24 @@
 {
+  "agencies": [
+    {
+      "id": "BART",
+      "city":"SFBAY",
+      "apiurl": "https://api.bart.gov"
+    }
+  ],
+  "bikeshares": [
+    {
+      "id": "metrobikeshare",
+      "city": "los_angeles",
+      "type": "gbfs",
+      "url": ""
+    }
+  ],
   "maps" : [
   {
     "id": "bay",
     "name": "BART",
+    "agency": "BART",
     "type": "svg",
     "file": "/public/maps/bart.svg"
   }
