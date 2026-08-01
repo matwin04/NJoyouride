@@ -200,33 +200,33 @@ async function loadBikeShare(stationId) {
         const ebikesPercent = (ebikes / capacity) * 100;
         card.innerHTML = `
             <div class="bike-card-grid">
-        
+
                 <div class="bike-name">
                     ${data.name}
                 </div>
-        
+
                 <!-- SPLIT METER -->
                 <div class="bike-meter">
                     <div class="bike-fill bike-classic" style="width:${bikesPercent}%"></div>
                     <div class="bike-fill bike-ebike" style="width:${ebikesPercent}%"></div>
                 </div>
-        
+
                 <!-- STATS -->
                 <div class="bike-stat classic">
                     <span class="mdi mdi-bicycle"></span>
                     <span>${bikes}</span>
                 </div>
-        
+
                 <div class="bike-stat ebike">
                     <span class="mdi mdi-bicycle-electric"></span>
                     <span>${ebikes}</span>
                 </div>
-        
+
                 <div class="bike-stat docks">
                     <span class="mdi mdi-parking"></span>
                     <span>${docks}</span>
                 </div>
-        
+
             </div>
         `;
         container.appendChild(card);
@@ -403,7 +403,7 @@ function createDepartureTimes(route) {
         const t = document.createElement("span");
         t.className = "train-etd";
 
-        t.textContent = est.minutes === "Leaving" ? "Leaving" : `${est.minutes} min`;
+        t.textContent = est.minutes === "Leaving" ? "Leaving" : `${est.minutes} min ${est.delay}`;
 
         times.appendChild(t);
     });
@@ -421,7 +421,8 @@ function createDepartureMeta(route) {
 
     const first = route.estimate[0];
 
-    meta.textContent = `Platform ${first.platform} • ${first.direction} ${first.length} Car`;
+  meta.textContent = `<div>
+      <b> A ${first.platform} • ${first.direction} ${first.length} Car`;
 
     return meta;
 }
