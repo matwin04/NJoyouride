@@ -401,9 +401,33 @@ function createDepartureTimes(route) {
 
     route.estimate.forEach((est) => {
         const t = document.createElement("span");
-        t.className = "train-etd";
 
-        t.textContent = est.minutes === "Leaving" ? "Leaving" : `${est.minutes} min ${est.delay}`;
+        // BART's `delay` field is seconds off the original schedule.
+        const delaySeconds = parseInt(est.delay, 10) || 0;
+        const delayMinutes = Math.round(delaySeconds / 60);
+        const isCancelled = est.cancelflag === "1";
+
+        let status = "on-time";
+        if (isCancelled) {
+            status = "cancelled";
+        } else if (delayMinutes >= 10) {
+            status = "delay-major";
+        } else if (delayMinutes >= 1) {
+            status = "delay-minor";
+        }
+
+        t.className = `train-etd ${status}`;
+
+        const label = est.minutes === "Leaving" ? "Leaving" : `${est.minutes} min`;
+
+        let tag = "";
+        if (isCancelled) {
+            tag = `<span class="delay-tag">Cancelled</span>`;
+        } else if (delayMinutes > 0) {
+            tag = `<span class="delay-tag">+${delayMinutes} late</span>`;
+        }
+
+        t.innerHTML = `${label}${tag}`;
 
         times.appendChild(t);
     });
@@ -421,8 +445,7 @@ function createDepartureMeta(route) {
 
     const first = route.estimate[0];
 
-  meta.textContent = `<div>
-      <b> A ${first.platform} • ${first.direction} ${first.length} Car`;
+    meta.innerHTML = `<b>Platform ${first.platform}</b> • ${first.direction} • ${first.length} car`;
 
     return meta;
 }

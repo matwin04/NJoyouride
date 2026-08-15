@@ -118,8 +118,8 @@ app.get("/api/station/parking", async (req, res) => {
     }
 });
 app.get("/api/api-docs", async (req, res) => {
-    res.render("api-docs");
-})
+  res.render("api-docs");
+});
 app.get("/api/station-info/access", async (req, res) => {
     try {
         const {stationId} = req.query;

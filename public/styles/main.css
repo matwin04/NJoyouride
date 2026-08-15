@@ -20,6 +20,32 @@
 
     --bike-classic: #22c55e;
     --bike-ebike: #3b82f6;
+
+    --accent: #3b82f6;
+    --mono:
+        ui-monospace,
+        "JetBrains Mono",
+        "SFMono-Regular",
+        Menlo,
+        Consolas,
+        monospace;
+
+    /* delay status colors */
+    --ontime: #16a34a;
+    --ontime-bg: rgba(22, 163, 74, 0.12);
+    --ontime-border: rgba(22, 163, 74, 0.35);
+
+    --delay-minor: #b45309;
+    --delay-minor-bg: rgba(245, 158, 11, 0.14);
+    --delay-minor-border: rgba(245, 158, 11, 0.4);
+
+    --delay-major: #dc2626;
+    --delay-major-bg: rgba(220, 38, 38, 0.12);
+    --delay-major-border: rgba(220, 38, 38, 0.4);
+
+    --cancelled: #6b7280;
+    --cancelled-bg: rgba(107, 114, 128, 0.12);
+    --cancelled-border: rgba(107, 114, 128, 0.35);
 }
 
 /* ============================= */
@@ -39,6 +65,22 @@ body.dark {
     --tab-active: #374151;
 
     --map-bg: #020617;
+
+    --ontime: #4ade80;
+    --ontime-bg: rgba(74, 222, 128, 0.14);
+    --ontime-border: rgba(74, 222, 128, 0.35);
+
+    --delay-minor: #fbbf24;
+    --delay-minor-bg: rgba(251, 191, 36, 0.16);
+    --delay-minor-border: rgba(251, 191, 36, 0.4);
+
+    --delay-major: #f87171;
+    --delay-major-bg: rgba(248, 113, 113, 0.16);
+    --delay-major-border: rgba(248, 113, 113, 0.4);
+
+    --cancelled: #9ca3af;
+    --cancelled-bg: rgba(156, 163, 175, 0.14);
+    --cancelled-border: rgba(156, 163, 175, 0.35);
 }
 
 /* ============================= */
@@ -59,6 +101,8 @@ body {
     height: 100%;
     background: var(--bg);
     color: var(--text);
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 /* ============================= */
@@ -72,8 +116,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 8px;
 
     padding: 0 12px;
+    overflow: hidden;
+}
+
+.nav-title {
+    flex-shrink: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.navbar label[for="map-select"] {
+    flex-shrink: 0;
+}
+
+#map-select {
+    min-width: 0;
+    max-width: 40vw;
 }
 
 .theme-btn {
@@ -82,6 +145,11 @@ body {
     padding: 6px;
     border-radius: 6px;
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.theme-btn:hover {
+    transform: rotate(10deg) scale(1.05);
 }
 
 /* ============================= */
@@ -90,6 +158,8 @@ body {
 #app {
     display: flex;
     height: calc(100vh - 50px);
+    max-width: 100vw;
+    overflow: hidden;
 }
 
 /* ============================= */
@@ -109,25 +179,61 @@ body {
     gap: 12px;
 
     overflow-y: auto;
+    overflow-x: hidden;
     position: relative;
+
+    scroll-behavior: smooth;
 }
 
 /* ============================= */
-/* HEADER */
+/* HEADER — SIGN PLATE */
 /* ============================= */
 .panel-header {
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 8px;
+    background: #0b1220;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    padding: 14px 14px 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* route-color rail across the top, like a station board's ID strip */
+.panel-header::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 3px;
+    background: linear-gradient(90deg, #f59e0b, var(--accent), var(--ontime));
 }
 
 #station-name {
-    font-size: 18px;
-    font-weight: 600;
+    font-family: var(--mono);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #f8fafc;
+}
+
+#station-id {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-top: 4px;
 }
 
 #station-addr {
-    font-size: 13px;
-    color: var(--text-muted);
+    display: block;
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: #94a3b8;
+    margin-top: 2px;
+}
+
+#access {
+    margin-top: 6px;
 }
 
 /* ============================= */
@@ -135,29 +241,60 @@ body {
 /* ============================= */
 .tabs {
     display: flex;
-    gap: 6px;
+    flex-wrap: wrap;
+    gap: 2px;
+    border-bottom: 1px solid var(--border);
 }
 
 .tab {
-    flex: 1;
-    padding: 6px;
-    border-radius: 6px;
+    flex: 1 1 auto;
+    min-width: fit-content;
+
+    padding: 8px 12px 9px;
+    margin-bottom: -1px;
+
     border: none;
-    background: var(--tab);
+    border-bottom: 2px solid transparent;
+    background: transparent;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+
     cursor: pointer;
+    white-space: nowrap;
+    transition:
+        color 0.15s ease,
+        border-color 0.15s ease;
+}
+
+.tab:hover {
+    color: var(--text);
 }
 
 .tab.active {
-    background: var(--tab-active);
-    color: white;
+    color: var(--accent);
+    border-bottom-color: var(--accent);
 }
 
 .tab-content {
     display: none;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: all 0.2s ease;
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
 }
 
 .tab-content.active {
     display: block;
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+    pointer-events: auto;
 }
 
 /* ============================= */
@@ -166,18 +303,53 @@ body {
 .departure-group {
     background: var(--card);
     border: 1px solid var(--border);
+    border-left: 3px solid transparent;
     border-radius: 8px;
-    padding: 10px;
+    padding: 10px 10px 10px 12px;
     margin-bottom: 8px;
     cursor: pointer;
+
+    animation: fadeSlideIn 0.35s ease forwards;
+    transform: translateY(8px);
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+@keyframes fadeSlideIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .departure-group:hover {
     background: var(--hover);
+    border-left-color: var(--text-muted);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.departure-group:active {
+    transform: scale(0.97);
 }
 
 .departure-group.active {
-    border: 2px solid #3b82f6;
+    border-color: var(--accent);
+    border-left-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+    animation: pulse 0.6s ease;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .departure-header {
@@ -186,30 +358,116 @@ body {
     align-items: center;
 }
 
+.departure-header strong {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
 .route-icon {
     width: 24px;
     height: 24px;
     display: block;
     object-fit: contain;
+    transition: transform 0.2s ease;
 }
 
+.departure-group:hover .route-icon {
+    transform: scale(1.15);
+}
+
+.departure-meta {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-top: 5px;
+}
+
+/* ============================= */
+/* DEPARTURE TIMES + DELAY COLOR */
+/* ============================= */
 .departure-times {
     display: flex;
+    flex-wrap: wrap;
     gap: 4px;
     margin-top: 4px;
 }
 
 .train-etd {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
     background: var(--tab);
-    padding: 3px 6px;
+    border: 1px solid transparent;
+    padding: 3px 8px;
     border-radius: 4px;
-    font-weight: 600;
+
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.01em;
+
+    transition: all 0.2s ease;
 }
 
-.departure-meta {
-    font-size: 11px;
-    color: var(--text-muted);
-    margin-top: 4px;
+/* on time (default / no meaningful delay) */
+.train-etd.on-time {
+    background: var(--ontime-bg);
+    border-color: var(--ontime-border);
+    color: var(--ontime);
+}
+
+/* delayed 1-9 minutes */
+.train-etd.delay-minor {
+    background: var(--delay-minor-bg);
+    border-color: var(--delay-minor-border);
+    color: var(--delay-minor);
+}
+
+/* delayed 10+ minutes */
+.train-etd.delay-major {
+    background: var(--delay-major-bg);
+    border-color: var(--delay-major-border);
+    color: var(--delay-major);
+    animation: delayPulse 1.6s ease-in-out infinite;
+}
+
+@keyframes delayPulse {
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 var(--delay-major-border);
+    }
+    50% {
+        box-shadow: 0 0 0 3px transparent;
+    }
+}
+
+/* cancelled train */
+.train-etd.cancelled {
+    background: var(--cancelled-bg);
+    border-color: var(--cancelled-border);
+    color: var(--cancelled);
+    text-decoration: line-through;
+}
+
+/* small inline "+N late" / "Cancelled" chip inside the badge */
+.delay-tag {
+    font-size: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    padding: 1px 5px;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.08);
+    white-space: nowrap;
+}
+
+body.dark .delay-tag {
+    background: rgba(255, 255, 255, 0.12);
 }
 
 /* ============================= */
@@ -218,18 +476,24 @@ body {
 .info-group {
     background: var(--card);
     border: 1px solid var(--border);
+    border-left: 3px solid var(--border);
     border-radius: 8px;
-    padding: 10px;
+    padding: 10px 10px 10px 12px;
     margin-bottom: 8px;
 }
 
 .info-group h3 {
-    font-size: 16px;
+    font-family: var(--mono);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     margin-bottom: 6px;
 }
 
 .info-group h4 {
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-muted);
     margin-bottom: 6px;
     display: flex;
     align-items: center;
@@ -274,11 +538,13 @@ body {
     display: grid;
     grid-template-columns: 1fr auto auto auto;
     gap: 6px;
+    align-items: center;
 }
 
 .bike-name {
     grid-column: 1 / -1;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 13px;
 }
 
 .bike-meter {
@@ -303,15 +569,22 @@ body {
 }
 
 .bike-stat {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
     font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
 }
 
 .bike-stat.classic {
     color: var(--bike-classic);
 }
+
 .bike-stat.ebike {
     color: var(--bike-ebike);
 }
+
 .bike-stat.docks {
     color: var(--text-muted);
 }
@@ -321,12 +594,18 @@ body {
 /* ============================= */
 #svg-container {
     flex: 1;
-    background: var(--map-bg);
+    background: radial-gradient(circle at center, var(--map-bg), #cbd5e1);
+}
+
+body.dark #svg-container {
+    background: radial-gradient(circle at center, #020617, #000);
 }
 
 /* route highlight */
 #svg-container svg path {
-    transition: all 0.2s ease;
+    transition:
+        opacity 0.25s ease,
+        stroke-width 0.25s ease;
 }
 
 .dimmed {
@@ -336,6 +615,20 @@ body {
 .active-line {
     opacity: 1;
     stroke-width: 6px;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: drawLine 0.6s ease forwards;
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
+}
+
+body.dark .active-line {
+    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.8));
+}
+
+@keyframes drawLine {
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 /* ============================= */
@@ -352,173 +645,53 @@ body {
     stroke-width: 2px;
 }
 
-/* dark mode text outline */
 body.dark #svg-container svg .station_name_text {
     stroke: #020617;
 }
+
 /* ============================= */
 /* DIRECTIONS */
 /* ============================= */
 .directions-box {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#origin-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-muted);
 }
 
 .directions-box select {
-    padding: 6px;
+    padding: 7px 8px;
     border-radius: 6px;
     border: 1px solid var(--border);
     background: var(--panel);
     color: var(--text);
+    font-size: 13px;
 }
-
-.directions-box button {
-    padding: 6px;
-    border-radius: 6px;
-    border: none;
-    background: #3b82f6;
-    color: white;
-    cursor: pointer;
-}
-
-/* ============================= */
-/* MOBILE */
-/* ============================= */
-
-/* KEEP YOUR VARIABLES (unchanged) */
-
-/* ============================= */
-/* CARD ANIMATIONS */
-/* ============================= */
-.departure-group {
-    animation: fadeSlideIn 0.35s ease forwards;
-    transform: translateY(8px);
-    opacity: 0;
-    transition: all 0.2s ease;
-}
-
-@keyframes fadeSlideIn {
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.departure-group:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
-}
-
-.departure-group:active {
-    transform: scale(0.97);
-}
-
-.departure-group.active {
-    border: 2px solid #3b82f6;
-    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
-}
-
-/* ============================= */
-/* ROUTE ANIMATION */
-/* ============================= */
-#svg-container svg path {
-    transition:
-        opacity 0.25s ease,
-        stroke-width 0.25s ease;
-}
-
-.dimmed {
-    opacity: 0.15;
-}
-
-.active-line {
-    stroke-width: 6px;
-    stroke-dasharray: 200;
-    stroke-dashoffset: 200;
-    animation: drawLine 0.6s ease forwards;
-}
-
-@keyframes drawLine {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-/* ============================= */
-/* TAB ANIMATION */
-/* ============================= */
-.tab-content {
-    opacity: 0;
-    transform: translateY(6px);
-    transition: all 0.2s ease;
-    position: absolute;
-    width: 100%;
-    pointer-events: none;
-}
-
-.tab-content.active {
-    opacity: 1;
-    transform: translateY(0);
-    position: relative;
-    pointer-events: auto;
-}
-
-/* ============================= */
-/* MAP DARK MODE */
-/* ============================= */
-body.dark #svg-container {
-    background: radial-gradient(circle at center, #020617, #000);
-}
-
-/* ============================= */
-/* SVG TEXT */
-/* ============================= */
-#svg-container svg .station_name_text {
-    fill: var(--text);
-    stroke: white;
-    stroke-width: 2px;
-    paint-order: stroke;
-}
-
-body.dark #svg-container svg .station_name_text {
-    stroke: #020617;
-}
-
-/* ============================= */
-/* BIKE */
-/* ============================= */
-.bike-classic {
-    background: var(--bike-classic);
-}
-
-.bike-ebike {
-    background: var(--bike-ebike);
-}
-
-.tab {
-    transition: all 0.2s ease;
-}
-
-.tab:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-}
-
-.theme-btn {
-    transition: all 0.2s ease;
-}
-
-.theme-btn:hover {
-    transform: rotate(10deg) scale(1.05);
-}
-/* ============================= */
-/* BUTTON FEEDBACK */
-/* ============================= */
 
 .directions-box button {
     position: relative;
     overflow: hidden;
+
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: var(--accent);
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    cursor: pointer;
 }
 
 .directions-box button::after {
@@ -537,43 +710,10 @@ body.dark #svg-container svg .station_name_text {
 .directions-box button:active::after {
     transform: translate(-50%, -50%) scale(1);
 }
-/* ============================= */
-/* ROUTE GLOW */
-/* ============================= */
 
-.active-line {
-    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
-}
-
-body.dark .active-line {
-    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.8));
-}
-/* ============================= */
-/* ROUTE GLOW */
-/* ============================= */
-
-.active-line {
-    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
-}
-
-body.dark .active-line {
-    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.8));
-}
-/* ============================= */
-/* STATION HOVER */
-/* ============================= */
-
-/* ============================= */
-/* SCROLL SMOOTH */
-/* ============================= */
-
-#side-panel {
-    scroll-behavior: smooth;
-}
 /* ============================= */
 /* LOADING SHIMMER */
 /* ============================= */
-
 .loading {
     position: relative;
     overflow: hidden;
@@ -589,30 +729,16 @@ body.dark .active-line {
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
     animation: shimmer 1.2s infinite;
 }
-/* ============================= */
-/* ACTIVE CARD PULSE */
-/* ============================= */
 
-.departure-group.active {
-    animation: pulse 0.6s ease;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.02);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
 @keyframes shimmer {
     100% {
         left: 150%;
     }
 }
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
 @media (max-width: 700px) {
     #app {
         flex-direction: column;
@@ -620,32 +746,21 @@ body.dark .active-line {
 
     #side-panel {
         width: 100%;
+        max-width: 100vw;
+        min-width: 0;
         height: 45%;
     }
 
     #svg-container {
         height: 55%;
     }
-}
-/* ============================= */
-/* BACKGROUND DEPTH */
-/* ============================= */
 
-#svg-container {
-    background: radial-gradient(circle at center, var(--map-bg), #cbd5e1);
-}
+    .navbar {
+        padding: 0 8px;
+    }
 
-body.dark #svg-container {
-    background: radial-gradient(circle at center, #020617, #000);
-}
-/* ============================= */
-/* ICON POLISH */
-/* ============================= */
-
-.route-icon {
-    transition: transform 0.2s ease;
-}
-
-.departure-group:hover .route-icon {
-    transform: scale(1.15);
+    .nav-title {
+        font-size: 15px;
+        max-width: 30vw;
+    }
 }
