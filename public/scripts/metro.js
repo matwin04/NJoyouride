@@ -175,7 +175,7 @@ function hookMap(map) {
             const station = d3.select(this);
 
             const stopId = station.attr("id");
-            const chateauId = station.attr("chateau-id");
+            const chateauId = station.attr("data-chateau-id");
             //const stopName = station.attr("data-name") || station.attr("name") || stopId;
             console.log("Chateau:", chateauId);
             console.log("Stop:", stopId);

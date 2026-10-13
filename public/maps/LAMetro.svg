@@ -1465,7 +1465,7 @@
           </g>
         </g>
       </g>
-      <g id="stn_8coqNQdU_O" transform="translate(550, 375)" class="station" data-chateau-id="metro~losangeles">
+      <g id="80208" transform="translate(550, 375)" class="station" data-chateau-id="metro~losangeles">
         <g id="g385">
           <circle id="stn_core_stn_8coqNQdU_O" r="3" stroke="#e3131b" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_8coqNQdU_O" transform="translate(5, 13.5)" text-anchor="start">
@@ -1478,7 +1478,7 @@
           </g>
         </g>
       </g>
-      <g id="stn_LdiATu06GS" transform="translate(575, 350)" class="station" data-agency-id="f-9q5-metro~losangeles~rail" data-chateau-id="metro~losangeles">
+      <g id="80207" transform="translate(575, 350)" class="station" data-agency-id="f-9q5-metro~losangeles~rail" data-chateau-id="metro~losangeles">
         <g id="g388">
           <circle id="stn_core_stn_LdiATu06GS" r="3" stroke="#e3131b" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_LdiATu06GS" transform="translate(5, 13.5)" text-anchor="start">
@@ -1491,7 +1491,7 @@
           </g>
         </g>
       </g>
-      <g id="stn_RkfTxqlZZM" transform="translate(600, 325)" class="station" data-chateau-id="metro~losangeles">
+      <g id="80206" transform="translate(600, 325)" class="station" data-chateau-id="metro~losangeles">
         <g id="g391">
           <circle id="stn_core_stn_RkfTxqlZZM" r="3" stroke="#e3131b" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_RkfTxqlZZM" transform="translate(5, 13.5)" text-anchor="start">
@@ -1504,7 +1504,7 @@
           </g>
         </g>
       </g>
-      <g id="stn_jdkVpEw4SK" transform="translate(600, 275)" class="station" data-chateau-id="metro~losangeles">
+      <g id="80205" transform="translate(600, 275)" class="station" data-chateau-id="metro~losangeles">
         <g id="g394">
           <circle id="stn_core_stn_jdkVpEw4SK" r="3" stroke="#e3131b" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_jdkVpEw4SK" transform="translate(5, -10)" text-anchor="start">
@@ -1517,7 +1517,7 @@
           </g>
         </g>
       </g>
-      <g id="stn_kU7ExkMgP_" transform="translate(575, 250)" class="station" data-chateau-id="metro~losangeles">
+      <g id="80204" transform="translate(575, 250)" class="station" data-chateau-id="metro~losangeles">
         <g id="g397">
           <circle id="stn_core_stn_kU7ExkMgP_" r="3" stroke="#e3131b" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_kU7ExkMgP_" transform="translate(5, -10)" text-anchor="start">
@@ -1530,7 +1530,7 @@
           </g>
         </g>
       </g>
-      <g id="stn_r-V0QxDIEJ" transform="translate(550, 225)" class="station" data-chateau-id="metro~losangeles">
+      <g id="80203" transform="translate(550, 225)" class="station" data-chateau-id="metro~losangeles">
         <g id="g400">
           <circle id="stn_core_stn_r-V0QxDIEJ" r="3" stroke="#e3131b" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_r-V0QxDIEJ" transform="translate(5, -10)" text-anchor="start">
@@ -1543,7 +1543,7 @@
           </g>
         </g>
       </g>
-      <g id="stn_OpmIZ1qLf7" transform="translate(550, 175)" class="station" data-chateau-id="metro~losangeles">
+      <g id="80202" transform="translate(550, 175)" class="station" data-chateau-id="metro~losangeles">
         <g id="g403">
           <circle id="stn_core_stn_OpmIZ1qLf7" r="3" stroke="#e3131b" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_OpmIZ1qLf7" transform="translate(5, 13.5)" text-anchor="start">
@@ -1556,7 +1556,7 @@
           </g>
         </g>
       </g>
-      <g id="stn_Ceh1YdMfUB" transform="translate(575, 150)" class="station" data-chateau-id="metro~losangeles">
+      <g id="80201" transform="translate(575, 150)" class="station" data-chateau-id="metro~losangeles">
         <g id="g406">
           <circle id="stn_core_stn_Ceh1YdMfUB" r="3" stroke="#e3131b" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_Ceh1YdMfUB" transform="translate(5, 13.5)" text-anchor="start">
@@ -1569,7 +1569,7 @@
           </g>
         </g>
       </g>
-      <g id="stn_ahDyaGoYIr" transform="translate(500, 380)" class="stations" data-chateau-id="">
+      <g id="80215" transform="translate(500, 380)" class="stations" data-chateau-id="">
         <g id="g409">
           <circle id="stn_core_stn_ahDyaGoYIr" r="3.25" stroke="#a05da5" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_ahDyaGoYIr" transform="translate(-8, 15.83)" text-anchor="end">
@@ -1582,7 +1582,7 @@
           </g>
         </g>
       </g>
-      <g id="stn_P2x7REl8L5" transform="translate(475, 355)" class="stations" data-chateau-id="">
+      <g id="80216" transform="translate(475, 355)" class="stations" data-chateau-id="">
         <g id="g412">
           <circle id="stn_core_stn_P2x7REl8L5" r="3.25" stroke="#a05da5" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_P2x7REl8L5" transform="translate(-8, 15.83)" text-anchor="end">
@@ -1595,7 +1595,7 @@
           </g>
         </g>
       </g>
-      <g id="stn_Qw4IiGnN4a" transform="translate(450, 330)" class="stations" data-chateau-id="">
+      <g id="80229" transform="translate(450, 330)" class="stations" data-chateau-id="">
         <g id="g415">
           <circle id="stn_core_stn_Qw4IiGnN4a" r="3.25" stroke="#a05da5" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_Qw4IiGnN4a" transform="translate(-8, 15.83)" text-anchor="end">
@@ -1608,7 +1608,7 @@
           </g>
         </g>
       </g>
-      <g id="stn_I2LXFvEA3z" transform="translate(425, 305)" class="stations" data-chateau-id="">
+      <g id="80230" transform="translate(425, 305)" class="stations" data-chateau-id="">
         <g id="g418">
           <circle id="stn_core_stn_I2LXFvEA3z" r="3.25" stroke="#a05da5" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_I2LXFvEA3z" transform="translate(-8, 15.83)" text-anchor="end">
@@ -1621,7 +1621,7 @@
           </g>
         </g>
       </g>
-      <g id="stn_ifgUx_iFlF" transform="translate(400, 280)" class="stations" data-chateau-id="">
+      <g id="80231" transform="translate(400, 280)" class="stations" data-chateau-id="">
         <g id="g421">
           <circle id="stn_core_stn_ifgUx_iFlF" r="3.25" stroke="#a05da5" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_ifgUx_iFlF" transform="translate(-8, 15.83)" text-anchor="end">
