@@ -21,8 +21,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="8.1765624"
-     inkscape:cx="749.64266"
-     inkscape:cy="433.37283"
+     inkscape:cx="699.25474"
+     inkscape:cy="330.27327"
      inkscape:window-width="1920"
      inkscape:window-height="1106"
      inkscape:window-x="-11"
@@ -4316,7 +4316,8 @@
          id="80214"
          transform="translate(825, 500)"
          class="station"
-         chateau-id="metro~losangeles">
+         chateau-id="metro~losangeles"
+         agency-id="f-9q5-metro~losangeles~rail">
         <g
            id="g342">
           <g
