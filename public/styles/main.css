@@ -23,12 +23,12 @@
 
     --accent: #3b82f6;
     --mono:
-        ui-monospace,
-        "JetBrains Mono",
-        "SFMono-Regular",
-        Menlo,
-        Consolas,
-        monospace;
+            ui-monospace,
+            "JetBrains Mono",
+            "SFMono-Regular",
+            Menlo,
+            Consolas,
+            monospace;
 
     /* delay status colors */
     --ontime: #16a34a;
@@ -91,9 +91,9 @@ body.dark {
     margin: 0;
     padding: 0;
     font-family:
-        system-ui,
-        -apple-system,
-        sans-serif;
+            system-ui,
+            -apple-system,
+            sans-serif;
 }
 
 html,
@@ -266,8 +266,8 @@ body {
     cursor: pointer;
     white-space: nowrap;
     transition:
-        color 0.15s ease,
-        border-color 0.15s ease;
+            color 0.15s ease,
+            border-color 0.15s ease;
 }
 
 .tab:hover {
@@ -604,8 +604,8 @@ body.dark #svg-container {
 /* route highlight */
 #svg-container svg path {
     transition:
-        opacity 0.25s ease,
-        stroke-width 0.25s ease;
+            opacity 0.25s ease,
+            stroke-width 0.25s ease;
 }
 
 .dimmed {
@@ -763,4 +763,149 @@ body.dark #svg-container svg .station_name_text {
         font-size: 15px;
         max-width: 30vw;
     }
+}
+
+/* ============================= */
+/* CARDS (SIDE PANEL) */
+/* ============================= */
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-family: "Overpass", system-ui, sans-serif;
+}
+
+.card * {
+    font-family: inherit;
+}
+
+.card-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.card-header h1 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.2;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.stop-label {
+    flex-shrink: 0;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.state-message {
+    padding: 16px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* departure card */
+.departure-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    animation: fadeSlideIn 0.3s ease forwards;
+}
+
+.row-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+.route {
+    flex-shrink: 0;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--tab-active);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.destination {
+    min-width: 0;
+    font-size: 16px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.row-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px 10px;
+    font-size: 13px;
+}
+
+.sched {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.live {
+    font-weight: 700;
+}
+
+.status {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: var(--tab);
+    color: var(--text-muted);
+}
+
+.vehicle {
+    margin-left: auto;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+/* delay colors */
+.live.on-time,
+.live.early {
+    color: var(--ontime);
+}
+
+.live.late {
+    color: var(--delay-minor);
+}
+
+.status.on-time,
+.status.early {
+    background: var(--ontime-bg);
+    color: var(--ontime);
+}
+
+.status.late {
+    background: var(--delay-minor-bg);
+    color: var(--delay-minor);
+}
+
+.status.cancelled {
+    background: var(--cancelled-bg);
+    color: var(--cancelled);
+    text-decoration: line-through;
 }

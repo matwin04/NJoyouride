@@ -98,7 +98,7 @@ app.get("/api/bikeshare/info", async (req, res) => {
     const data = await response.json();
     res.json(data);
 });
-app.get("/api/station-info/connections", async (req, res) => {
+app.get("/api/bart/station-info/connections", async (req, res) => {
     try {
         const data = await getDataFile();
         const connections = data.stations.DALY.connections
@@ -107,7 +107,7 @@ app.get("/api/station-info/connections", async (req, res) => {
         console.error(err);
     }
 });
-app.get("/api/station/parking", async (req, res) => {
+app.get("/api/bart/station/parking", async (req, res) => {
     try {
         const data = await getDataFile();
         const {stationId} = req.query;
@@ -117,10 +117,10 @@ app.get("/api/station/parking", async (req, res) => {
         console.error(err);
     }
 });
-app.get("/api/api-docs", async (req, res) => {
+app.get("/api/bart/api-docs", async (req, res) => {
   res.render("api-docs");
 });
-app.get("/api/station-info/access", async (req, res) => {
+app.get("/api/bart/station-info/access", async (req, res) => {
     try {
         const {stationId} = req.query;
         const url = `https://api.bart.gov/api/stn.aspx?cmd=stnaccess&key=QMAK-PUTH-9BVT-DWEI&orig=${stationId}&json=y`;
@@ -133,7 +133,7 @@ app.get("/api/station-info/access", async (req, res) => {
         res.status(500).send("Server Error");
     }
 });
-app.get("/api/station-info/discovery", async (req, res) => {
+app.get("/api/bart/station-info/discovery", async (req, res) => {
     try {
         const {stationId} = req.query;
         const url = `https://api.bart.gov/api/stn.aspx?cmd=stninfo&key=QMAK-PUTH-9BVT-DWEI&orig=${stationId}&json=y`;
@@ -146,7 +146,7 @@ app.get("/api/station-info/discovery", async (req, res) => {
         res.status(500).send("Server Error");
     }
 });
-app.get("/api/station-info", async (req, res) => {
+app.get("/api/bart/station-info", async (req, res) => {
     try {
         const {stationId} = req.query;
         const url = `https://api.bart.gov/api/stn.aspx?cmd=stninfo&key=QMAK-PUTH-9BVT-DWEI&orig=${stationId}&json=y`;
@@ -162,7 +162,7 @@ app.get("/api/station-info", async (req, res) => {
         });
     }
 });
-app.get("/api/schedule/arrivals", async (req, res) => {
+app.get("/api/bart/schedule/arrivals", async (req, res) => {
     try {
         const { stationId } = req.query;
         const url = `https://api.bart.gov/api/sched.aspx?cmd=arrive&orig=${stationId}&key=QMAK-PUTH-9BVT-DWEI&json=y`;
@@ -174,7 +174,7 @@ app.get("/api/schedule/arrivals", async (req, res) => {
         res.status(500).json({ error: "Arrival schedule failed" });
     }
 });
-app.get("/api/schedule/departures", async (req, res) => {
+app.get("/api/bart/schedule/departures", async (req, res) => {
     try {
         const { stationId } = req.query;
 
@@ -189,7 +189,7 @@ app.get("/api/schedule/departures", async (req, res) => {
         res.status(500).json({ error: "Departure schedule failed" });
     }
 });
-app.get("/api/directions", async (req, res) => {
+app.get("/api/bart/directions", async (req, res) => {
     try {
         const { orig, dest } = req.query;
         const url = `https://api.bart.gov/api/sched.aspx?cmd=arrive&key=QMAK-PUTH-9BVT-DWEI&orig=${orig}&dest=${dest}&json=y`;
@@ -201,7 +201,7 @@ app.get("/api/directions", async (req, res) => {
         res.status(500).json({ error: "Departure schedule failed" });
     }
 })
-app.get("/api/fare", async (req, res) => {
+app.get("/api/bart/fare", async (req, res) => {
     try {
         const { from, to } = req.query;
 
@@ -216,11 +216,26 @@ app.get("/api/fare", async (req, res) => {
         res.status(500).json({ error: "Fare lookup failed" });
     }
 });
-app.get("/api/eta",async(req,res)=>{
+app.get("/api/LAMetro/station-info", async (req, res) => {
+    try {
+        const {stationId} = req.query;
+        const url = `https://api.metro.net/LACMTA_Rail/stops/${stationId}`;
+        const options = {method: "GET"};
+        const response = await fetch(url, options);
+        const data = await response.json();
+        res.json(data);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: "Fare lookup failed" });
+
+    }
+});
+
+app.get("/api/bart/eta",async(req,res)=>{
     try {
         const {stationId} = req.query;
         const url = `https://api.bart.gov/api/etd.aspx?cmd=etd&key=QMAK-PUTH-9BVT-DWEI&orig=${stationId}&json=y`;
-         const options = {method: 'GET'};
+        const options = {method: 'GET'};
         const response = await fetch(url, options);
         const data = await response.json();
         res.json(data);
@@ -245,6 +260,41 @@ app.get("/api/bikeshare", async (req, res) => {
 });
 app.get("/debug",(req,res)=>{
     res.render("debug");
+});
+app.get("/api/departures/:chateau_id/:stop_id", async (req, res) => {
+    try {
+        const nowSeconds = Math.floor(Date.now() / 1000);
+        const { chateau_id, stop_id } = req.params;
+
+        const url =
+            `https://birchdeparturesfromstop.catenarymaps.org/departures_at_stop` +
+            `?stop_id=${encodeURIComponent(stop_id)}` +
+            `&chateau_id=${encodeURIComponent(chateau_id)}` +
+            `&include_shapes=false` +
+            `&grater_than_time=${nowSeconds}`;
+        console.log(url);
+
+        const response = await fetch(url);
+        const data = await response.json();
+
+        // Only keep departures at or after now (realtime if present, else scheduled)
+        data.events = (data.events || []).filter((e) => {
+            const t =
+                e.realtime_departure ??
+                e.scheduled_departure ??
+                e.realtime_arrival ??
+                e.scheduled_arrival;
+            return t && t >= nowSeconds;
+        });
+
+        res.json(data);
+    } catch (err) {
+        console.error("Failed to get departures:", err);
+        res.status(500).json({
+            error: "Failed to get departures",
+            details: err.message,
+        });
+    }
 });
 // START SERVER
 if (!process.env.VERCEL && !process.env.NOW_REGION) {

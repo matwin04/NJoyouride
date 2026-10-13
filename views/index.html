@@ -1,124 +1,68 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>NJoy Your Ride</title>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
-        <meta property="description" content="Dynamic Transit Maps that make transit more accessible and enjoyable for all" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="N-Joy Your Ride" />
-        <meta property="og:url" content="https://ride.mattwiner.org/" />
-        <meta property="og:image" content="https://ride.mattwiner.org/public/icons/favicon.svg" />
-        <meta property="og:description" content="Making transit more accessible and enjoyable for all" />
+    <title>NJoy Your Ride</title>
 
-        <link rel="icon" type="image/x-icon" href="/public/icons/favicon.svg" />
-        <link rel="stylesheet" href="/public/styles/main.css" />
-    </head>
+    <meta property="description" content="Dynamic Transit Maps that make transit more accessible and enjoyable for all" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="N-Joy Your Ride" />
+    <meta property="og:url" content="https://ride.mattwiner.org/" />
+    <meta property="og:image" content="https://ride.mattwiner.org/public/icons/favicon.svg" />
+    <meta property="og:description" content="Making transit more accessible and enjoyable for all" />
 
-    <body>
-        <!-- NAVBAR -->
-        <div class="navbar">
-            <div class="nav-title">Transit Map</div>
-            <label for="map-select">Map Select</label
-            ><select id="map-select"></select>
-            <button id="theme-toggle" class="theme-btn">
-                <span class="mdi mdi-weather-night"></span>
-            </button>
-        </div>
+    <link rel="icon" type="image/x-icon" href="/public/icons/favicon.svg" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap" />
+    <link rel="stylesheet" href="/public/styles/main.css" />
+</head>
 
-        <div id="app">
-            <!-- ============================= -->
-            <!-- SIDE PANEL -->
-            <!-- ============================= -->
-            <div class="col" id="side-panel">
-                <!-- HEADER -->
-                <div class="panel-header">
-                    <h2 id="station-name">Select a station</h2>
-                    <span id="station-id"></span>
-                    <span id="station-addr"></span>
-                    <div id="access"></div>
-                </div>
+<body>
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-title">Transit Map</div>
 
-                <!-- ============================= -->
-                <!-- TABS -->
-                <!-- ============================= -->
-                <div class="tabs">
-                    <button class="tab active" data-tab="departures">Departures</button>
-                    <button class="tab" data-tab="directions">Directions</button>
-                    <!-- ✅ NEW -->
-                    <button class="tab" data-tab="connections">Connections</button>
-                    <button class="tab" data-tab="bikeshare">Bikeshare</button>
-                    <button class="tab" data-tab="discover">Discover</button>
-                    <button class="tab" data-tab="info">Info</button>
-                </div>
+    <label for="map-select">Map Select</label>
+    <select id="map-select"></select>
 
-                <!-- ============================= -->
-                <!-- TAB CONTENT -->
-                <!-- ============================= -->
+    <button id="theme-toggle" class="theme-btn">
+        <span class="mdi mdi-weather-night"></span>
+    </button>
+</div>
 
-                <!-- DEPARTURES -->
-                <div class="tab-content active" id="tab-departures">
-                    <div id="departures"></div>
-                </div>
-
-                <!-- ✅ DIRECTIONS TAB -->
-                <div class="tab-content" id="tab-directions">
-                    <div class="directions-box">
-                        <div id="origin-label">Origin: —</div>
-
-                        <select id="dest-select"></select>
-
-                        <button id="directions-btn">
-                            <span class="mdi mdi-directions"></span>
-                            Go
-                        </button>
-                    </div>
-
-                    <!-- RESULTS -->
-                    <div id="directions-results"></div>
-                </div>
-
-                <!-- CONNECTIONS -->
-                <div class="tab-content" id="tab-connections">
-                    <div id="connections"></div>
-                </div>
-
-                <!-- BIKE SHARE -->
-                <div class="tab-content" id="tab-bikeshare">
-                    <span class="mdi mdi-bicycle"></span> BikeShare
-                    <div id="bikeshare"></div>
-                </div>
-
-                <!-- DISCOVER -->
-                <div class="tab-content" id="tab-discover">
-                    <div id="discover"></div>
-                </div>
-
-                <!-- INFO -->
-                <div class="tab-content" id="tab-info">
-                    <div id="info"></div>
-                </div>
-
-                <!-- resize handle -->
-                <div id="resize-handle"></div>
+<div id="app">
+    <!-- SIDE PANEL -->
+    <div class="col" id="side-panel">
+        <!-- STOP CARD -->
+        <div class="card">
+            <div class="card-header">
+                <h1 id="stopName">Departures</h1>
+                <span class="stop-label" id="stopLabel"></span>
             </div>
-
-            <!-- MAP -->
-            <div class="col" id="svg-container"></div>
         </div>
 
-        <!-- ============================= -->
-        <!-- SCRIPT -->
-        <!-- ============================= -->
-        <script type="module" src="/public/scripts/metro.js"></script>
-        <script>
-            window.va =
-                window.va ||
-                function () {
-                    (window.vaq = window.vaq || []).push(arguments);
-                };
-        </script>
-        <script defer src="/_vercel/insights/script.js"></script>
-    </body>
+        <!-- DEPARTURE CARDS -->
+        <div id="list">
+            <div class="state-message">Select a station</div>
+        </div>
+        <div id="resize-handle"></div>
+    </div>
+
+    <!-- MAP -->
+    <div class="col" id="svg-container"></div>
+</div>
+
+<!-- SCRIPT -->
+<script type="module" src="/public/scripts/metro.js"></script>
+
+<script>
+    window.va =
+        window.va ||
+        function () {
+            (window.vaq = window.vaq || []).push(arguments);
+        };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
 </html>

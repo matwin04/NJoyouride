@@ -14,15 +14,22 @@
       "url": ""
     }
   ],
-  "maps" : [
-  {
-    "id": "bay",
-    "name": "BART",
-    "agency": "BART",
-    "type": "svg",
-    "file": "/public/maps/bart.svg"
-  }
-],
+  "maps": [
+    {
+      "id": "bart",
+      "name": "BART",
+      "type": "svg",
+      "file": "/public/maps/bart.svg",
+      "api": "/api/bart"
+    },
+    {
+      "id": "LAMetro",
+      "name": "LA Metro",
+      "type": "svg",
+      "file": "/public/maps/LAMetro.svg",
+      "api": "/api/LAMetro"
+    }
+  ],
 
   "stations": {
     "80214": {
