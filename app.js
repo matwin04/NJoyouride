@@ -261,6 +261,7 @@ app.get("/api/bikeshare", async (req, res) => {
 app.get("/debug",(req,res)=>{
     res.render("debug");
 });
+<<<<<<< HEAD
 app.get("/api/stoptimes/:station_id",async(req,res)=>{
     const {station_id } = req.params;
     const now = new Date().toISOString();
@@ -303,6 +304,9 @@ app.get("/api/departures/:agency_id/:stop_id", async(req,res)=>{
     }
 });
 app.get("/api/departures/cat/:chateau_id/:stop_id", async (req, res) => {
+=======
+app.get("/api/departures/:chateau_id/:stop_id", async (req, res) => {
+>>>>>>> parent of 9dfc588 (MAP)
     try {
         const nowSeconds = Math.floor(Date.now() / 1000);
         const { chateau_id, stop_id } = req.params;

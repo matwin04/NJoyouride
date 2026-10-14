@@ -12,6 +12,7 @@ loadMaps();
 // ==============================
 // HELPERS
 // ==============================
+<<<<<<< HEAD
 
 function delayClass(delaySec, cancelled) {
     if (cancelled) return "cancelled";
@@ -20,17 +21,26 @@ function delayClass(delaySec, cancelled) {
     if (min < -1) return "early";
     if (min > 10) return "very-late";
     if (min > 3) return "late";
+=======
+function delayClass(scheduled, realtime) {
+    if (!scheduled || !realtime) return "";
+    const delayMin = (new Date(realtime) - new Date(scheduled)) / 60000;
+    if (delayMin < 0) return "early";
+    if (delayMin > 10) return "very-late";
+    if (delayMin > 3) return "late";
+>>>>>>> parent of 9dfc588 (MAP)
     return "on-time";
 }
 
-function formatTime(iso) {
-    if (!iso) return null;
-    return new Date(iso).toLocaleTimeString([], {
+function formatTime(unixSeconds) {
+    if (!unixSeconds) return null;
+    return new Date(unixSeconds * 1000).toLocaleTimeString([], {
         hour: "numeric",
         minute: "2-digit",
     });
 }
 
+<<<<<<< HEAD
 function delayText(delaySec, cancelled) {
     if (cancelled) return "Cancelled";
     if (delaySec == null) return "Scheduled";
@@ -50,6 +60,8 @@ function escapeHtml(str = "") {
     })[c]);
 }
 
+=======
+>>>>>>> parent of 9dfc588 (MAP)
 // ==============================
 // THEME
 // ==============================
@@ -194,11 +206,21 @@ function hookMap(map) {
         .style("cursor", "pointer")
         .on("click", async function () {
             const station = d3.select(this);
+<<<<<<< HEAD
             // MOTIS stop IDs are feed-prefixed, e.g. "<feed>_80112S".
             // Put the full ID in data-stop-id; falls back to the element id.
             const stopId = station.attr("data-stop-id") || station.attr("id");
             console.log("Stop:", stopId);
             await getDepartures(stopId);
+=======
+
+            const stopId = station.attr("id");
+            const chateauId = station.attr("data-chateau-id");
+            //const stopName = station.attr("data-name") || station.attr("name") || stopId;
+            console.log("Chateau:", chateauId);
+            console.log("Stop:", stopId);
+            await getDepartures(stopId, chateauId);
+>>>>>>> parent of 9dfc588 (MAP)
         })
         .on("mouseenter", function () {
             d3.select(this).selectAll("rect").attr("fill", "#ffcc00");
@@ -209,6 +231,7 @@ function hookMap(map) {
 }
 
 // ==============================
+<<<<<<< HEAD
 // DEPARTURES (MOTIS / Transitous)
 // ==============================
 
@@ -232,9 +255,18 @@ function normalizeStopTime(st) {
         delay,
         cancelled: Boolean(st.cancelled || st.tripCancelled),
     };
+=======
+// LOAD DEPARTURES
+function renderStationInfo(data) {
+    const primary = data.primary || [];
+    const div = document.createElement("div");
+    div.innerHTML = `
+        <h1></h1>
+    `;
+>>>>>>> parent of 9dfc588 (MAP)
 }
-
 function renderDepartures(data) {
+<<<<<<< HEAD
     const departures = (data.stopTimes || []).map(normalizeStopTime);
     list.innerHTML = "";
 
@@ -250,11 +282,20 @@ function renderDepartures(data) {
         let headsign = dep.headsign;
         const prefix = dep.routeLong ? `${dep.routeLong} - ` : null;
         if (prefix && headsign.startsWith(prefix)) headsign = headsign.slice(prefix.length);
+=======
+    const events = data.events || [];
+    list.innerHTML = "";
+    events.slice(0, 5).forEach((event) => {
+        const scheduled = event?.scheduled_departure;
+        const realtime = event?.realtime_departure;
+        const cls = delayClass(scheduled, realtime);
+>>>>>>> parent of 9dfc588 (MAP)
 
         const div = document.createElement("div");
         div.className = `departure ${dep.cancelled ? "is-cancelled" : ""}`;
         div.innerHTML = `
         <div class="row-top">
+<<<<<<< HEAD
           <span class="route" style="background:${dep.color};color:${dep.textColor}">
             ${escapeHtml(dep.route)}
           </span>
@@ -267,12 +308,23 @@ function renderDepartures(data) {
               ? `<span class="live ${cls}">Live ${formatTime(dep.live)}</span>`
               : ""}
           <span class="delay ${cls}">${delayText(dep.delay, dep.cancelled)}</span>
+=======
+          <span class="route">${event.route_id || "—"}</span>
+          <span>${event.headsign}</span>
         </div>
+        <div class="row-bottom">
+          <span class="rt">${event.realtime}</span><br>
+          <span class="sched">Sched ${formatTime(event.scheduled_departure)}</span>
+          <span class="live ${cls}">Live ${formatTime(realtime)}</span>
+>>>>>>> parent of 9dfc588 (MAP)
+        </div>
+       
       `;
         list.appendChild(div);
     });
 }
 
+<<<<<<< HEAD
 function renderStationInfo(data) {
     const name = data.place?.name;
     if (!name) return;
@@ -284,19 +336,28 @@ function renderStationInfo(data) {
 
 async function getDepartures(stopId) {
     const url = `/api/stoptimes/${encodeURIComponent(stopId)}`;
+=======
+
+// ==============================
+async function getDepartures(stopId,chateauId) {
+    const url = `/api/departures/${chateauId}/${stopId}`;
+    const options = { method: "GET" };
+>>>>>>> parent of 9dfc588 (MAP)
     console.log(url);
 
     try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`Failed to load departures: ${response.status}`);
-        }
+        const response = await fetch(url, options);
         const data = await response.json();
         renderDepartures(data);
-        renderStationInfo(data); // after renderDepartures, since that clears the list
+        renderStationInfo(data);
         console.log(data);
+        //console.log(data.primary.stop_name);
     } catch (error) {
         console.error(error);
-        list.innerHTML = `<div class="empty">Couldn't load departures</div>`;
     }
 }
+
+// ==============================
+// RENDER: SELECTED STOP
+// ==============================
+
