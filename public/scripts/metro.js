@@ -5,8 +5,6 @@ let maps = [];
 let currentMap = null;
 const list = document.getElementById("list");
 
-const MOTIS_BASE = "https://api.transitous.org/api/v6";
-
 initResize();
 initTheme();
 loadMaps();
@@ -285,14 +283,7 @@ function renderStationInfo(data) {
 }
 
 async function getDepartures(stopId) {
-    const now = new Date().toISOString();
-    const url =
-        `${MOTIS_BASE}/stoptimes` +
-        `?stopId=${encodeURIComponent(stopId)}` +
-        `&time=${encodeURIComponent(now)}` +
-        `&arriveBy=false` +
-        `&n=20` +
-        `&language=en`;
+    const url = `/api/stoptimes/${encodeURIComponent(stopId)}`;
     console.log(url);
 
     try {
