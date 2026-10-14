@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg id="canvas" height="1141.5321960449219" width="1277.3572616577148" viewBox="35.258094787597656 97.00003051757812 1277.3572616577148 1141.5321960449219" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
   <defs id="defs1">
-    <style bx:fonts="Geist">@import url(https://fonts.googleapis.com/css2?family=Geist%3Aital%2Cwght%400%2C100..900&amp;display=swap);</style>
+    <style bx:fonts="Geist" id="style1">@import url(https://fonts.googleapis.com/css2?family=Geist%3Aital%2Cwght%400%2C100..900&amp;display=swap);</style>
   </defs>
   <g id="g486">
     <g data-editor-layer="" id="g485">
@@ -380,7 +380,7 @@
       <g id="line_ALGf0kgsAd">
         <path d="M 255.00000000000006 1105.0000000000002 L 241.0355339059328 1091.0355339059329 C 239.26776695296644 1089.2677669529667 235.73223304703367 1089.2677669529667 233.96446609406732 1091.0355339059329 L 215 1110.0000000000002" fill="none" stroke="#0072bc" stroke-width="5" stroke-linecap="round" cursor="pointer" id="path126"/>
       </g>
-      <g id="stn_i3dvja_IUD" transform="translate(970, 355)" class="stations" data-chateau-id="metro~losangeles">
+      <g id="stn_i3dvja_IUD" transform="translate(970, 355)">
         <g id="g128">
           <circle id="stn_core_stn_i3dvja_IUD" r="2.7" stroke="#0072bc" stroke-width="0.2" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_i3dvja_IUD" transform="translate(6, 12)" text-anchor="start">
@@ -471,7 +471,7 @@
           </g>
         </g>
       </g>
-      <g id="80425" transform="translate(1115, 440)" class="station" data-chateau-id="metro~losangeles">
+      <g id="g1" transform="translate(1115, 440)" class="station" data-agency-id="f-9q5-metro~losangeles~rail" data-chateau-id="metro~losangeles">
         <g id="g149">
           <circle id="stn_core_stn_M036m6__E8" r="2.7" stroke="#0072bc" stroke-width="0.2" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_M036m6__E8" transform="translate(6, -9.25)" text-anchor="start">
@@ -510,7 +510,7 @@
           </g>
         </g>
       </g>
-      <g id="80417" transform="translate(955, 370)" class="stations" data-chateau-id="metro~losangeles">
+      <g id="80417" transform="translate(955, 370)">
         <g id="g158">
           <circle id="stn_core_stn_Cu8Gkyun12" r="2.7" stroke="#0072bc" stroke-width="0.2" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_Cu8Gkyun12" transform="translate(6, 12)" text-anchor="start">
@@ -523,7 +523,7 @@
           </g>
         </g>
       </g>
-      <g id="80416" transform="translate(940, 385)" class="stations" data-chateau-id="metro~losangeles">
+      <g id="80416" transform="translate(940, 385)">
         <g id="g161">
           <circle id="stn_core_stn__-sKWZ-kCT" r="2.7" stroke="#0072bc" stroke-width="0.2" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn__-sKWZ-kCT" transform="translate(6, 12)" text-anchor="start">
@@ -536,7 +536,7 @@
           </g>
         </g>
       </g>
-      <g id="80415" transform="translate(925, 400)" class="stations" data-chateau-id="metro~losangeles">
+      <g id="80415" transform="translate(925, 400)">
         <g id="g164">
           <circle id="stn_core_stn_COTSXE-5pn" r="2.7" stroke="#0072bc" stroke-width="0.2" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_COTSXE-5pn" transform="translate(6, 12)" text-anchor="start">
@@ -549,7 +549,7 @@
           </g>
         </g>
       </g>
-      <g id="80414" transform="translate(910, 415)" class="stations" data-chateau-id="metro~losangeles">
+      <g id="80414" transform="translate(910, 415)">
         <g id="g167">
           <circle id="stn_core_stn_fT1i_oxRPD" r="2.7" stroke="#0072bc" stroke-width="0.2" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_fT1i_oxRPD" transform="translate(6, 12)" text-anchor="start">
@@ -562,7 +562,7 @@
           </g>
         </g>
       </g>
-      <g id="80413" transform="translate(895, 430)" class="stations" data-chateau-id="metro~losangeles">
+      <g id="80413" transform="translate(895, 430)">
         <g id="g170">
           <circle id="stn_core_stn_YtUTIJdcnq" r="2.7" stroke="#0072bc" stroke-width="0.2" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_YtUTIJdcnq" transform="translate(6, 12)" text-anchor="start">
@@ -575,7 +575,7 @@
           </g>
         </g>
       </g>
-      <g id="80412" transform="translate(880, 445)" class="stations" data-chateau-id="metro~losangeles">
+      <g id="80412" transform="translate(880, 445)">
         <g id="g173">
           <circle id="stn_core_stn_06GpT8o63A" r="2.7" stroke="#0072bc" stroke-width="0.2" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_06GpT8o63A" transform="translate(6, 12)" text-anchor="start">
@@ -588,7 +588,7 @@
           </g>
         </g>
       </g>
-      <g id="80411" transform="translate(865, 460)" class="stations" data-chateau-id="metro~losangeles">
+      <g id="80411" transform="translate(865, 460)">
         <g id="g176">
           <circle id="stn_core_stn_JKuHP2O4zS" r="2.7" stroke="#0072bc" stroke-width="0.2" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_JKuHP2O4zS" transform="translate(6, 12)" text-anchor="start">
@@ -601,7 +601,7 @@
           </g>
         </g>
       </g>
-      <g id="80410" transform="translate(850, 475)" class="stations" data-chateau-id="metro~losangeles">
+      <g id="80410" transform="translate(850, 475)">
         <g id="g179">
           <circle id="stn_core_stn_keDoBc3Jwa" r="2.7" stroke="#0072bc" stroke-width="0.2" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_keDoBc3Jwa" transform="translate(6, 12)" text-anchor="start">
@@ -655,7 +655,7 @@
       </g>
       <g id="801103" transform="translate(1205, 530)" class="station" data-chateau-id="metro~losangeles">
         <g id="g191">
-          <circle id="stn_core_stn_K-u2VgrLOh" r="2.7" stroke="#0072bc" stroke-width="0.2" fill="white" style="cursor: move;"/>
+          <circle id="stn_core_stn_K-u2VgrLOh" r="2.7" style="cursor: move;" stroke-width="0.3" stroke="#0072bc" fill="white"/>
           <g id="stn_name_stn_K-u2VgrLOh" transform="translate(6, -9.25)" text-anchor="start">
             <g id="g189">
               <text dy="-1" dx="0" dominant-baseline="auto" font-size="8" font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif" style="font-synthesis: none; white-space: pre;" id="text188">Pomona North</text>
@@ -1287,7 +1287,7 @@
           </g>
         </g>
       </g>
-      <g id="80214" transform="translate(825, 500)" class="station" chateau-id="metro~losangeles" data-chateau-id="metro~losangeles">
+      <g id="80214" transform="translate(825, 500)" class="station" chateau-id="metro~losangeles">
         <g id="g342">
           <g transform="scale(0.03757891572301834) translate(-274.42 -273.92)" id="g339">
             <circle cx="274.42" cy="273.92" r="199.58" fill="white" stroke="#0066a3" stroke-miterlimit="10" stroke-width="31.9328" id="circle337"/>
@@ -1306,7 +1306,7 @@
           </g>
         </g>
       </g>
-      <g id="80413" transform="translate(750, 525)" data-chateau-id="metro~losangeles" class="station">
+      <g id="g2" transform="translate(750, 525)">
         <g id="g347">
           <g id="g344">
             <circle r="7.5" fill="white" stroke="#0066a3" stroke-width="1.2" id="circle342"/>
@@ -1326,7 +1326,7 @@
           </g>
         </g>
       </g>
-      <g id="81402" transform="translate(725, 500)" class="station" data-chateau-id="metro~losangeles">
+      <g id="81402" transform="translate(725, 500)">
         <g id="g352">
           <g id="g349">
             <circle r="7.5" fill="white" stroke="#0066a3" stroke-width="1.2" id="circle347"/>
@@ -1346,7 +1346,7 @@
           </g>
         </g>
       </g>
-      <g id="81401" transform="translate(655, 470)" class="station" data-chateau-id="metro~losangeles">
+      <g id="81401" transform="translate(655, 470)">
         <g id="g357">
           <g id="g354">
             <circle r="7.5" fill="white" stroke="#0066a3" stroke-width="1.2" id="circle352"/>
@@ -1366,7 +1366,7 @@
           </g>
         </g>
       </g>
-      <g id="80211S" transform="translate(625, 500)" class="station" data-chateau-id="metro~losangeles">
+      <g id="80211" transform="translate(625, 500)" class="station" chateau-id="metro~losangeles" data-agency-id="f-9q5-metro~losangeles~rail">
         <g id="g362">
           <g transform="scale(0.03757891572301834) translate(-274.42 -273.92)" id="g359">
             <circle cx="274.42" cy="273.92" r="199.58" fill="white" stroke="#0066a3" stroke-miterlimit="10" stroke-width="31.9328" id="circle357"/>
@@ -1374,28 +1374,28 @@
             <path fill="#0066a3" stroke="#0066a3" stroke-miterlimit="10" stroke-width="8" d="M408,262.55s-.02-.35-.08-1c-.91-8.89-10.99-74.14-111.98-77.39l-3.29,34.26-63.29-61.94,75.87-37.55-4.84,34.65s135.68-4.65,107.61,108.97Z" id="path358"/>
             <path fill="#0066a3" stroke="#0066a3" stroke-miterlimit="10" stroke-width="8" d="M216.58,393.19s70.45,32.52,123.1-56.9l-24.19-23.03,78.39-19.74-2.13,82.65-26.32-21.29s-74.32,116.13-148.84,38.32Z" id="path359"/>
           </g>
-          <circle id="stn_core_stn_fo65xOxXVv" r="7.5" fill="transparent" style="cursor: move;"/>
+          <circle id="stn_core_stn_fo65xOxXVv" style="cursor: move;"/>
           <g id="stn_name_stn_fo65xOxXVv" transform="translate(-8.5, 0)" text-anchor="end">
             <g id="g360">
               <text dy="-1" dx="0" dominant-baseline="auto" font-size="10" font-weight="bold" font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif" style="font-synthesis: none; white-space: pre;" id="text359">Metro Center</text>
               <text dy="-11" dx="0" dominant-baseline="auto" font-size="10" font-weight="bold" font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif" style="font-synthesis: none; white-space: pre;" id="text360">7th St/</text>
             </g>
             <g id="g361" transform="matrix(1, 0, 0, 1, -12.879889, -0.518968)">
-              <g transform="matrix(1, 0, 0, 1, 0, 0.183885)">
-                <ellipse style="fill: rgb(1, 115, 188);" cx="-24.389" cy="4.006" rx="3.745" ry="3.745"/>
-                <text style="fill: rgb(255, 255, 255); font-family: &quot;Geist&quot;; font-size: 5px; white-space: pre; text-anchor: middle;" x="-24.395" y="5.794">A</text>
+              <g transform="matrix(1, 0, 0, 1, 0, 0.183885)" id="g3">
+                <ellipse style="fill: rgb(1, 115, 188);" cx="-24.389" cy="4.006" rx="3.745" ry="3.745" id="ellipse2"/>
+                <text style="fill: rgb(255, 255, 255); font-family: &quot;Geist&quot;; font-size: 5px; white-space: pre; text-anchor: middle;" x="-24.395" y="5.794" id="text2">A</text>
               </g>
-              <g transform="matrix(1, 0, 0, 1, 7.656, 0.183884)">
-                <ellipse style="fill: rgb(227, 18, 27);" cx="-24.389" cy="4.006" rx="3.745" ry="3.745"/>
-                <text style="fill: rgb(255, 255, 255); font-family: &quot;Geist&quot;; font-size: 5px; white-space: pre; text-anchor: middle;" x="-24.395" y="5.794">B</text>
+              <g transform="matrix(1, 0, 0, 1, 7.656, 0.183884)" id="g4">
+                <ellipse style="fill: rgb(227, 18, 27);" cx="-24.389" cy="4.006" rx="3.745" ry="3.745" id="ellipse3"/>
+                <text style="fill: rgb(255, 255, 255); font-family: &quot;Geist&quot;; font-size: 5px; white-space: pre; text-anchor: middle;" x="-24.395" y="5.794" id="text3">B</text>
               </g>
-              <g transform="matrix(1, 0, 0, 1, 15.204935, 0.183884)">
-                <ellipse style="fill: rgb(160, 93, 165);" cx="-24.389" cy="4.006" rx="3.745" ry="3.745"/>
-                <text style="fill: rgb(255, 255, 255); font-family: &quot;Geist&quot;; font-size: 5px; white-space: pre; text-anchor: middle;" x="-24.395" y="5.794">D</text>
+              <g transform="matrix(1, 0, 0, 1, 15.204935, 0.183884)" id="g5">
+                <ellipse style="fill: rgb(160, 93, 165);" cx="-24.389" cy="4.006" rx="3.745" ry="3.745" id="ellipse4"/>
+                <text style="fill: rgb(255, 255, 255); font-family: &quot;Geist&quot;; font-size: 5px; white-space: pre; text-anchor: middle;" x="-24.395" y="5.794" id="text4">D</text>
               </g>
-              <g transform="matrix(1, 0, 0, 1, 22.800766, 0.183884)">
-                <ellipse style="fill: rgb(253, 187, 19);" cx="-24.389" cy="4.006" rx="3.745" ry="3.745"/>
-                <text style="font-family: &quot;Geist&quot;; font-size: 5px; text-anchor: middle; white-space: pre;" x="-24.401" y="5.801">E</text>
+              <g transform="matrix(1, 0, 0, 1, 22.800766, 0.183884)" id="g6">
+                <ellipse style="fill: rgb(253, 187, 19);" cx="-24.389" cy="4.006" rx="3.745" ry="3.745" id="ellipse5"/>
+                <text style="font-family: &quot;Geist&quot;; font-size: 5px; text-anchor: middle; white-space: pre;" x="-24.401" y="5.801" id="text5">E</text>
               </g>
             </g>
           </g>
@@ -1422,7 +1422,7 @@
           </g>
         </g>
       </g>
-      <g id="80213" transform="translate(735, 455)" class="station">
+      <g id="80213" transform="translate(735, 455)" class="station" data-agency-id="f-9q5-metro~losangeles~rail">
         <g id="g372">
           <g id="g369">
             <circle r="7.5" fill="white" stroke="#0066a3" stroke-width="1.2" id="circle367"/>
@@ -1443,7 +1443,7 @@
           </g>
         </g>
       </g>
-      <g id="80209" transform="translate(550, 425)" class="station" data-chateau-id="metro~losangeles">
+      <g id="80209" transform="translate(550, 425)" class="station" data-agency-id="f-9q5-metro~losangeles~rail">
         <g id="g382">
           <g id="g379">
             <circle r="7.5" fill="white" stroke="#0066a3" stroke-width="1.2" id="circle377"/>
@@ -1463,7 +1463,7 @@
           </g>
         </g>
       </g>
-      <g id="80208" transform="translate(550, 375)" class="station" data-chateau-id="metro~losangeles">
+      <g id="80208" transform="translate(550, 375)" class="station" data-agency-id="f-9q5-metro~losangeles~rail">
         <g id="g385">
           <circle id="stn_core_stn_8coqNQdU_O" r="3" stroke="#e3131b" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_8coqNQdU_O" transform="translate(5, 13.5)" text-anchor="start">
@@ -1476,7 +1476,7 @@
           </g>
         </g>
       </g>
-      <g id="80207" transform="translate(575, 350)" class="station" data-agency-id="f-9q5-metro~losangeles~rail" data-chateau-id="metro~losangeles">
+      <g id="80207" transform="translate(575, 350)" class="station" data-agency-id="f-9q5-metro~losangeles~rail">
         <g id="g388">
           <circle id="stn_core_stn_LdiATu06GS" r="3" stroke="#e3131b" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_LdiATu06GS" transform="translate(5, 13.5)" text-anchor="start">
@@ -1567,7 +1567,7 @@
           </g>
         </g>
       </g>
-      <g id="80215" transform="translate(500, 380)" data-chateau-id="metro~losangeles" class="station">
+      <g id="80215" transform="translate(500, 380)" class="stations" data-chateau-id="metro~losangeles">
         <g id="g409">
           <circle id="stn_core_stn_ahDyaGoYIr" r="3.25" stroke="#a05da5" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_ahDyaGoYIr" transform="translate(-8, 15.83)" text-anchor="end">
@@ -1580,7 +1580,7 @@
           </g>
         </g>
       </g>
-      <g id="80216" transform="translate(475, 355)" data-chateau-id="metro~losangeles" class="station">
+      <g id="80216" transform="translate(475, 355)" class="stations" data-chateau-id="">
         <g id="g412">
           <circle id="stn_core_stn_P2x7REl8L5" r="3.25" stroke="#a05da5" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_P2x7REl8L5" transform="translate(-8, 15.83)" text-anchor="end">
@@ -1593,7 +1593,7 @@
           </g>
         </g>
       </g>
-      <g id="80229" transform="translate(450, 330)" data-chateau-id="metro~losangeles" class="station">
+      <g id="80229" transform="translate(450, 330)" class="stations" data-chateau-id="">
         <g id="g415">
           <circle id="stn_core_stn_Qw4IiGnN4a" r="3.25" stroke="#a05da5" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_Qw4IiGnN4a" transform="translate(-8, 15.83)" text-anchor="end">
@@ -1606,7 +1606,7 @@
           </g>
         </g>
       </g>
-      <g id="80230" transform="translate(425, 305)" data-chateau-id="metro~losangeles" class="station">
+      <g id="80230" transform="translate(425, 305)" class="stations" data-chateau-id="metro~losangeles">
         <g id="g418">
           <circle id="stn_core_stn_I2LXFvEA3z" r="3.25" stroke="#a05da5" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_I2LXFvEA3z" transform="translate(-8, 15.83)" text-anchor="end">
@@ -1619,7 +1619,7 @@
           </g>
         </g>
       </g>
-      <g id="80231" transform="translate(400, 280)" data-chateau-id="metro~losangeles" class="station">
+      <g id="80231" transform="translate(400, 280)" class="stations" data-chateau-id="metro~losangeles">
         <g id="g421">
           <circle id="stn_core_stn_ifgUx_iFlF" r="3.25" stroke="#a05da5" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_ifgUx_iFlF" transform="translate(-8, 15.83)" text-anchor="end">
@@ -1633,7 +1633,7 @@
         </g>
       </g>
       <g id="misc_node_ZW4wdy4SXe" transform="translate(770, 550)"/>
-      <g id="stn_c5xIWT0KJl" transform="translate(600, 525)">
+      <g id="80121" transform="translate(600, 525)" class="station" chateau-id="metro~losangeles">
         <g id="g426">
           <g id="g423">
             <circle r="7.5" fill="white" stroke="#0066a3" stroke-width="1.2" id="circle421"/>
@@ -1642,7 +1642,6 @@
               <path fill="#0066a3" fill-rule="evenodd" d="M57.53,56.22c0,6.09-6.41,7.73-8.38,7.73,0,0,.01,1.41,0,1.41,6.85,0,12.27-4.18,12.27-9.14v-8.54h4.18s-6.13-7.27-6.13-7.27l-6.13,7.27h4.18v8.54Z" transform="translate(-49.84, -50.15)" id="path422"/>
             </g>
           </g>
-          <circle id="stn_core_stn_c5xIWT0KJl" r="7.5" fill="transparent" style="cursor: move;"/>
           <g id="stn_name_stn_c5xIWT0KJl" transform="translate(-8.5, 0)" text-anchor="end">
             <g id="g424">
               <text dy="-1" dx="0" dominant-baseline="auto" font-size="10" font-weight="bold" font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif" style="font-synthesis: none; white-space: pre;" id="text423">Pico</text>
@@ -1668,7 +1667,7 @@
       </g>
       <g id="stn_ELzrhwFGvw" transform="translate(600, 575)" class="station">
         <g id="g432">
-          <circle id="stn_core_stn_ELzrhwFGvw" r="3.25" stroke="#0072bc" stroke-width="1" fill="white" style="cursor: move;"/>
+          <circle id="stn_core_stn_ELzrhwFGvw" r="2" stroke="#0072bc" stroke-width="1" fill="white" style="cursor: move;"/>
           <g id="stn_name_stn_ELzrhwFGvw" transform="translate(8, 0)" text-anchor="start" style="">
             <g id="g430">
               <text dy="-1" dx="0" dominant-baseline="auto" font-size="10" font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif" style="font-synthesis: none; white-space: pre;" id="text429">Grand/LATTC</text>
@@ -1873,7 +1872,7 @@
         <g id="g473">
           <g transform="translate(-12.5, -12.5)" id="g472">
             <rect fill="#0072bc" x="0" width="25" height="25" rx="12.5" ry="12.5" id="rect471"/>
-            <text font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif" style="font-synthesis: none; white-space: pre;" text-anchor="middle" x="12.5" y="12.5" fill="#fff" font-size="16" dominant-baseline="central" id="text471">A</text>
+            <text font-family="SimHei, 'STHeiti T0C', 'PingFang SC', sans-serif" style="white-space:pre" text-anchor="middle" x="12.5" y="12.5" fill="#ffffff" font-size="16px" dominant-baseline="central" id="text471">A</text>
             <rect id="misc_node_connectable_misc_node_ZXcCsRO_Bi" style="cursor: move; z-index: 1000;" x="0" y="0" width="25" height="25" fill="white" opacity="0" stroke="none"/>
           </g>
         </g>

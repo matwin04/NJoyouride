@@ -261,7 +261,29 @@ app.get("/api/bikeshare", async (req, res) => {
 app.get("/debug",(req,res)=>{
     res.render("debug");
 });
-app.get("/api/departures/:chateau_id/:stop_id", async (req, res) => {
+app.get("/api/departures/:agency_id/:stop_id", async(req,res)=>{
+    const { agency_id, stop_id } = req.params;
+    try {
+        const options = {
+            method: 'GET',
+            headers: {
+                'apikey': 'WOo9vL8ECMWN76EcKjsNGfo8YgNZ7c2u'
+            }
+        };
+        const url =
+            `https://transit.land/api/v2/rest/stops/` +
+            `${agency_id}:` +
+            `${stop_id}` +
+            `/departures`;
+        console.log(url);
+        const response = await fetch(url,options);
+        const data = await response.json();
+        res.json(data);
+    } catch (err) {
+        console.error(err);
+    }
+});
+app.get("/api/departures/cat/:chateau_id/:stop_id", async (req, res) => {
     try {
         const nowSeconds = Math.floor(Date.now() / 1000);
         const { chateau_id, stop_id } = req.params;
