@@ -261,26 +261,6 @@ app.get("/api/bikeshare", async (req, res) => {
 app.get("/debug",(req,res)=>{
     res.render("debug");
 });
-<<<<<<< HEAD
-app.get("/api/stoptimes/:station_id",async(req,res)=>{
-    const {station_id } = req.params;
-    const now = new Date().toISOString();
-    try {
-        const url =
-            `https://api.transitous.org/api/v6/stoptimes` +
-            `?stopId=${encodeURIComponent(station_id)}` +
-            `&time=${encodeURIComponent(now)}` +
-            `&arriveBy=false` +
-            `&n=20` +
-            `&language=en`;
-        console.log(url);
-        const response = await fetch(url);
-        const data = await response.json();
-        res.json(data);
-    } catch (err) {
-        console.log(error);
-    }
-})
 app.get("/api/departures/:agency_id/:stop_id", async(req,res)=>{
     const { agency_id, stop_id } = req.params;
     try {
