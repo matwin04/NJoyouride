@@ -1534,7 +1534,7 @@
          MONT
       </text>
    </g>
-   <g id="EMBR" class="station">
+   <g id="us-ca-SF-bayarea_mtc:embarcadero-bart" class="station">
       <g style="cursor: move" transform="rotate(45 -248.878 781.911)" id="g47">
          <rect width="21" height="6" x="-10.5" y="-3" fill="#fff" stroke="#616161" ry="3" id="rect44" />
          <circle cx="-7.5" r="2" fill="#ed1c24" id="circle44" />

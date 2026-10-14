@@ -261,6 +261,24 @@ app.get("/api/bikeshare", async (req, res) => {
 app.get("/debug",(req,res)=>{
     res.render("debug");
 });
+app.get("/api/stoptimes/:stop_id", async(req,res)=>{
+    const {stop_id}  = req.params;
+    const now = new Date().toISOString();
+    const url =
+        `https://api.transitous.org/api/v6/stoptimes` +
+        `?stopId=${encodeURIComponent(stop_id)}` +
+        `&n=20` +
+        `&language=en`;
+    try {
+        console.log(url);
+        const response = await fetch(url);
+        const data = await response.json();
+        console.log(data);
+        res.json(data);
+    } catch (err) {
+        console.error(err);
+    }
+});
 app.get("/api/departures/:agency_id/:stop_id", async(req,res)=>{
     const { agency_id, stop_id } = req.params;
     try {

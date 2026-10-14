@@ -3,8 +3,7 @@ import { initResize } from "./re-size.js";
 
 let maps = [];
 let currentMap = null;
-const list = document.getElementById("list");
-
+const listEl = document.getElementById("list");
 initResize();
 initTheme();
 loadMaps();
@@ -13,12 +12,12 @@ loadMaps();
 // HELPERS
 // ==============================
 
-function delayClass(delaySec) {
-    if (delaySec == null) return "";
-    const min = delaySec / 60;
-    if (min < -1) return "early";
-    if (min > 10) return "very-late";
-    if (min > 3) return "late";
+function delayClass(scheduled, realtime) {
+    if (!scheduled || !realtime) return "";
+    const delayMin = (new Date(realtime) - new Date(scheduled)) / 60000;
+    if (delayMin < 0) return "early";
+    if (delayMin > 10) return "very-late";
+    if (delayMin > 3) return "late";
     return "on-time";
 }
 
@@ -186,7 +185,7 @@ function hookMap(map) {
             const agencyId = station.attr("data-agency-id");
             console.log("Agency:", agencyId);
             console.log("Stop:", stopId);
-            await getDepartures(stopId, agencyId);
+            await getStopTimes(stopId);
         })
         .on("mouseenter", function () {
             d3.select(this).selectAll("rect").attr("fill", "#ffcc00");
@@ -195,104 +194,60 @@ function hookMap(map) {
             d3.select(this).selectAll("rect").attr("fill", "white");
         });
 }
+async function getStopTimes(stopId) {
 
-// ==============================
-// DEPARTURES (Transitland)
-// ==============================
+    listEl.innerHTML = '<div class="state-message">Loading…</div>';
 
-// Merge every platform at the station (e.g. A + C line platforms), dedupe, sort, drop departed trains
-function collectDepartures(data) {
-    const stop = data.stops?.[0];
-    if (!stop) return [];
-
-    const platforms = stop.parent?.children?.length ? stop.parent.children : [stop];
-    const seen = new Set();
-    const all = [];
-
-    for (const p of platforms) {
-        for (const d of p.departures || []) {
-            const key = `${d.trip?.trip_id}-${d.service_date}`;
-            if (seen.has(key)) continue;
-            seen.add(key);
-            all.push(d);
-        }
+    const now = new Date().toISOString();
+    const url =
+        `https://api.transitous.org/api/v6/stoptimes` +
+        `?stopId=${encodeURIComponent(stopId)}` +
+        `&time=${encodeURIComponent(now)}` +
+        `&arriveBy=false` +
+        `&n=20` +
+        `&language=en`;
+    console.log(url);
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        renderDepartures(data);
+    } catch (err) {
+        listEl.innerHTML = `<div class="state-message">Couldn't load departures.<br>${err.message}</div>`;
     }
-
-    const t = (d) =>
-        new Date(d.departure?.estimated_utc || d.departure?.scheduled_utc).getTime();
-    const cutoff = Date.now() - 60_000;
-
-    return all.filter((d) => t(d) >= cutoff).sort((a, b) => t(a) - t(b));
 }
-
 function renderDepartures(data) {
-    const departures = collectDepartures(data);
-    list.innerHTML = "";
+    const stopTimes = data.stopTimes || [];
 
-    if (!departures.length) {
-        list.innerHTML = `<div class="empty">No upcoming departures</div>`;
+    const stopName = stopTimes[0]?.place?.name;
+    document.getElementById("stopName").textContent = stopName || "Departures";
+
+    listEl.innerHTML = "";
+
+    if (!stopTimes.length) {
+        listEl.innerHTML = '<div class="state-message">No upcoming departures.</div>';
         return;
     }
 
-    departures.slice(0, 5).forEach((dep) => {
-        const route = dep.trip?.route ?? {};
-        const times = dep.departure ?? dep.arrival ?? {};
-        const delay = times.estimated_delay;
-        const cls = delayClass(delay);
-
-        const routeName =
-            route.route_short_name || route.route_long_name || route.route_id || "—";
-
-        // "Metro A Line - Pomona Station" -> "Pomona Station"
-        let headsign = dep.trip?.trip_headsign || dep.stop_headsign || "";
-        const prefix = route.route_long_name ? `${route.route_long_name} - ` : null;
-        if (prefix && headsign.startsWith(prefix)) headsign = headsign.slice(prefix.length);
+    stopTimes.slice(0, 6).forEach((item) => {
+        const scheduled = item.place?.scheduledDeparture;
+        const realtime = item.place?.departure || scheduled;
+        const cls = delayClass(scheduled, realtime);
 
         const div = document.createElement("div");
         div.className = "departure";
         div.innerHTML = `
         <div class="row-top">
-          <span class="route" style="background:#${route.route_color || "666"};color:#${route.route_text_color || "fff"}">
-            ${routeName}
-          </span>
-          <span class="headsign">${headsign}</span>
+          <span class="route">${item.routeLongName || "—"}</span>
+          <span class="destination">${(item.tripTo?.name || "—").trim()}</span>
+          
         </div>
         <div class="row-bottom">
-          <span class="sched">Sched ${formatTime(times.scheduled_local)}</span>
-          ${times.estimated_local
-            ? `<span class="live ${cls}">Live ${formatTime(times.estimated_local)}</span>`
-            : ""}
-          <span class="delay ${cls}">${delayText(delay)}</span>
+          <span class="rt">${item.realtime}</span><br>
+          <span class="sched">Sched ${formatTime(scheduled)}</span>
+          <span class="live ${cls}">Live ${formatTime(realtime)}</span>
+          
         </div>
       `;
-        list.appendChild(div);
+        listEl.appendChild(div);
     });
-}
-
-function renderStationInfo(data) {
-    const stop = data.stops?.[0];
-    if (!stop) return;
-    const h = document.createElement("h2");
-    h.className = "station-name";
-    h.textContent = stop.parent?.stop_name || stop.stop_name;
-    list.prepend(h);
-}
-
-async function getDepartures(stopId, agencyId) {
-    const url = `/api/departures/${agencyId}/${stopId}`;
-    console.log(url);
-
-    try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`Failed to load departures: ${response.status}`);
-        }
-        const data = await response.json();
-        renderDepartures(data);
-        renderStationInfo(data); // after renderDepartures, since that clears the list
-        console.log(data);
-    } catch (error) {
-        console.error(error);
-        list.innerHTML = `<div class="empty">Couldn't load departures</div>`;
-    }
 }
