@@ -283,44 +283,6 @@ app.get("/api/departures/:agency_id/:stop_id", async(req,res)=>{
         console.error(err);
     }
 });
-app.get("/api/departures/cat/:chateau_id/:stop_id", async (req, res) => {
-=======
-app.get("/api/departures/:chateau_id/:stop_id", async (req, res) => {
->>>>>>> parent of 9dfc588 (MAP)
-    try {
-        const nowSeconds = Math.floor(Date.now() / 1000);
-        const { chateau_id, stop_id } = req.params;
-
-        const url =
-            `https://birchdeparturesfromstop.catenarymaps.org/departures_at_stop` +
-            `?stop_id=${encodeURIComponent(stop_id)}` +
-            `&chateau_id=${encodeURIComponent(chateau_id)}` +
-            `&include_shapes=false` +
-            `&grater_than_time=${nowSeconds}`;
-        console.log(url);
-
-        const response = await fetch(url);
-        const data = await response.json();
-
-        // Only keep departures at or after now (realtime if present, else scheduled)
-        data.events = (data.events || []).filter((e) => {
-            const t =
-                e.realtime_departure ??
-                e.scheduled_departure ??
-                e.realtime_arrival ??
-                e.scheduled_arrival;
-            return t && t >= nowSeconds;
-        });
-
-        res.json(data);
-    } catch (err) {
-        console.error("Failed to get departures:", err);
-        res.status(500).json({
-            error: "Failed to get departures",
-            details: err.message,
-        });
-    }
-});
 // START SERVER
 if (!process.env.VERCEL && !process.env.NOW_REGION) {
     const PORT = process.env.PORT || 8088;
